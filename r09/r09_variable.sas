@@ -8,7 +8,7 @@ and message.solution.customerType in  ('PE', 'BU')
 and message.solution.source in ('LOGIN','DEVICEREG','KYCUPDT','BENREG')
 and message.authentication.decision = 'FAIL'
 then do;
-    dcl int k;
+    dcl int k; 
 
     do i= 6 to 2 by -1;
         k=i-1;
