@@ -1,3 +1,9 @@
+/* 
+    Rule Name: Single Device accessing multiple CIFs
+    Rule Desctiption:If a single device is accessing multiple CIF( More than 2)( Time frame-in 30 minutes)
+*/
+
+
 dcl double current_dtm; 
 dcl int login_count;
 
