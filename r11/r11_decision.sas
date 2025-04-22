@@ -1,3 +1,9 @@
+/* 
+    Rule Name: Multiple failed login attempts 
+    Rule Desctiption:If the customer consecutively  fails to login twice within 10 min time frame before the current outward financial transaction,  decline only if  (a) such outward financial transaction is to high risk countries and   (b)total of all such outward payment( in the next 2 hours post failed attempts) is exceeding BD 300 50.0%  of the account balance .
+*/
+
+
 dcl int failed_login_count;
 dcl double last_failed_login_dtm; 
 dcl double current_dtm;
