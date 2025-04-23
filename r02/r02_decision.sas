@@ -18,10 +18,9 @@ transaction_time = timepart(transaction_datetime);
 week_day = weekday(transaction_date);
 
     if lists.holiday_date.contains(put(transaction_date , date9.))
-    or ( week_day in (1,2,3,4,5) and (transaction_time  >= hms(19,0,0) or transaction_time < hms(6,0,0)))
+    or (transaction_time  >= hms(19,0,0) or transaction_time < hms(6,0,0))
     or week_day in (6,7)
     then do;
     detection.Alert();
-    detection.Decline();
     end;
 end;
