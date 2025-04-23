@@ -14,7 +14,7 @@ counter = 0;
 
     /*if payment amoun exist at the array*/
     do j = 1 to 50;
-        if lists.nationality.contains(message.customer.nationality)
+        if lists.BlackListed_Nationalities.contains(message.customer.nationality)
         and profile.beneficiary_customer.transaction_amount[j] = message.payment.amount
         and message.solution.messageDtTm - profile.beneficiary_customer.transaction_dt[j] < dhms(0,0,15,0)
         and profile.beneficiary_customer.transaction_amount[j] ^= 0
