@@ -6,12 +6,11 @@
 if message.solution.source in ('ONEPAY', 'FDEFTSTRE', 'FDTRE', 'CCREDPAY', 'BILLPAY')
  and message.solution.customerType = 'PE'
  and message.solution.channeltype in ('DM', 'DI')
- and message.authentication.decision = 'A'
+ and message.solution.messageDtTm - profile.Customer.last_tran_dt[2] >= dhms(90, 0, 0, 0)
+ and message.payment.amount >= 300
+ and lists.BlackListed_Nationalities.contains(message.customer.nationality)
+ and not missing(profile.Customer.last_tran_dt[2])
  then do;
-    if message.solution.messageDtTm - profile.Customer.last_tran_dt[2] >= dhms(90, 0, 0, 0)
-    and message.payment.amount >= 300
-    and lists.BlackListed_Nationalities.contains(message.customer.nationality)
-    then do;
         detection.Alert();
-    end;
+    
 end;
