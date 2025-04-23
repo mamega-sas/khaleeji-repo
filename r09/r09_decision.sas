@@ -8,7 +8,7 @@ y=0;
 if message.solution.channelType in ('DM','DI')
 and message.solution.customerType in  ('PE', 'BU')
 and message.solution.source in ('LOGIN','DEVICEREG','KYCUPDT','BENREG')
-and message.authentication.decision = 'FAIL'
+and message.authentication.decision = 'R'
 then do;
     do i = 1 to 6;
         if message.solution.messageDtTm - profile.Customer.failed_login_dt[i] < dhms(7,0,0,0)
