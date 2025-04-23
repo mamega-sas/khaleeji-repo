@@ -6,7 +6,7 @@
 if message.solution.channelType in ('DM','DI')
 and message.solution.customerType in  ('PE', 'BU')
 and message.solution.source in ('LOGIN','DEVICEREG','KYCUPDT','BENREG')
-and message.authentication.decision = 'FAIL'
+and message.authentication.decision = 'R'
 then do;
     dcl int k; 
 
