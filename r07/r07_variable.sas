@@ -14,16 +14,15 @@ if message.solution.source = 'LOGIN'
 and message.authentication.decision = 'A'
 then do;
     /* replace null values with 0 */
+    /* check if device is exist */
     do i =1 to 5;
         if missing(profile.Customer.devices_login_dt[i] )
             then profile.Customer.devices_login_dt[i]= 0;
+
+        if profile.Customer.devices_id[i] = message.device.macAddress
+        then exist =1;    
     end;
 
-    /* check if device is exist */
-    do i =1 to 5;
-        if profile.Customer.devices_id[i] = message.device.macAddress
-        then exist =1;
-    end;
 
     if exist = 0
     then do;
