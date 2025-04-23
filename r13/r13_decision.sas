@@ -11,7 +11,7 @@ and message.solution.customerType in  ('PE')
 and message.solution.source in ('ONEPAY','FDEFTSTRF','FDTRF','CCREDPAY','BILLPAY','LOGIN','DEVICEREG','KYCUPDT','BENREG')
 then do;
     do i = 1 to 50;
-        if lists.nationality.contains(message.customer.nationality)
+        if lists.BlackListed_Nationalities.contains(message.customer.nationality)
         and message.solution.messageDtTm - profile.Customer.transaction_dt[i] < dhms(0,0,10,0)
         and not missing(profile.Customer.transaction_dt[i])
         then do;
