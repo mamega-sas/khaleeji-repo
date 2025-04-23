@@ -24,5 +24,4 @@ profile.Customer.count = y;
 if y > 5
 then do;
 detection.Alert();
-detection.Decline();
 end; 
