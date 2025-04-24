@@ -29,9 +29,9 @@ then do;
         end;
 		
 		/* get min datetime */
-		min_dt = min(min_dt,profile.Customer.devices_login_dt[i]);
-		if min_dt = profile.Customer.devices_login_dt[i]
-		then min_ind = i;
+	min_dt = min(min_dt,profile.Customer.devices_login_dt[i]);
+	if min_dt = profile.Customer.devices_login_dt[i]
+	then min_ind = i;
     end;
 
 
