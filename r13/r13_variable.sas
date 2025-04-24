@@ -5,14 +5,13 @@
 
 
 if message.solution.channelType in ('DM','DI')
-and message.solution.customerType in  ('PE')
-and message.solution.source in ('ONEPAY','FDEFTSTRF','FDTRF','CCREDPAY','BILLPAY','LOGIN','DEVICEREG','KYCUPDT','BENREG')
+and message.solution.source in ('ONEPAY','FDEFTSTRF','FDTRF','CCREDPAY','BILLPAY')
 then do;
 dcl int k;
 
     do i= 50 to 2 by -1;
-    k=i-1;
-    profile.Customer.transaction_dt[i]=profile.Customer.transaction_dt[k];
+        k=i-1;
+        profile.Customer.transaction_dt[i]=profile.Customer.transaction_dt[k];
     end;
 
     profile.Customer.transaction_dt[1]= message.solution.messageDtTm;
