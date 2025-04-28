@@ -17,10 +17,4 @@ then do;
 
     profile.beneficiary_customer.transaction_amount[1]= message.payment.amount;
     profile.beneficiary_customer.transaction_dt[1] = message.solution.messageDtTm;
-
-    /*intialize payment*/
-    do i= 1 to 50;
-    if missing(profile.beneficiary_customer.transaction_amount[i]) then profile.beneficiary_customer.transaction_amount[i] = 0;
-    if missing(profile.beneficiary_customer.transaction_dt[i]) then profile.beneficiary_customer.transaction_dt[i]= 0;
-    end;
 end;
