@@ -1,6 +1,13 @@
-/* 
+/*
     Rule Name: Multiple failed login attempts 
     Rule Desctiption:If the customer consecutively  fails to login twice within 10 min time frame before the current outward financial transaction,  decline only if total of all such outward payment( in the next 2 hours post failed attempts) is exceeding BD 300.
+        
+    Key Variables:
+    - failed_login_count: Tracks the number of failed login attempts within the specified time frame.
+    - last_failed_login_dtm: Stores the timestamp of the most recent failed login attempt.
+    - current_dtm: Captures the current transaction's timestamp.
+    - interval: Represents the time difference between failed login attempts.
+
 */
 
 
