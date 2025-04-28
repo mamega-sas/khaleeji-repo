@@ -1,6 +1,6 @@
 /* 
     Rule Name : Failed login attempts
-    Rule Description : If CIFholder has more than 5 failed login attempts in  a week. Please generate a alert
+    Rule Description : If CIFholder has more than 5 failed login attempts in a week. Please generate an alert
 */
 
 dcl int fail_count;
@@ -11,8 +11,8 @@ and message.solution.source in ('LOGIN')
 and message.authentication.decision = 'R'
 then do;
     do i = 1 to 6;
-        if message.solution.messageDtTm - profile.Customer.failed_login_dt[i] < dhms(7,0,0,0)
-        and not missing(profile.Customer.failed_login_dt[i])
+        if not missing(profile.Customer.failed_login_dt[i])
+        and message.solution.messageDtTm - profile.Customer.failed_login_dt[i] < dhms(7,0,0,0)
         then do;
             fail_count = fail_count + 1;
         end;
