@@ -6,28 +6,27 @@
 if message.solution.channelType in ('DM','DI')
 and message.solution.customerType in ('PE','BU')
 and message.solution.source in ('ONEPAY','FDEFTSTRF','FDTRF','CCREDPAY','BILLPAY')
+and lists.BlackListed_Nationalities.contains(message.customer.nationality)
 then do;
 dcl int counter;
 dcl int find_flag;
 counter = 0;
 
-
     /*if payment amoun exist at the array*/
     do j = 1 to 50;
-        if lists.BlackListed_Nationalities.contains(message.customer.nationality)
-        and profile.beneficiary_customer.transaction_amount[j] = message.payment.amount
+        if profile.beneficiary_customer.transaction_amount[j] = message.payment.amount
         and message.solution.messageDtTm - profile.beneficiary_customer.transaction_dt[j] < dhms(0,0,15,0)
-        and profile.beneficiary_customer.transaction_amount[j] ^= 0
-        and  profile.beneficiary_customer.transaction_dt[j] ^=0
+        and not missing(profile.beneficiary_customer.transaction_amount[j])
+        and not missing(profile.beneficiary_customer.transaction_dt[j])
         then do;
-            counter = counter+1;
+            counter = counter + 1;
         end;
     end;
-    profile.beneficiary_customer.counter = counter;
+    
     if counter > 3
     then do;
-    detection.Alert();
-    detection.Decline();
+        detection.Alert();
+        detection.Decline();
     end;
 end;
 
