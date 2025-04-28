@@ -79,7 +79,8 @@ else do;
       end;
       end;
    end;
-
+   
+   else if interval < 0 and interval >= -5 then do;
    /* subcase(2-C) backdated transactions */
    interval_p = abs(interval);
    /* map interval to array position */
@@ -87,7 +88,6 @@ else do;
    profile.customer_vs.interval_p = interval_p;
    profile.customer_vs.position = position;
 
-   if interval < 0 and interval_p <= 5 then do;
       profile.customer_vs.total_spend_daily_sum[position] = profile.customer_vs.total_spend_daily_sum[position] + message.payment.amount;
       profile.customer_vs.total_spend_daily_ct[position] = profile.customer_vs.total_spend_daily_ct[position] + 1;
    end;
