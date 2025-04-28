@@ -7,7 +7,10 @@
 dcl double current_dtm; 
 dcl int login_count;
 
-if message.solution.source = 'LOGIN' and message.solution.customerType = 'BU' then do;
+if message.solution.source = 'LOGIN' 
+and message.authentication.decision = 'A' 
+and message.solution.customerType = 'BU' 
+and message.solution.channelType = 'DM' then do;
     current_dtm = message.solution.messageDtTm;
     login_count = 0;
     do i = 1 to 5;
@@ -17,7 +20,6 @@ if message.solution.source = 'LOGIN' and message.solution.customerType = 'BU' th
     end;
 
     if login_count > 1 then do;
-        detection.Fire();
         detection.Alert();
     end;
 end;

@@ -10,18 +10,14 @@ dcl int arr_size;
 dcl double oldest_dtm;
 dcl int index_found;
 
-if message.solution.source = 'LOGIN' and message.solution.customerType = 'BU' then do;
+if message.solution.source = 'LOGIN' 
+and not missing(message.device.macAddress)
+and message.authentication.decision = 'A' then do;
 
     current_time = message.solution.messageDtTm;
     current_cif = message.customer.identifier;
     found_flag = 0;
     arr_size = hbound(profile.device_vs.cif_dtm_arr_of5_v2);
-
-    /* check if null values exist and replace with zeros or empty strings*/
-    /* do i = 1 to arr_size;
-        if missing(profile.device_vs.cif_dtm_arr_of5_v2[i]) then profile.device_vs.cif_dtm_arr_of5_v2[i] = 0;
-        if missing(profile.device_vs.cif_arr_of5[i]) then profile.device_vs.cif_arr_of5[i] = ' ';
-    end; */
 
     /* check if incoming cif exist in the arr  and update dtm if found*/
     do j = 1 to arr_size;
@@ -42,9 +38,6 @@ if message.solution.source = 'LOGIN' and message.solution.customerType = 'BU' th
                 index_found = k;
             end;
         end;
-
-        profile.device_vs.index_found = index_found;  /* for debugging */
-        profile.device_vs.oldest_dtm = oldest_dtm;  /* for debugging */
         
         if not missing(index_found) then do;
             profile.device_vs.cif_arr_of5[index_found] = current_cif;
