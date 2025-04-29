@@ -17,7 +17,7 @@ dcl double current_dtm;
 dcl int k;
 dcl double interval;
 
-if message.solution.source in ('FDTRF', 'ONEPAY', 'FDEFTSTRF', 'BILLPAY') 
+if message.solution.source in ('FDTRF', 'ONEPAY', 'FDEFTSTRF', 'BILLPAY', 'CCREDPAY') 
 and message.solution.customerType = 'PE' then do;
     failed_login_count = 0;
     current_dtm = message.solution.messageDtTm;
