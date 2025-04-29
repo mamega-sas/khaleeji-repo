@@ -1,5 +1,5 @@
 if message.solution.source in ('FDTRF', 'ONEPAY', 'FDEFTSTRF', 'BILLPAY')
-and message.solution.customerType = 'PE' then do;
+and message.solution.channeltype in ('DM', 'DI')then do;
     dcl int k;
     do i = 50 to 2 by -1;
         k = (i-1);
