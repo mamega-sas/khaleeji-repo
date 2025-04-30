@@ -6,5 +6,5 @@
 if message.solution.source = 'BENREG'
 and message.authentication.decision = 'A'
 then do;
-   profile.Customer_and_Beneficiary.bene_reg_dt = message.solution.messageDtTm;
+   profile.customer_and_Beneficiary.bene_reg_dt = message.solution.messageDtTm;
 end;

@@ -11,8 +11,8 @@ dcl int k;
 
     do i= 50 to 2 by -1;
         k=i-1;
-        profile.Customer.transaction_dt[i]=profile.Customer.transaction_dt[k];
+        profile.customer.transaction_dt[i]=profile.customer.transaction_dt[k];
     end;
 
-    profile.Customer.transaction_dt[1]= message.solution.messageDtTm;
+    profile.customer.transaction_dt[1]= message.solution.messageDtTm;
 end;
