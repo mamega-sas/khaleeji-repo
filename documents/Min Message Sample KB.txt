@@ -1,0 +1,29 @@
+http://10.243.10.205:32080/detection/decision/execute
+
+{
+  "message": {
+    "request": {
+      "messageClassificationName": "SAMPLEmcns",
+      "restResponseFlg": 0,
+      "schemaName": "Card Fraud"
+    },
+    "solution": {
+      "activityType": "NM",
+      "authenticationType": "NA",
+      "channelType": "NA",
+      "customerType": "NA",
+      "originationType": "CS",
+      "messageDtTm": "2025-02-11T15:00:10.702Z"
+    },
+    "customer": {
+      "identifier": "ver_test_001"
+    },
+    "payment": {
+      "amount": "20000"
+    },
+    "creditaccount" : {
+      "countryCode": "SAU",
+      "number": "EG75639883903794931"
+    }
+  }
+}
