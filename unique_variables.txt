@@ -1,0 +1,16 @@
+profile.customer.devices_id
+profile.customer.devices_login_dt
+profile.customer.failed_login_dt
+profile.customer.failed_login_dtm_ar
+profile.customer.financial_trx_amount_arr
+profile.customer.financial_trx_dtm_arr
+profile.customer.interval
+profile.customer.interval_p
+profile.customer.interval_start
+profile.customer.last_acc_change
+profile.customer.null_array_flag
+profile.customer.position
+profile.customer.total_spend_daily_ct
+profile.customer.total_spend_daily_dtm
+profile.customer.total_spend_daily_sum
+profile.customer.transaction_dt
