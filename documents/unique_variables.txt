@@ -2,8 +2,7 @@ profile.beneficiary_customer.transaction_amount
 profile.beneficiary_customer.transaction_dt
 profile.customer.devices_id
 profile.customer.devices_login_dt
-profile.customer.failed_login_dt
-profile.customer.failed_login_dtm_ar
+profile.customer.failed_login_dtm_arr
 profile.customer.financial_trx_amount_arr
 profile.customer.financial_trx_dtm_arr
 profile.customer.interval

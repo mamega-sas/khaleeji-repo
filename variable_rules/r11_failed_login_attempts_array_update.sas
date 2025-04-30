@@ -16,8 +16,8 @@ if message.solution.source = 'LOGIN'
     /* Set the array to zeros instead of nulls once only once, for safer comparisons */
     if profile.customer.null_array_flag = 0 then do;
         do j = 1 to 6;
-            if missing(profile.customer.failed_login_dtm_ar[j]) then do;
-                profile.customer.failed_login_dtm_ar[j] = 0;
+            if missing(profile.customer.failed_login_dtm_arr[j]) then do;
+                profile.customer.failed_login_dtm_arr[j] = 0;
             end;
         end;
         profile.customer.null_array_flag = 1;
@@ -25,7 +25,7 @@ if message.solution.source = 'LOGIN'
 
     do i = 6 to 2 by -1;
         k = (i - 1);
-        profile.customer.failed_login_dtm_ar[i] = profile.customer.failed_login_dtm_ar[k];
+        profile.customer.failed_login_dtm_arr[i] = profile.customer.failed_login_dtm_arr[k];
     end;
-    profile.customer.failed_login_dtm_ar[1] = message.solution.messageDtTm;
+    profile.customer.failed_login_dtm_arr[1] = message.solution.messageDtTm;
 end;

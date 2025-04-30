@@ -21,15 +21,15 @@ if message.solution.source in ('FDTRF', 'ONEPAY', 'FDEFTSTRF', 'BILLPAY', 'CCRED
 and message.solution.customerType = 'PE' then do;
     failed_login_count = 0;
     current_dtm = message.solution.messageDtTm;
-    last_failed_login_dtm = profile.customer.failed_login_dtm_ar[1];
+    last_failed_login_dtm = profile.customer.failed_login_dtm_arr[1];
     do i = 2 to 6;        
-        if not missing(profile.customer.failed_login_dtm_ar[i]) 
-        and profile.customer.failed_login_dtm_ar[i] > last_failed_login_dtm then do;
-            last_failed_login_dtm = profile.customer.failed_login_dtm_ar[i];
+        if not missing(profile.customer.failed_login_dtm_arr[i]) 
+        and profile.customer.failed_login_dtm_arr[i] > last_failed_login_dtm then do;
+            last_failed_login_dtm = profile.customer.failed_login_dtm_arr[i];
         end;
     end;
     do k = 1 to 6;
-        if not missing(profile.customer.failed_login_dtm_ar[k]) and abs(last_failed_login_dtm - profile.customer.failed_login_dtm_ar[k]) < dhms(0,0,10,0) then failed_login_count = failed_login_count + 1;
+        if not missing(profile.customer.failed_login_dtm_arr[k]) and abs(last_failed_login_dtm - profile.customer.failed_login_dtm_arr[k]) < dhms(0,0,10,0) then failed_login_count = failed_login_count + 1;
     end;
 
     if failed_login_count > 1 and message.payment.amount > 300 and current_dtm < (last_failed_login_dtm + dhms(0,2,0,0)) then do;
