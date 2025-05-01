@@ -21,7 +21,7 @@ and message.authentication.decision = 'A' then do;
 
     /* check if incoming cif exist in the arr  and update dtm if found*/
     do j = 1 to arr_size;
-        if profile.device.cif_arr_of5[j] = current_cif then do;
+        if profile.device.cifs_accessed[j] = current_cif then do;
             profile.device.access_to_cif_dtm_arr[j] = current_time;
             found_flag = 1;
         end;
@@ -40,7 +40,7 @@ and message.authentication.decision = 'A' then do;
         end;
         
         if not missing(index_found) then do;
-            profile.device.cif_arr_of5[index_found] = current_cif;
+            profile.device.cifs_accessed[index_found] = current_cif;
             profile.device.access_to_cif_dtm_arr[index_found] = current_time;
         end;
     end;

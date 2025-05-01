@@ -145,7 +145,7 @@ variable_rules\r06_device_cif_access_history_update.sas:
   21  
 
   23      do j = 1 to arr_size;
-  24:         if profile.device.cif_arr_of5[j] = current_cif then do;
+  24:         if profile.device.cifs_accessed[j] = current_cif then do;
   25:             profile.device.access_to_cif_dtm_arr[j] = current_time;
   26              found_flag = 1;
 
@@ -158,7 +158,7 @@ variable_rules\r06_device_cif_access_history_update.sas:
   38                  index_found = k;
 
   42          if not missing(index_found) then do;
-  43:             profile.device.cif_arr_of5[index_found] = current_cif;
+  43:             profile.device.cifs_accessed[index_found] = current_cif;
   44:             profile.device.access_to_cif_dtm_arr[index_found] = current_time;
   45          end;
 
