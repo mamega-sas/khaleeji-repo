@@ -12,7 +12,6 @@
 
 */
 if message.solution.channelType in ('DM','DI')
-and message.solution.customerType = 'PE'
 and message.solution.source in ('ONEPAY','FDEFTSTRF','FDTRF','CCREDPAY','BILLPAY')
 then do;
    /* Declare variables */
