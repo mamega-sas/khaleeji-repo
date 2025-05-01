@@ -11,8 +11,8 @@ and message.payment.amount > 300
 and lists.Restricted_Nationalities.contains(message.Customer.nationality)
 and (
     (message.solution.source in ('FDEFTSTRF', 'FDTRF', 'CCREDPAY', 'BILLPAY')
-    and message.solution.messageDtTm - profile.customer_and_Beneficiary.bene_reg_dt <= hms(12, 0, 0)
-    and not missing(profile.customer_and_Beneficiary.bene_reg_dt))
+    and message.solution.messageDtTm - profile.beneficiary_customer.bene_reg_dt <= hms(12, 0, 0)
+    and not missing(profile.beneficiary_customer.bene_reg_dt))
     or
     message.solution.source = 'ONEPAY'
     )
