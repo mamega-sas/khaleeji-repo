@@ -1,6 +1,4 @@
 /* 
-    Rule Name : Number of transactions 
-    Rule Description : If the total number of Financial transactions in a day(Debit/Credit) exceeds 7 and the cumulative  transaction value of all these transactions exceeds BD 300, trigger a fraud alert.( Intially restricting alerts to specific nationalities)
     Rule variables:
     - profile.Customer.total_spend_daily_dtm: Stores the timestamp of the last transaction.
     - profile.Customer.total_spend_daily_sum: An array tracking the total transaction amount per day.

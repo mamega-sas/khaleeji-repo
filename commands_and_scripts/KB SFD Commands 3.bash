@@ -16,11 +16,16 @@ kubectl get pods -n sfdprem
 
 	4- docker push 583616729562.dkr.ecr.me-south-1.amazonaws.com/fraud-repository/khaleejiorg:latest
 
+#getting all pods in sfdnp
+kubectl get pods -n sfdnp
+
 #getting all pods in scr
 kubectl get pods -n scr
 
 #deleting scr pod
 kubectl delete po "pod-name" -n scr
+kubectl delete po sas-sda-scr-khalorg-6d88fd95f-264lf -n scr
+
 
 #Getting the configs for openlens
 kubectl config view --minify --raw
