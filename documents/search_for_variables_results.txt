@@ -20,7 +20,7 @@ decision_rules\r05_decision.sas:
 
 decision_rules\r06_decision.sas:
   16      do i = 1 to 5;
-  17:         if not missing(profile.device.cif_dtm_arr_of5_v2[i]) and current_dtm - profile.device.cif_dtm_arr_of5_v2[i] < dhms(0,0,30,0)  then do;
+  17:         if not missing(profile.device.access_to_cif_dtm_arr[i]) and current_dtm - profile.device.access_to_cif_dtm_arr[i] < dhms(0,0,30,0)  then do;
   18          login_count = login_count + 1;
 
 decision_rules\r07_decision.sas:
@@ -141,25 +141,25 @@ variable_rules\r03_daily_transaction_tracking_and_update.sas:
 
 variable_rules\r06_device_cif_access_history_update.sas:
   19      found_flag = 0;
-  20:     arr_size = hbound(profile.device.cif_dtm_arr_of5_v2);
+  20:     arr_size = hbound(profile.device.access_to_cif_dtm_arr);
   21  
 
   23      do j = 1 to arr_size;
   24:         if profile.device.cif_arr_of5[j] = current_cif then do;
-  25:             profile.device.cif_dtm_arr_of5_v2[j] = current_time;
+  25:             profile.device.access_to_cif_dtm_arr[j] = current_time;
   26              found_flag = 1;
 
   32          /* check for the oldest datetime in the array and return its index */
-  33:         oldest_dtm = profile.device.cif_dtm_arr_of5_v2[1];
+  33:         oldest_dtm = profile.device.access_to_cif_dtm_arr[1];
   34          index_found = 1;
   35          do k = 2 to arr_size;
-  36:             if profile.device.cif_dtm_arr_of5_v2[k] < oldest_dtm then do;
-  37:                 oldest_dtm = profile.device.cif_dtm_arr_of5_v2[k];
+  36:             if profile.device.access_to_cif_dtm_arr[k] < oldest_dtm then do;
+  37:                 oldest_dtm = profile.device.access_to_cif_dtm_arr[k];
   38                  index_found = k;
 
   42          if not missing(index_found) then do;
   43:             profile.device.cif_arr_of5[index_found] = current_cif;
-  44:             profile.device.cif_dtm_arr_of5_v2[index_found] = current_time;
+  44:             profile.device.access_to_cif_dtm_arr[index_found] = current_time;
   45          end;
 
 variable_rules\r07_update_device_login_history_for_customer.sas:

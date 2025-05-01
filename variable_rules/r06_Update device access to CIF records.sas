@@ -17,12 +17,12 @@ and message.authentication.decision = 'A' then do;
     current_time = message.solution.messageDtTm;
     current_cif = message.Customer.identifier;
     found_flag = 0;
-    arr_size = hbound(profile.device.cif_dtm_arr_of5_v2);
+    arr_size = hbound(profile.device.access_to_cif_dtm_arr);
 
     /* check if incoming cif exist in the arr  and update dtm if found*/
     do j = 1 to arr_size;
         if profile.device.cif_arr_of5[j] = current_cif then do;
-            profile.device.cif_dtm_arr_of5_v2[j] = current_time;
+            profile.device.access_to_cif_dtm_arr[j] = current_time;
             found_flag = 1;
         end;
     end;
@@ -30,18 +30,18 @@ and message.authentication.decision = 'A' then do;
     /* if cif was not found */
     if found_flag = 0 then do;
         /* check for the oldest datetime in the array and return its index */
-        oldest_dtm = profile.device.cif_dtm_arr_of5_v2[1];
+        oldest_dtm = profile.device.access_to_cif_dtm_arr[1];
         index_found = 1;
         do k = 2 to arr_size;
-            if profile.device.cif_dtm_arr_of5_v2[k] < oldest_dtm then do;
-                oldest_dtm = profile.device.cif_dtm_arr_of5_v2[k];
+            if profile.device.access_to_cif_dtm_arr[k] < oldest_dtm then do;
+                oldest_dtm = profile.device.access_to_cif_dtm_arr[k];
                 index_found = k;
             end;
         end;
         
         if not missing(index_found) then do;
             profile.device.cif_arr_of5[index_found] = current_cif;
-            profile.device.cif_dtm_arr_of5_v2[index_found] = current_time;
+            profile.device.access_to_cif_dtm_arr[index_found] = current_time;
         end;
     end;
 end;
