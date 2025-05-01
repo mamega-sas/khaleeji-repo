@@ -1,6 +1,6 @@
 /* 
     Rule Name: Multiple payments to same beneficiary
-    Rule Desctiption: If there are more than 3 payments were made to a single beneficiary(from single customer with single/multiple accounts), payment amount is same and all were in last 15 minutes. Next transaction is declined( Specific Nationalitie
+    Rule Desctiption: If there are more than 3 payments were made to a single beneficiary(from single Customer with single/multiple accounts), payment amount is same and all were in last 15 minutes. Next transaction is declined( Specific Nationalitie
 */
 
 

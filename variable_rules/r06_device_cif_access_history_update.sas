@@ -15,7 +15,7 @@ and not missing(message.device.macAddress)
 and message.authentication.decision = 'A' then do;
 
     current_time = message.solution.messageDtTm;
-    current_cif = message.customer.identifier;
+    current_cif = message.Customer.identifier;
     found_flag = 0;
     arr_size = hbound(profile.device.cif_dtm_arr_of5_v2);
 

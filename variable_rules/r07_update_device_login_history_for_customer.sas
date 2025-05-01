@@ -17,27 +17,27 @@ and not missing(message.device.macAddress)
 then do;
     do i =1 to 5;
 		/* replace null values with 0 */
-        if missing(profile.customer.devices_login_dt[i] )
-        then profile.customer.devices_login_dt[i]= 0;
+        if missing(profile.Customer.devices_login_dt[i] )
+        then profile.Customer.devices_login_dt[i]= 0;
 		
 		/* check if device is exist */
-        if profile.customer.devices_id[i] = message.device.macAddress
+        if profile.Customer.devices_id[i] = message.device.macAddress
         then do;
             exist =1;
             /* if device exists update the date */
-            profile.customer.devices_login_dt[i] = message.solution.messageDtTm;
+            profile.Customer.devices_login_dt[i] = message.solution.messageDtTm;
         end;
 		
 		/* get min datetime */
-	min_dt = min(min_dt,profile.customer.devices_login_dt[i]);
-	if min_dt = profile.customer.devices_login_dt[i]
+	min_dt = min(min_dt,profile.Customer.devices_login_dt[i]);
+	if min_dt = profile.Customer.devices_login_dt[i]
 	then min_ind = i;
     end;
 
 
     if exist = 0
     then do;
-        profile.customer.devices_login_dt[min_ind] = message.solution.messageDtTm;
-        profile.customer.devices_id[min_ind] = message.device.macAddress;   
+        profile.Customer.devices_login_dt[min_ind] = message.solution.messageDtTm;
+        profile.Customer.devices_id[min_ind] = message.device.macAddress;   
     end;
 end;

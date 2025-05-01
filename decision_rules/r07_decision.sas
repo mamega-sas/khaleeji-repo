@@ -13,8 +13,8 @@ and message.authentication.decision = 'A'
 and not missing(message.device.macAddress)
 then do;
     do i=1 to 5;
-        if message.solution.messageDtTm - profile.customer.devices_login_dt[i] <= dhms(0, 0, 30, 0)
-        and profile.customer.devices_login_dt[i] ne 0
+        if message.solution.messageDtTm - profile.Customer.devices_login_dt[i] <= dhms(0, 0, 30, 0)
+        and profile.Customer.devices_login_dt[i] ne 0
         then counter =counter +1;
     end;
 end;

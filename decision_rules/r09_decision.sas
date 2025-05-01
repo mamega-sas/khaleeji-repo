@@ -11,8 +11,8 @@ and message.solution.source in ('LOGIN')
 and message.authentication.decision = 'R'
 then do;
     do i = 1 to 6;
-        if not missing(profile.customer.failed_login_dtm_arr[i])
-        and message.solution.messageDtTm - profile.customer.failed_login_dtm_arr[i] < dhms(7,0,0,0)
+        if not missing(profile.Customer.failed_login_dtm_arr[i])
+        and message.solution.messageDtTm - profile.Customer.failed_login_dtm_arr[i] < dhms(7,0,0,0)
         then do;
             fail_count = fail_count + 1;
         end;

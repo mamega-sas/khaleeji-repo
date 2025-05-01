@@ -2,20 +2,20 @@
 
 decision_rules\r03_decision.sas:
   8      
-  9:    if profile.customer.total_spend_daily_ct[1] > 7 and profile.customer.total_spend_daily_sum[1] > 300 then do;
+  9:    if profile.Customer.total_spend_daily_ct[1] > 7 and profile.Customer.total_spend_daily_sum[1] > 300 then do;
   10          detection.Alert();
 
 decision_rules\r04_decision.sas:
    8   and message.solution.channeltype in ('DM', 'DI')
-   9:  and message.solution.messageDtTm - profile.customer.financial_trx_dtm_arr[2] >= dhms(90, 0, 0, 0)
+   9:  and message.solution.messageDtTm - profile.Customer.financial_trx_dtm_arr[2] >= dhms(90, 0, 0, 0)
   10   and message.payment.amount >= 300
-  11   and lists.BlackListed_Nationalities.contains(message.customer.nationality)
-  12:  and not missing(profile.customer.financial_trx_dtm_arr[2])
+  11   and lists.BlackListed_Nationalities.contains(message.Customer.nationality)
+  12:  and not missing(profile.Customer.financial_trx_dtm_arr[2])
   13   then do;
 
 decision_rules\r05_decision.sas:
-  10  and  lists.BlackListed_Nationalities.contains(message.customer.nationality)
-  11: and profile.customer.total_spend_daily_sum[1] >300
+  10  and  lists.BlackListed_Nationalities.contains(message.Customer.nationality)
+  11: and profile.Customer.total_spend_daily_sum[1] >300
   12  then do;
 
 decision_rules\r06_decision.sas:
@@ -25,39 +25,39 @@ decision_rules\r06_decision.sas:
 
 decision_rules\r07_decision.sas:
   15      do i=1 to 5;
-  16:         if message.solution.messageDtTm - profile.customer.devices_login_dt[i] <= dhms(0, 0, 30, 0)
-  17:         and profile.customer.devices_login_dt[i] ne 0
+  16:         if message.solution.messageDtTm - profile.Customer.devices_login_dt[i] <= dhms(0, 0, 30, 0)
+  17:         and profile.Customer.devices_login_dt[i] ne 0
   18          then counter =counter +1;
 
 decision_rules\r09_decision.sas:
   13      do i = 1 to 6;
-  14:         if not missing(profile.customer.failed_login_dtm_arr[i])
-  15:         and message.solution.messageDtTm - profile.customer.failed_login_dtm_arr[i] < dhms(7,0,0,0)
+  14:         if not missing(profile.Customer.failed_login_dtm_arr[i])
+  15:         and message.solution.messageDtTm - profile.Customer.failed_login_dtm_arr[i] < dhms(7,0,0,0)
   16          then do;
 
 decision_rules\r11_decision.sas:
   23      current_dtm = message.solution.messageDtTm;
-  24:     last_failed_login_dtm = profile.customer.failed_login_dtm_arr[1];
+  24:     last_failed_login_dtm = profile.Customer.failed_login_dtm_arr[1];
   25      do i = 2 to 6;        
-  26:         if not missing(profile.customer.failed_login_dtm_arr[i]) 
-  27:         and profile.customer.failed_login_dtm_arr[i] > last_failed_login_dtm then do;
-  28:             last_failed_login_dtm = profile.customer.failed_login_dtm_arr[i];
+  26:         if not missing(profile.Customer.failed_login_dtm_arr[i]) 
+  27:         and profile.Customer.failed_login_dtm_arr[i] > last_failed_login_dtm then do;
+  28:             last_failed_login_dtm = profile.Customer.failed_login_dtm_arr[i];
   29          end;
 
   31      do k = 1 to 6;
-  32:         if not missing(profile.customer.failed_login_dtm_arr[k]) and abs(last_failed_login_dtm - profile.customer.failed_login_dtm_arr[k]) < dhms(0,0,10,0) then failed_login_count = failed_login_count + 1;
+  32:         if not missing(profile.Customer.failed_login_dtm_arr[k]) and abs(last_failed_login_dtm - profile.Customer.failed_login_dtm_arr[k]) < dhms(0,0,10,0) then failed_login_count = failed_login_count + 1;
   33      end;
 
 decision_rules\r13_decision.sas:
   14      do i = 1 to 50;
-  15:         if message.solution.messageDtTm - profile.customer.financial_trx_dtm_arr[i] < dhms(0,0,10,0)
-  16:         and not missing(profile.customer.financial_trx_dtm_arr[i])
+  15:         if message.solution.messageDtTm - profile.Customer.financial_trx_dtm_arr[i] < dhms(0,0,10,0)
+  16:         and not missing(profile.Customer.financial_trx_dtm_arr[i])
   17          then do;
 
 decision_rules\r14_decision.sas:
   7  and message.solution.customerType = 'PE'
-  8: and not missing( profile.customer.last_acc_change )
-  9: and message.solution.messageDtTm - profile.customer.last_acc_change < dhms(0, 12, 0, 0) 
+  8: and not missing( profile.Customer.last_acc_change )
+  9: and message.solution.messageDtTm - profile.Customer.last_acc_change < dhms(0, 12, 0, 0) 
   10  and message.payment.amount > 300 
 
 decision_rules\r16_decision.sas:
@@ -81,62 +81,62 @@ documents\extract_variables.py:
 
 variable_rules\r03_daily_transaction_tracking_and_update.sas:
    4      Rule variables:
-   5:     - profile.customer.total_spend_daily_dtm: Stores the timestamp of the last transaction.
-   6:     - profile.customer.total_spend_daily_sum: An array tracking the total transaction amount per day.
-   7:     - profile.customer.total_spend_daily_ct: An array tracking the count of transactions per day.
-   8:     - profile.customer.interval: Stores the number of full days passed since the last transaction.
-   9:     - profile.customer.interval_start: Stores the start time (midnight) of the last transaction's timestamp.
-  10:     - profile.customer.interval_p: Stores the absolute value of the interval for backdated transactions.
-  11:     - profile.customer.position: Maps interval to the array position for tracking backdated transactions.
+   5:     - profile.Customer.total_spend_daily_dtm: Stores the timestamp of the last transaction.
+   6:     - profile.Customer.total_spend_daily_sum: An array tracking the total transaction amount per day.
+   7:     - profile.Customer.total_spend_daily_ct: An array tracking the count of transactions per day.
+   8:     - profile.Customer.interval: Stores the number of full days passed since the last transaction.
+   9:     - profile.Customer.interval_start: Stores the start time (midnight) of the last transaction's timestamp.
+  10:     - profile.Customer.interval_p: Stores the absolute value of the interval for backdated transactions.
+  11:     - profile.Customer.position: Maps interval to the array position for tracking backdated transactions.
   12  
 
   28     /* get the start time (midnight) of the last transaction's timestamp */
-  29:    /* interval_start = intnx('day', profile.customer.total_spend_daily_dtm, 0);  */
-  30:    interval_start = datepart(profile.customer.total_spend_daily_dtm);
+  29:    /* interval_start = intnx('day', profile.Customer.total_spend_daily_dtm, 0);  */
+  30:    interval_start = datepart(profile.Customer.total_spend_daily_dtm);
   31  
 
   38     /* update profile variables with interval data */
-  39:    profile.customer.interval = interval;
-  40:    profile.customer.interval_start = interval_start;
+  39:    profile.Customer.interval = interval;
+  40:    profile.Customer.interval_start = interval_start;
   41  
   42     /*CASE(1): first transaction ever */
-  43:    if profile.customer.total_spend_daily_dtm = 0 then do;  
+  43:    if profile.Customer.total_spend_daily_dtm = 0 then do;  
   44        /* initialize the first day's data with the current transaction */
-  45:       profile.customer.total_spend_daily_sum[1] = message.payment.amount;
-  46:       profile.customer.total_spend_daily_ct[1] = 1;
-  47:       profile.customer.total_spend_daily_dtm = message.solution.messageDtTm;
+  45:       profile.Customer.total_spend_daily_sum[1] = message.payment.amount;
+  46:       profile.Customer.total_spend_daily_ct[1] = 1;
+  47:       profile.Customer.total_spend_daily_dtm = message.solution.messageDtTm;
   48  
 
   50        do r = 20 to 2 by -1;
-  51:          profile.customer.total_spend_daily_ct[r] = 0;
-  52:          profile.customer.total_spend_daily_sum[r] = 0;
+  51:          profile.Customer.total_spend_daily_ct[r] = 0;
+  52:          profile.Customer.total_spend_daily_sum[r] = 0;
   53        end;
 
   60           /* accumulate amount array and count array element no1 (current day) */
-  61:          profile.customer.total_spend_daily_sum[1] = profile.customer.total_spend_daily_sum[1] + message.payment.amount;
-  62:          profile.customer.total_spend_daily_ct[1] = profile.customer.total_spend_daily_ct[1] + 1;
+  61:          profile.Customer.total_spend_daily_sum[1] = profile.Customer.total_spend_daily_sum[1] + message.payment.amount;
+  62:          profile.Customer.total_spend_daily_ct[1] = profile.Customer.total_spend_daily_ct[1] + 1;
   63        end;
 
   70                 k = j - 1;
-  71:                profile.customer.total_spend_daily_ct[j] = profile.customer.total_spend_daily_ct[k];
-  72:                profile.customer.total_spend_daily_sum[j] = profile.customer.total_spend_daily_sum[k];
+  71:                profile.Customer.total_spend_daily_ct[j] = profile.Customer.total_spend_daily_ct[k];
+  72:                profile.Customer.total_spend_daily_sum[j] = profile.Customer.total_spend_daily_sum[k];
   73              end;
 
   75           if i > 1 then do;
-  76:             profile.customer.total_spend_daily_ct[1] = 0;
-  77:             profile.customer.total_spend_daily_sum[1] = 0;
+  76:             profile.Customer.total_spend_daily_ct[1] = 0;
+  77:             profile.Customer.total_spend_daily_sum[1] = 0;
   78           end;
   79           else do;
-  80:             profile.customer.total_spend_daily_dtm = message.solution.messageDtTm;
-  81:             profile.customer.total_spend_daily_ct[1] = 1;
-  82:             profile.customer.total_spend_daily_sum[1] = message.payment.amount;
+  80:             profile.Customer.total_spend_daily_dtm = message.solution.messageDtTm;
+  81:             profile.Customer.total_spend_daily_ct[1] = 1;
+  82:             profile.Customer.total_spend_daily_sum[1] = message.payment.amount;
   83           end;
 
   91           position = interval_p + 1;
-  92:          profile.customer.interval_p = interval_p;
-  93:          profile.customer.position = position;
-  94:          profile.customer.total_spend_daily_sum[position] = profile.customer.total_spend_daily_sum[position] + message.payment.amount;
-  95:          profile.customer.total_spend_daily_ct[position] = profile.customer.total_spend_daily_ct[position] + 1;
+  92:          profile.Customer.interval_p = interval_p;
+  93:          profile.Customer.position = position;
+  94:          profile.Customer.total_spend_daily_sum[position] = profile.Customer.total_spend_daily_sum[position] + message.payment.amount;
+  95:          profile.Customer.total_spend_daily_ct[position] = profile.Customer.total_spend_daily_ct[position] + 1;
   96        end;
 
 variable_rules\r06_device_cif_access_history_update.sas:
@@ -164,57 +164,57 @@ variable_rules\r06_device_cif_access_history_update.sas:
 
 variable_rules\r07_update_device_login_history_for_customer.sas:
   19  		/* replace null values with 0 */
-  20:         if missing(profile.customer.devices_login_dt[i] )
-  21:         then profile.customer.devices_login_dt[i]= 0;
+  20:         if missing(profile.Customer.devices_login_dt[i] )
+  21:         then profile.Customer.devices_login_dt[i]= 0;
   22  		
   23  		/* check if device is exist */
-  24:         if profile.customer.devices_id[i] = message.device.macAddress
+  24:         if profile.Customer.devices_id[i] = message.device.macAddress
   25          then do;
 
   27              /* if device exists update the date */
-  28:             profile.customer.devices_login_dt[i] = message.solution.messageDtTm;
+  28:             profile.Customer.devices_login_dt[i] = message.solution.messageDtTm;
   29          end;
 
   31  		/* get min datetime */
-  32: 	min_dt = min(min_dt,profile.customer.devices_login_dt[i]);
-  33: 	if min_dt = profile.customer.devices_login_dt[i]
+  32: 	min_dt = min(min_dt,profile.Customer.devices_login_dt[i]);
+  33: 	if min_dt = profile.Customer.devices_login_dt[i]
   34  	then min_ind = i;
 
   39      then do;
-  40:         profile.customer.devices_login_dt[min_ind] = message.solution.messageDtTm;
-  41:         profile.customer.devices_id[min_ind] = message.device.macAddress;   
+  40:         profile.Customer.devices_login_dt[min_ind] = message.solution.messageDtTm;
+  41:         profile.Customer.devices_id[min_ind] = message.device.macAddress;   
   42      end;
 
 variable_rules\r11_failed_login_attempts_array_update.sas:
   16      /* Set the array to zeros instead of nulls once only once, for safer comparisons */
-  17:     if profile.customer.null_array_flag = 0 then do;
+  17:     if profile.Customer.null_array_flag = 0 then do;
   18          do j = 1 to 6;
-  19:             if missing(profile.customer.failed_login_dtm_arr[j]) then do;
-  20:                 profile.customer.failed_login_dtm_arr[j] = 0;
+  19:             if missing(profile.Customer.failed_login_dtm_arr[j]) then do;
+  20:                 profile.Customer.failed_login_dtm_arr[j] = 0;
   21              end;
   22          end;
-  23:         profile.customer.null_array_flag = 1;
+  23:         profile.Customer.null_array_flag = 1;
   24      end;
 
   27          k = (i - 1);
-  28:         profile.customer.failed_login_dtm_arr[i] = profile.customer.failed_login_dtm_arr[k];
+  28:         profile.Customer.failed_login_dtm_arr[i] = profile.Customer.failed_login_dtm_arr[k];
   29      end;
-  30:     profile.customer.failed_login_dtm_arr[1] = message.solution.messageDtTm;
+  30:     profile.Customer.failed_login_dtm_arr[1] = message.solution.messageDtTm;
   31  end;
 
 variable_rules\r11_last 50 transaction amounts.sas:
    5          k = (i-1);
-   6:         profile.customer.financial_trx_amount_arr[i] = profile.customer.financial_trx_amount_arr[k];
-   7:         profile.customer.financial_trx_dtm_arr[i] = profile.customer.financial_trx_dtm_arr[k];
+   6:         profile.Customer.financial_trx_amount_arr[i] = profile.Customer.financial_trx_amount_arr[k];
+   7:         profile.Customer.financial_trx_dtm_arr[i] = profile.Customer.financial_trx_dtm_arr[k];
    8      end;
    9  
-  10:     profile.customer.financial_trx_dtm_arr[1] = message.solution.messageDtTm;
-  11:     profile.customer.financial_trx_amount_arr[1] = message.payment.amount;
+  10:     profile.Customer.financial_trx_dtm_arr[1] = message.solution.messageDtTm;
+  11:     profile.Customer.financial_trx_amount_arr[1] = message.payment.amount;
   12  end;
 
 variable_rules\r14_kyc_account_change_timestamp_update.sas:
   7  and message.authentication.decision = 'A' then do;
-  8:     profile.customer.last_acc_change = message.solution.messageDtTm;
+  8:     profile.Customer.last_acc_change = message.solution.messageDtTm;
   9  end;
 
 variable_rules\r16_update_beneficiary_registration_timestamp.sas:

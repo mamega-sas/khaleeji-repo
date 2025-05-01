@@ -5,5 +5,5 @@
 
 if message.solution.source = 'KYCUPDT'
 and message.authentication.decision = 'A' then do;
-    profile.customer.last_acc_change = message.solution.messageDtTm;
+    profile.Customer.last_acc_change = message.solution.messageDtTm;
 end;

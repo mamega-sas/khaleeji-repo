@@ -5,10 +5,10 @@
 
 if message.solution.source in ('FDTRF', 'ONEPAY', 'FDEFTSTRF', 'BILLPAY','CCREDPAY') 
 and message.solution.customerType = 'PE'
-and not missing( profile.customer.last_acc_change )
-and message.solution.messageDtTm - profile.customer.last_acc_change < dhms(0, 12, 0, 0) 
+and not missing( profile.Customer.last_acc_change )
+and message.solution.messageDtTm - profile.Customer.last_acc_change < dhms(0, 12, 0, 0) 
 and message.payment.amount > 300 
-and lists.BlackListed_Nationalities.contains(message.customer.nationality)then do;
+and lists.BlackListed_Nationalities.contains(message.Customer.nationality)then do;
     detection.Alert();
     detection.Decline();
 end; 

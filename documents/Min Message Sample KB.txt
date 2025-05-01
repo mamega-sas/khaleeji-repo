@@ -15,7 +15,7 @@ http://10.243.10.205:32080/detection/decision/execute
       "originationType": "CS",
       "messageDtTm": "2025-02-11T15:00:10.702Z"
     },
-    "customer": {
+    "Customer": {
       "identifier": "ver_test_001"
     },
     "payment": {
