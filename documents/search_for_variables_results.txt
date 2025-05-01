@@ -9,12 +9,12 @@ decision_rules\r04_decision.sas:
    8   and message.solution.channeltype in ('DM', 'DI')
    9:  and message.solution.messageDtTm - profile.Customer.financial_trx_dtm_arr[2] >= dhms(90, 0, 0, 0)
   10   and message.payment.amount >= 300
-  11   and lists.BlackListed_Nationalities.contains(message.Customer.nationality)
+  11   and lists.Restricted_Nationalities.contains(message.Customer.nationality)
   12:  and not missing(profile.Customer.financial_trx_dtm_arr[2])
   13   then do;
 
 decision_rules\r05_decision.sas:
-  10  and  lists.BlackListed_Nationalities.contains(message.Customer.nationality)
+  10  and  lists.Restricted_Nationalities.contains(message.Customer.nationality)
   11: and profile.Customer.total_spend_daily_sum[1] >300
   12  then do;
 

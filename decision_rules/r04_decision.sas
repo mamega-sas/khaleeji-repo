@@ -8,7 +8,7 @@ if message.solution.source in ('ONEPAY', 'FDEFTSTRE', 'FDTRE', 'CCREDPAY', 'BILL
  and message.solution.channeltype in ('DM', 'DI')
  and message.solution.messageDtTm - profile.Customer.financial_trx_dtm_arr[2] >= dhms(90, 0, 0, 0)
  and message.payment.amount >= 300
- and lists.BlackListed_Nationalities.contains(message.Customer.nationality)
+ and lists.Restricted_Nationalities.contains(message.Customer.nationality)
  and not missing(profile.Customer.financial_trx_dtm_arr[2])
  then do;
         detection.Alert();

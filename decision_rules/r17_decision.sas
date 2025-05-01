@@ -6,7 +6,7 @@
 if message.solution.channelType in ('DM','DI')
 and message.solution.customerType in ('PE','BU')
 and message.solution.source in ('ONEPAY','FDEFTSTRF','FDTRF','CCREDPAY','BILLPAY')
-and lists.BlackListed_Nationalities.contains(message.Customer.nationality)
+and lists.Restricted_Nationalities.contains(message.Customer.nationality)
 then do;
 dcl int counter;
 dcl int find_flag;

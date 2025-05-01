@@ -17,7 +17,7 @@ transaction_date = datepart(transaction_datetime);
 transaction_time = timepart(transaction_datetime);
 week_day = weekday(transaction_date);
 
-    if lists.holiday_date.contains(put(transaction_date , date9.))
+    if lists.Public_Holiday.contains(put(transaction_date , date9.))
     or (transaction_time  >= hms(19,0,0) or transaction_time < hms(6,0,0))
     or week_day in (6,7)
     then do;
