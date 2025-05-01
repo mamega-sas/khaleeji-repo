@@ -62,8 +62,8 @@ decision_rules\r14_decision.sas:
 
 decision_rules\r16_decision.sas:
   13      (message.solution.source in ('FDEFTSTRF', 'FDTRF', 'CCREDPAY', 'BILLPAY')
-  14:     and message.solution.messageDtTm - profile.customer_and_Beneficiary.bene_reg_dt <= hms(12, 0, 0)
-  15:     and not missing(profile.customer_and_Beneficiary.bene_reg_dt))
+  14:     and message.solution.messageDtTm - profile.beneficiary_customer.bene_reg_dt <= hms(12, 0, 0)
+  15:     and not missing(profile.beneficiary_customer.bene_reg_dt))
   16      or
 
 decision_rules\r17_decision.sas:
@@ -219,7 +219,7 @@ variable_rules\r14_kyc_account_change_timestamp_update.sas:
 
 variable_rules\r16_update_beneficiary_registration_timestamp.sas:
   8  then do;
-  9:    profile.customer_and_Beneficiary.bene_reg_dt = message.solution.messageDtTm;
+  9:    profile.beneficiary_customer.bene_reg_dt = message.solution.messageDtTm;
   10  end;
 
 variable_rules\r17_shift_beneficiary_transaction_records.sas:

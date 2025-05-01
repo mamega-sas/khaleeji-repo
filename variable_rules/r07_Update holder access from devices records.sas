@@ -7,15 +7,15 @@ dcl int exist;
 dcl int min_ind;
 dcl double min_dt;
 
-exist =0;
-min_ind=1;
+exist = 0;
+min_ind = 1;
 min_dt = 0;
 
 if message.solution.source = 'LOGIN'
 and message.authentication.decision = 'A'
 and not missing(message.device.macAddress)
 then do;
-    do i =1 to 5;
+    do i = 1 to 5;
 		/* replace null values with 0 */
         if missing(profile.Customer.devices_login_dt[i] )
         then profile.Customer.devices_login_dt[i]= 0;
@@ -23,7 +23,7 @@ then do;
 		/* check if device is exist */
         if profile.Customer.devices_id[i] = message.device.macAddress
         then do;
-            exist =1;
+            exist = 1;
             /* if device exists update the date */
             profile.Customer.devices_login_dt[i] = message.solution.messageDtTm;
         end;

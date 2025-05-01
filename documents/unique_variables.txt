@@ -14,6 +14,6 @@ profile.Customer.position
 profile.Customer.total_spend_daily_ct
 profile.Customer.total_spend_daily_dtm
 profile.Customer.total_spend_daily_sum
-profile.customer_and_Beneficiary.bene_reg_dt
+profile.beneficiary_customer.bene_reg_dt
 profile.device.cif_arr_of5
 profile.device.cif_dtm_arr_of5_v2
