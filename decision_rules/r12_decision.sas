@@ -3,8 +3,6 @@
     Rule Desctiption:Transaction made to blacklisted IBAN/mobile numbernationalities)
 */
 
-
-
 if message.solution.source in ('ONEPAY', 'FDEFTSTRE', 'FDTRE', 'CCREDPAY', 'BILLPAY')
 and message.solution.customerType in ('PE', 'BU')
 and message.solution.channelType in ('DI', 'DM')
