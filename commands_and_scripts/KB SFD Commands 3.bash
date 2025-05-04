@@ -24,6 +24,7 @@ kubectl get pods -n scr
 
 #deleting scr pod
 kubectl delete po "pod-name" -n scr
+kubectl delete po "pod-name" -n sfdnp
 kubectl delete po sas-sda-scr-khalorg-6d88fd95f-264lf -n scr
 
 

@@ -1,5 +1,3 @@
-profile.beneficiary_customer.transaction_amount
-profile.beneficiary_customer.transaction_dt
 profile.Customer.devices_id
 profile.Customer.devices_login_dt
 profile.Customer.failed_login_dtm_arr
@@ -15,5 +13,7 @@ profile.Customer.total_spend_daily_ct
 profile.Customer.total_spend_daily_dtm
 profile.Customer.total_spend_daily_sum
 profile.beneficiary_customer.bene_reg_dt
-profile.device.cifs_accessed
+profile.beneficiary_customer.transaction_amount
+profile.beneficiary_customer.transaction_dt
 profile.device.access_to_cif_dtm_arr
+profile.device.cifs_accessed
