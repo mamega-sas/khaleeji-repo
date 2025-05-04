@@ -6,7 +6,7 @@ if message.solution.channelType in ('DM','DI')
    and message.solution.customerType = 'PE'
    and message.solution.source in ('ONEPAY','FDEFTSTRF','FDTRF','CCREDPAY','BILLPAY') then do;
     
-   if profile.Customer.total_spend_daily_ct[1] > 7 and profile.Customer.total_spend_daily_sum[1] > 300 then do;
+   if profile.Customer.daily_fin_trx_count[1] > 7 and profile.Customer.total_amt_spent_daily[1] > 300 then do;
         detection.Alert();
     end;
 end;
