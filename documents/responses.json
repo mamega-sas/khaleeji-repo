@@ -1,5 +1,5 @@
 {message: {authentication: {decision: "A"
-        },customer: {identifier: "r2_015"
+        },customer: {identifier: "r2_017"
         },device: {macAddress: ""
         },payment: {amount: "2000"
         },request: {command: "Execute",decisioningInd: 1,messageClassificationName: "SAMPLEmcns",restResponseFlg: 0,schemaName: "online fraud"
@@ -9,17 +9,17 @@
                 },
                 {alertFlg: false,disabledFlg: true,elapsed: 0,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50043.4",ruleIdentifier: "8aa2b78b-3a4e-405d-8ef5-2c3a265af324",skippedFlg: false,state: "Production"
                 },
-                {alertFlg: false,disabledFlg: false,elapsed: 9,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50044.2",ruleIdentifier: "5ed1809c-037f-4cd0-9ad5-15ddff8769ba",skippedFlg: false,state: "Production"
+                {alertFlg: false,disabledFlg: false,elapsed: 14,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50044.3",ruleIdentifier: "f1714c04-0d92-4ee8-91ee-439a3fd3ccd2",skippedFlg: false,state: "Production"
                 },
-                {alertFlg: false,disabledFlg: true,elapsed: 0,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50045.2",ruleIdentifier: "0298d51f-272c-41ac-9a1c-c6b8d9bfafb9",skippedFlg: false,state: "Production"
+                {alertFlg: false,disabledFlg: false,elapsed: 1,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50045.3",ruleIdentifier: "de8375b4-aea7-4175-a5ee-22ff5b2d232c",skippedFlg: false,state: "Production"
                 },
-                {alertFlg: false,disabledFlg: true,elapsed: 0,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50046.3",ruleIdentifier: "466d4f9b-e708-4943-a409-ad6f93fea509",skippedFlg: false,state: "Production"
+                {alertFlg: false,disabledFlg: false,elapsed: 5,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50046.4",ruleIdentifier: "6f0d9ffd-3ce4-4819-8e3d-70dd27124e9e",skippedFlg: false,state: "Production"
                 },
-                {alertFlg: false,disabledFlg: false,elapsed: 2,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50047.3",ruleIdentifier: "2e87fab6-cd97-491e-8539-a6d4d5014a72",skippedFlg: false,state: "Production"
+                {alertFlg: false,disabledFlg: false,elapsed: 4,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50047.3",ruleIdentifier: "2e87fab6-cd97-491e-8539-a6d4d5014a72",skippedFlg: false,state: "Production"
                 },
                 {alertFlg: false,disabledFlg: true,elapsed: 0,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50048.2",ruleIdentifier: "9960abc3-e479-45f6-9ef5-9986db4a9506",skippedFlg: false,state: "Production"
                 },
-                {alertFlg: false,disabledFlg: false,elapsed: 1,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50049.2",ruleIdentifier: "e10053bd-0af8-4c3f-a538-1a68bdea56fd",skippedFlg: false,state: "Production"
+                {alertFlg: false,disabledFlg: false,elapsed: 3,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50049.2",ruleIdentifier: "e10053bd-0af8-4c3f-a538-1a68bdea56fd",skippedFlg: false,state: "Production"
                 },
                 {alertFlg: false,disabledFlg: true,elapsed: 0,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50050.2",ruleIdentifier: "02d1453e-62d8-4b13-b135-4a2cd47d65b4",skippedFlg: false,state: "Production"
                 },
@@ -27,7 +27,7 @@
                 },
                 {alertFlg: false,disabledFlg: true,elapsed: 0,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50052.3",ruleIdentifier: "ec55d2f2-ebc7-442b-ba88-88bde3ba8bc6",skippedFlg: false,state: "Production"
                 },
-                {alertFlg: false,disabledFlg: false,elapsed: 2,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50053.2",ruleIdentifier: "2c95777c-4d3e-4ea0-b46a-ec382fcb4999",skippedFlg: false,state: "Production"
+                {alertFlg: false,disabledFlg: false,elapsed: 1,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50053.2",ruleIdentifier: "2c95777c-4d3e-4ea0-b46a-ec382fcb4999",skippedFlg: false,state: "Production"
                 },
                 {alertFlg: false,disabledFlg: false,elapsed: 14,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50054.2",ruleIdentifier: "82a402b9-5f96-4df3-8fa1-484cf4b38a8c",skippedFlg: false,state: "Production"
                 },
@@ -35,7 +35,7 @@
                 },
                 {alertFlg: false,disabledFlg: false,elapsed: 1,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50057.2",ruleIdentifier: "11d201c9-0b5e-4abc-833b-88b70a98393d",skippedFlg: false,state: "Production"
                 },
-                {alertFlg: false,disabledFlg: false,elapsed: 14,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50058.5",ruleIdentifier: "75d49ab7-6a3c-443e-9557-b7302faa7c20",skippedFlg: false,state: "Production"
+                {alertFlg: false,disabledFlg: false,elapsed: 10,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50058.5",ruleIdentifier: "75d49ab7-6a3c-443e-9557-b7302faa7c20",skippedFlg: false,state: "Production"
                 },
                 {alertFlg: false,disabledFlg: true,elapsed: 0,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50059.3",ruleIdentifier: "dc01af22-be80-4a94-b433-f1679bdd028e",skippedFlg: false,state: "Production"
                 },
@@ -49,12 +49,33 @@
                 },
                 {alertFlg: false,disabledFlg: true,elapsed: 0,firedFlg: false,outcome: null,outcomeEntity: null,outcomeEntityType: null,outcomeFiredFlg: false,overtimeFlg: false,referenceIdentifier: "50065.4",ruleIdentifier: "fab03070-adf7-4844-bc5d-3feaa319f674",skippedFlg: false,state: "Production"
                 }
-            ],system: {messageDtTmUtc: 2025-05-04T15: 12: 26.612072043Z,messageIdentifier: "2b6332b6-87d2-412a-b3fc-6d411d856954",packageVersion: 50148,transactionDtTmUtc: 2025-05-04T15: 12: 26.612072043Z,transactionIdentifier: "2b6332b6-87d2-412a-b3fc-6d411d856954"
-            },timings: {models: 3,post: 104,prep: 567,profileFetch: 572,profileUpdate: 499,rules: 64,total: 1812
+            ],system: {messageDtTmUtc: 2025-05-04T17: 47: 07.816970993Z,messageIdentifier: "0d281d48-4dee-44c7-b608-acb1880a4c8d",packageVersion: 50149,transactionDtTmUtc: 2025-05-04T17: 47: 07.816970993Z,transactionIdentifier: "0d281d48-4dee-44c7-b608-acb1880a4c8d"
+            },timings: {models: 5,post: 116,prep: 633,profileFetch: 591,profileUpdate: 463,rules: 79,total: 1889
             }
         },solution: {activityType: "NM",authenticationType: "NA",channelType: "DM",customerType: "BU",messageDtTm: 2025-08-01T10: 15: 10.702Z,originationType: "CS",source: "ONEPAY"
         }
-    },profiles: {Customer: {devices_id: [
+    },profiles: {Customer: {daily_fin_trx_count: [
+                1e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0
+            ],devices_id: [
                 null,
                 null,
                 null,
@@ -75,7 +96,7 @@
                 null
             ],financial_trx_amount_arr: [
                 2e+3,
-                2e+3,
+                null,
                 null,
                 null,
                 null,
@@ -126,7 +147,7 @@
                 null
             ],financial_trx_dtm_arr: [
                 2025-08-01T10: 15: 10.702Z,
-                2025-08-01T10: 15: 10.702Z,
+                null,
                 null,
                 null,
                 null,
@@ -175,8 +196,18 @@
                 null,
                 null,
                 null
-            ],interval: 0e+0,interval_p: 0e+0,interval_start: 2.3954e+4,last_acc_change: null,null_array_flag: 0e+0,position: 0e+0,total_spend_daily_ct: [
-                2e+0,
+            ],interval: 2.3954e+4,interval_p: 0e+0,interval_start: 0e+0,last_acc_change: null,null_array_flag: 0e+0,position: 0e+0,total_amt_spent_daily: [
+                2e+3,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
+                0e+0,
                 0e+0,
                 0e+0,
                 0e+0,
@@ -186,18 +217,7 @@
                 0e+0,
                 0e+0,
                 0e+0
-            ],total_spend_daily_dtm: 2.069662510702e+9,total_spend_daily_sum: [
-                4e+3,
-                0e+0,
-                0e+0,
-                0e+0,
-                0e+0,
-                0e+0,
-                0e+0,
-                0e+0,
-                0e+0,
-                0e+0
-            ]
+            ],total_spend_daily_dtm: 2.069662510702e+9
         }
     }
 }
