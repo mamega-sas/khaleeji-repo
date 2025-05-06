@@ -4,26 +4,6 @@
     "body": [
         [
             {
-                "domainID": "sfd_payment_fraud",
-                "id": "sfd_credit_card_fraud",
-                "localizedName": "Credit Card Fraud",
-                "name": "Credit Card Fraud",
-                "optLockVersion": -1,
-                "servicePriority": 1,
-                "triageMode": "MANUAL",
-                "version": 1
-            },
-            {
-                "domainID": "sfd_payment_fraud",
-                "id": "sfd_debit_card_fraud",
-                "localizedName": "Debit Card Fraud",
-                "name": "Debit Card Fraud",
-                "optLockVersion": -1,
-                "servicePriority": 2,
-                "triageMode": "MANUAL",
-                "version": 1
-            },
-            {
                 "defaultFlag": true,
                 "domainID": "domain_default",
                 "id": "triage_type_default",
@@ -42,16 +22,6 @@
                 "name": "Payment Fraud",
                 "optLockVersion": -1,
                 "servicePriority": 32767,
-                "version": 1
-            },
-            {
-                "domainID": "sfd_payment_fraud",
-                "id": "sfd_vip_payment_fraud",
-                "localizedName": "Payment Fraud - VIP",
-                "name": "Payment Fraud - VIP",
-                "optLockVersion": -1,
-                "servicePriority": 3,
-                "triageMode": "MANUAL",
                 "version": 1
             }
         ]

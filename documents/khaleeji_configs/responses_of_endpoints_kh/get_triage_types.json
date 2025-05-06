@@ -1,0 +1,143 @@
+{
+    "version": 2,
+    "count": 5,
+    "start": 0,
+    "limit": 1000,
+    "name": "triage.types",
+    "items": [
+      {
+        "version": 1,
+        "id": "sfd_credit_card_fraud",
+        "name": "Credit Card Fraud",
+        "triageMode": "MANUAL",
+        "domainID": "sfd_payment_fraud",
+        "servicePriority": 1,
+        "optLockVersion": 8,
+        "localizedName": "Credit Card Fraud",
+        "creationTimeStamp": "2025-02-05T19:49:51.690591Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "2025-05-06T12:23:57.721727Z",
+        "modifiedBy": "fraudsvc",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/triageTypes/sfd_credit_card_fraud",
+            "uri": "/alerts/triageTypes/sfd_credit_card_fraud",
+            "type": "application/vnd.sas.triage.triage.type"
+          }
+        ]
+      },
+      {
+        "version": 1,
+        "id": "sfd_debit_card_fraud",
+        "name": "Debit Card Fraud",
+        "triageMode": "MANUAL",
+        "domainID": "sfd_payment_fraud",
+        "servicePriority": 2,
+        "optLockVersion": 8,
+        "localizedName": "Debit Card Fraud",
+        "creationTimeStamp": "2025-02-05T19:46:58.441234Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "2025-05-06T12:23:57.727413Z",
+        "modifiedBy": "fraudsvc",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/triageTypes/sfd_debit_card_fraud",
+            "uri": "/alerts/triageTypes/sfd_debit_card_fraud",
+            "type": "application/vnd.sas.triage.triage.type"
+          }
+        ]
+      },
+      {
+        "version": 1,
+        "id": "triage_type_default",
+        "name": "Default Triage Type",
+        "triageMode": "MANUAL",
+        "domainID": "domain_default",
+        "defaultFlag": true,
+        "servicePriority": 32767,
+        "optLockVersion": 7,
+        "localizedName": "Default Triage Type",
+        "creationTimeStamp": "2025-02-05T19:36:58.77223Z",
+        "createdBy": "sas-alerts",
+        "modifiedTimeStamp": "2025-05-06T12:23:57.731937Z",
+        "modifiedBy": "fraudsvc",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/triageTypes/triage_type_default",
+            "uri": "/alerts/triageTypes/triage_type_default",
+            "type": "application/vnd.sas.triage.triage.type"
+          }
+        ]
+      },
+      {
+        "version": 1,
+        "id": "sfd_payment_fraud",
+        "name": "Payment Fraud",
+        "domainID": "sfd_payment_fraud",
+        "defaultFlag": true,
+        "servicePriority": 32767,
+        "optLockVersion": 7,
+        "localizedName": "Payment Fraud",
+        "creationTimeStamp": "2025-02-05T19:46:57.465195Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "2025-05-06T12:23:57.736328Z",
+        "modifiedBy": "fraudsvc",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/triageTypes/sfd_payment_fraud",
+            "uri": "/alerts/triageTypes/sfd_payment_fraud",
+            "type": "application/vnd.sas.triage.triage.type"
+          }
+        ]
+      },
+      {
+        "version": 1,
+        "id": "sfd_vip_payment_fraud",
+        "name": "Payment Fraud - VIP",
+        "triageMode": "MANUAL",
+        "domainID": "sfd_payment_fraud",
+        "servicePriority": 3,
+        "optLockVersion": 7,
+        "localizedName": "Payment Fraud - VIP",
+        "creationTimeStamp": "2025-02-05T19:49:53.706723Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "2025-05-06T12:23:57.740913Z",
+        "modifiedBy": "fraudsvc",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/triageTypes/sfd_vip_payment_fraud",
+            "uri": "/alerts/triageTypes/sfd_vip_payment_fraud",
+            "type": "application/vnd.sas.triage.triage.type"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "method": "POST",
+        "rel": "collection",
+        "href": "/alerts/triageTypes",
+        "uri": "/alerts/triageTypes",
+        "type": "application/vnd.sas.collection",
+        "itemType": "application/vnd.sas.triage.triage.type"
+      },
+      {
+        "method": "POST",
+        "rel": "self",
+        "href": "/alerts/triageTypes?start=0&limit=1000",
+        "uri": "/alerts/triageTypes?start=0&limit=1000",
+        "type": "application/vnd.sas.collection",
+        "itemType": "application/vnd.sas.triage.triage.type"
+      }
+    ]
+  }
