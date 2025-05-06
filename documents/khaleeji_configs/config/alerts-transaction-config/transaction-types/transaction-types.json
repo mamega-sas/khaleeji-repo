@@ -1,0 +1,600 @@
+{
+    "post": "/alertsTransaction/transactionTypes",
+    "contentType": "application/vnd.sas.triage.transaction.type+json",
+    "body": [
+        {
+            "defaultDisplayName": "Checking Account - Bill Payment",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "BP"
+                ],
+                "message.solution.originationType": [
+                    "CK"
+                ]
+            },
+            "displayName": "Checking Account - Bill Payment",
+            "displayNameLocalizationKey": "9098948a7db4f0c6",
+            "id": "CKBP",
+            "indexableVariablePaths": "[\"message.customer.identifier\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CKBP",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Checking Account - Check Deposit",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CH"
+                ],
+                "message.solution.originationType": [
+                    "CK"
+                ]
+            },
+            "displayName": "Checking Account - Check Deposit",
+            "displayNameLocalizationKey": "8d3dd8a3a3c713f1",
+            "id": "CKCH",
+            "indexableVariablePaths": "[\"message.customer.identifier\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CKCH",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Checking Account - Faster Payment",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "FP"
+                ],
+                "message.solution.originationType": [
+                    "CK"
+                ]
+            },
+            "displayName": "Checking Account - Faster Payment",
+            "displayNameLocalizationKey": "be537d7d5ff32b12",
+            "id": "CKFP",
+            "indexableVariablePaths": "[\"message.customer.identifier\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CKFP",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Checking Account - Other Non-Monetary",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "NM"
+                ],
+                "message.solution.originationType": [
+                    "CK"
+                ]
+            },
+            "displayName": "Checking Account - Other Non-Monetary",
+            "displayNameLocalizationKey": "9085bc1dd2d54526",
+            "id": "CKNM",
+            "indexableVariablePaths": "[\"message.customer.identifier\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CKNM",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Checking Account - Payment/Transfer Third Party",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "PT"
+                ],
+                "message.solution.originationType": [
+                    "CK"
+                ]
+            },
+            "displayName": "Checking Account - Payment/Transfer Third Party",
+            "displayNameLocalizationKey": "0b990c8ca476c2ce",
+            "id": "CKPT",
+            "indexableVariablePaths": "[\"message.customer.identifier\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CKPT",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Checking Account - Payment/Transfer self account",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "ST"
+                ],
+                "message.solution.originationType": [
+                    "CK"
+                ]
+            },
+            "displayName": "Checking Account - Payment/Transfer self account",
+            "displayNameLocalizationKey": "642941830b5c2ae3",
+            "id": "CKST",
+            "indexableVariablePaths": "[\"message.customer.identifier\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CKST",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Checking Account - Peer to Peer Payment",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "PP"
+                ],
+                "message.solution.originationType": [
+                    "CK"
+                ]
+            },
+            "displayName": "Checking Account - Peer to Peer Payment",
+            "displayNameLocalizationKey": "83798b156656c9fa",
+            "id": "CKPP",
+            "indexableVariablePaths": "[\"message.customer.identifier\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CKPP",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Credit Card -  ATM Cash Withdrawal",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CT"
+                ],
+                "message.solution.originationType": [
+                    "CC"
+                ]
+            },
+            "displayName": "Credit Card -  ATM Cash Withdrawal",
+            "displayNameLocalizationKey": "e10d59386b90a158",
+            "id": "CCCT",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.creditcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CCCT",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Credit Card -  Counter Cash Withdrawal",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CW"
+                ],
+                "message.solution.originationType": [
+                    "CC"
+                ]
+            },
+            "displayName": "Credit Card -  Counter Cash Withdrawal",
+            "displayNameLocalizationKey": "31b427a38900085c",
+            "id": "CCCW",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.creditcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CCCW",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Credit Card -  Posting",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CP"
+                ],
+                "message.solution.originationType": [
+                    "CC"
+                ]
+            },
+            "displayName": "Credit Card -  Posting",
+            "displayNameLocalizationKey": "c82c4a75124515b8",
+            "id": "CCCP",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.creditcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CCCP",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Credit Card - Authentication",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "AT"
+                ],
+                "message.solution.originationType": [
+                    "CC"
+                ]
+            },
+            "displayName": "Credit Card - Authentication",
+            "displayNameLocalizationKey": "b72439447368cbb1",
+            "id": "CCAT",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.creditcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CCAT",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Credit Card - Authorization",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CA"
+                ],
+                "message.solution.originationType": [
+                    "CC"
+                ]
+            },
+            "displayName": "Credit Card - Authorization",
+            "displayNameLocalizationKey": "7d2955be9ac1c993",
+            "id": "CCCA",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.creditcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CCCA",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Credit Card - Demographics",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "DE"
+                ],
+                "message.solution.originationType": [
+                    "CC"
+                ]
+            },
+            "displayName": "Credit Card - Demographics",
+            "displayNameLocalizationKey": "013d11bb5e2bc4cf",
+            "id": "CCDE",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.creditcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CCDE",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Credit Card - Deposit",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "DP"
+                ],
+                "message.solution.originationType": [
+                    "CC"
+                ]
+            },
+            "displayName": "Credit Card - Deposit",
+            "displayNameLocalizationKey": "83375225a7d397b9",
+            "id": "CCDP",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.creditcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CCDP",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Credit Card - Other Non-Monetary",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "NM"
+                ],
+                "message.solution.originationType": [
+                    "CC"
+                ]
+            },
+            "displayName": "Credit Card - Other Non-Monetary",
+            "displayNameLocalizationKey": "c00a996327ac08ba",
+            "id": "CCNM",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.creditcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CCNM",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Credit Card - Provisioning",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CV"
+                ],
+                "message.solution.originationType": [
+                    "CC"
+                ]
+            },
+            "displayName": "Credit Card - Provisioning",
+            "displayNameLocalizationKey": "b023964e5b891985",
+            "id": "CCCV",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.creditcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CCCV",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Customer - Demographics",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "DE"
+                ],
+                "message.solution.originationType": [
+                    "CS"
+                ]
+            },
+            "displayName": "Customer - Demographics",
+            "displayNameLocalizationKey": "4527c6d257d1c28e",
+            "id": "CSDE",
+            "indexableVariablePaths": "[\"message.customer.identifier\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CSDE",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Customer - Other Non-Monetary",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "NM"
+                ],
+                "message.solution.originationType": [
+                    "CS"
+                ]
+            },
+            "displayName": "Customer - Other Non-Monetary",
+            "displayNameLocalizationKey": "0eb837dba43f151e",
+            "id": "CSNM",
+            "indexableVariablePaths": "[\"message.customer.identifier\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "CSNM",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Debit Card - ATM Cash Withdrawal",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CT"
+                ],
+                "message.solution.originationType": [
+                    "DC"
+                ]
+            },
+            "displayName": "Debit Card - ATM Cash Withdrawal",
+            "displayNameLocalizationKey": "c21b5e5e82e1fb52",
+            "id": "DCCT",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "DCCT",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Debit Card - Authentication",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "AT"
+                ],
+                "message.solution.originationType": [
+                    "DC"
+                ]
+            },
+            "displayName": "Debit Card - Authentication",
+            "displayNameLocalizationKey": "f485dd1cf42fd2ea",
+            "id": "DCAT",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "DCAT",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Debit Card - Authorization",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CA"
+                ],
+                "message.solution.originationType": [
+                    "DC"
+                ]
+            },
+            "displayName": "Debit Card - Authorization",
+            "displayNameLocalizationKey": "97c4f14b4b9bdf59",
+            "id": "DCCA",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "DCCA",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Debit Card - Counter Cash Withdrawal",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CW"
+                ],
+                "message.solution.originationType": [
+                    "DC"
+                ]
+            },
+            "displayName": "Debit Card - Counter Cash Withdrawal",
+            "displayNameLocalizationKey": "c1cc71fb787c22dc",
+            "id": "DCCW",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "DCCW",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Debit Card - Demographics",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "DE"
+                ],
+                "message.solution.originationType": [
+                    "DC"
+                ]
+            },
+            "displayName": "Debit Card - Demographics",
+            "displayNameLocalizationKey": "f923c2c97ef1f08c",
+            "id": "DCDE",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "DCDE",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Debit Card - Deposit",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "DP"
+                ],
+                "message.solution.originationType": [
+                    "DC"
+                ]
+            },
+            "displayName": "Debit Card - Deposit",
+            "displayNameLocalizationKey": "3e9398f1bbcb8751",
+            "id": "DCDP",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "DCDP",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Debit Card - Other Non-Monetary",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "NM"
+                ],
+                "message.solution.originationType": [
+                    "DC"
+                ]
+            },
+            "displayName": "Debit Card - Other Non-Monetary",
+            "displayNameLocalizationKey": "b5180025ecd5cbf8",
+            "id": "DCNM",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "DCNM",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Debit Card - Posting",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CP"
+                ],
+                "message.solution.originationType": [
+                    "DC"
+                ]
+            },
+            "displayName": "Debit Card - Posting",
+            "displayNameLocalizationKey": "ece8a158d3789dea",
+            "id": "DCCP",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "DCCP",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Debit Card - Provisioning",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "CV"
+                ],
+                "message.solution.originationType": [
+                    "DC"
+                ]
+            },
+            "displayName": "Debit Card - Provisioning",
+            "displayNameLocalizationKey": "cdd7358182bad70d",
+            "id": "DCCV",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "DCCV",
+            "version": 1
+        }
+    ]
+}

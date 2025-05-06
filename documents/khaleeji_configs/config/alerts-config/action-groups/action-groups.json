@@ -1,0 +1,310 @@
+{
+    "post": "/alerts/actions/groups",
+    "contentType": "application/vnd.sas.collection.triage.action.group+json",
+    "body": [
+        [
+            {
+                "builtInFlag": true,
+                "description": "Built-in close",
+                "id": "AD_BUILT_IN_CLOSE",
+                "localizedDescription": "Built-in close",
+                "localizedName": "Built-in close",
+                "members": [
+                    {
+                        "argumentsJSON": "",
+                        "id": "close-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    },
+                    {
+                        "argumentsJSON": "[{ \"name\": \"productivityRating\", \"value\": \"UNPRODUCTIVE\"}]",
+                        "id": "set-productivity-rating",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Built-in close",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": true,
+                "description": "Built-in re-activate",
+                "id": "AD_BUILT_IN_REACTIVATE",
+                "localizedDescription": "Built-in re-activate",
+                "localizedName": "Built-in re-activate",
+                "members": [
+                    {
+                        "argumentsJSON": "",
+                        "id": "reactivate-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Built-in re-activate",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_CLOSED_INDETERMINATE",
+                "localizedName": "Closed Indeterminate",
+                "members": [
+                    {
+                        "argumentsJSON": "[{\"name\": \"productivityRating\", \"value\": \"INDETERMINATE\"}]",
+                        "id": "set-productivity-rating",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    },
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-suspend-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Closed Indeterminate",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_CLOSED_PRODUCTIVE",
+                "localizedName": "Closed Productive",
+                "members": [
+                    {
+                        "argumentsJSON": "[{\"name\": \"productivityRating\", \"value\": \"PRODUCTIVE\"}]",
+                        "id": "set-productivity-rating",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    },
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-suspend-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Closed Productive",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_CLOSED_UNPRODUCTIVE",
+                "localizedName": "Closed Unproductive",
+                "members": [
+                    {
+                        "argumentsJSON": "[{\"name\": \"productivityRating\", \"value\": \"UNPRODUCTIVE\"}]",
+                        "id": "set-productivity-rating",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    },
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-suspend-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Closed Unproductive",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_INTERACTIVE_MOVE_TO_Q_CREDIT_CNP",
+                "localizedName": "Move to Queue - CNP",
+                "members": [
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-move-to-queue",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"sfd_credit_card_not_present\"}]"
+                    },
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-set-reason-code",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Move to Queue - CNP",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_INTERACTIVE_MOVE_TO_Q_CREDIT_CP",
+                "localizedName": "Move to Queue - CP",
+                "members": [
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-move-to-queue",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"sfd_credit_card_present\"}]"
+                    },
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-set-reason-code",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Move to Queue - CP",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_INTERACTIVE_MOVE_TO_Q_DEBIT_CP",
+                "localizedName": "Move to Queue - Debit Card",
+                "members": [
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-move-to-queue",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"sfd_debit_card_present\"}]"
+                    },
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-set-reason-code",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Move to Queue - Debit Card",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_INTERACTIVE_MOVE_TO_Q_DEBIT_CNP",
+                "localizedName": "Move to Queue - Debit Card",
+                "members": [
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-move-to-queue",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"sfd_debit_card_not_present\"}]"
+                    },
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-set-reason-code",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Move to Queue - Debit Card",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_INTERACTIVE_SUSPEND",
+                "localizedName": "Reschedule",
+                "members": [
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-suspend-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Reschedule",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_SEND_OUTBOUND_CONTACT",
+                "localizedName": "Send outbound contact",
+                "members": [
+                    {
+                        "argumentsJSON": "[{\"name\": \"label\", \"value\": \"Initiate Contact\"},{\"name\": \"actionType\", \"value\": \"initiate-contact\"},{\"name\": \"topic\", \"value\": \"sas-alert-topic-outbound\"}]",
+                        "id": "external-send-to-kafka",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Send outbound contact",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_SKIP_ALERT",
+                "localizedName": "Skip",
+                "members": [
+                    {
+                        "argumentsJSON": "[{\"name\": \"suspendDuration\", \"value\": 120}]",
+                        "id": "suspend-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Skip",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "test_action_group",
+                "localizedName": "Skip",
+                "members": [
+                    {
+                        "argumentsJSON": "[{\"name\": \"suspendDuration\", \"value\": 120}]",
+                        "id": "suspend-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Skip",
+                "optLockVersion": -1,
+                "version": 1
+            }
+        ]
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "post": "/alerts/domains",
+    "contentType": "application/vnd.sas.collection.triage.domain+json",
+    "body": [
+        [
+            {
+                "defaultFlag": true,
+                "id": "domain_default",
+                "localizedName": "Default Domain",
+                "name": "Default Domain",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "defaultFlag": false,
+                "id": "sfd_payment_fraud",
+                "localizedName": "Payment Fraud",
+                "name": "Payment Fraud",
+                "optLockVersion": -1,
+                "version": 1
+            }
+        ]
+    ]
+}

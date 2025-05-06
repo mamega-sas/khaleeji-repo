@@ -1,0 +1,482 @@
+{
+    "version": 2,
+    "count": 9,
+    "start": 0,
+    "limit": 10,
+    "name": "queues",
+    "items": [
+        {
+            "version": 1,
+            "id": "sfd_credit_card_present",
+            "name": "Card Present",
+            "domainID": "sfd_payment_fraud",
+            "triageTypeID": "sfd_credit_card_fraud",
+            "defaultFlag": false,
+            "servicePriority": 2,
+            "serviceSortFieldOrder": "creationTimeStamp:ascending",
+            "serviceEnabled": true,
+            "alertMaxDurationInQueue": 24,
+            "routingEnabled": true,
+            "routingPriority": 4,
+            "routingRule": "enrichmentData.sfd_dec_outcome_enrch!=10&&alertType==\"sfd_creditcard\"&&enrichmentData.sfd_cf_cardPresInd_enrch==\"0\"&&enrichmentData.sfd_cf_usdAmt_enrch >= 100.00",
+            "reactivationEnabled": false,
+            "stickyFlag": false,
+            "dispositions": [
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_RESCHEDULE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SAVE_PENDING_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SEND_OUTBOUND_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                }
+            ],
+            "optLockVersion": 8,
+            "localizedName": "Card Present",
+            "creationTimeStamp": "2025-02-05T19:49:52.111343Z",
+            "createdBy": "sas.rfcSolutionConfig",
+            "modifiedTimeStamp": "2025-05-05T12:48:14.89994Z",
+            "modifiedBy": "fraudsvc",
+            "links": [
+                {
+                    "method": "GET",
+                    "rel": "self",
+                    "href": "/alerts/queues/sfd_credit_card_present",
+                    "uri": "/alerts/queues/sfd_credit_card_present",
+                    "type": "application/vnd.sas.triage.queue"
+                }
+            ]
+        },
+        {
+            "version": 1,
+            "id": "sfd_credit_card_not_present",
+            "name": "Card Not Present",
+            "domainID": "sfd_payment_fraud",
+            "triageTypeID": "sfd_credit_card_fraud",
+            "defaultFlag": false,
+            "servicePriority": 1,
+            "serviceSortFieldOrder": "creationTimeStamp:ascending",
+            "serviceEnabled": true,
+            "alertMaxDurationInQueue": 24,
+            "routingEnabled": true,
+            "routingPriority": 3,
+            "routingRule": "enrichmentData.sfd_dec_outcome_enrch!=10&&alertType==\"sfd_creditcard\"&&enrichmentData.sfd_cf_cardPresInd_enrch==\"1\"&&enrichmentData.sfd_cf_usdAmt_enrch >= 100.00",
+            "reactivationEnabled": false,
+            "stickyFlag": false,
+            "dispositions": [
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_RESCHEDULE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SAVE_PENDING_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SEND_OUTBOUND_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                }
+            ],
+            "optLockVersion": 8,
+            "localizedName": "Card Not Present",
+            "creationTimeStamp": "2025-02-05T19:49:51.902169Z",
+            "createdBy": "sas.rfcSolutionConfig",
+            "modifiedTimeStamp": "2025-05-05T12:48:14.97017Z",
+            "modifiedBy": "fraudsvc",
+            "links": [
+                {
+                    "method": "GET",
+                    "rel": "self",
+                    "href": "/alerts/queues/sfd_credit_card_not_present",
+                    "uri": "/alerts/queues/sfd_credit_card_not_present",
+                    "type": "application/vnd.sas.triage.queue"
+                }
+            ]
+        },
+        {
+            "version": 1,
+            "id": "sfd_debit_card_not_present",
+            "name": "Card Not Present",
+            "domainID": "sfd_payment_fraud",
+            "triageTypeID": "sfd_debit_card_fraud",
+            "defaultFlag": false,
+            "servicePriority": 1,
+            "serviceSortFieldOrder": "creationTimeStamp:ascending",
+            "serviceEnabled": true,
+            "alertMaxDurationInQueue": 24,
+            "routingEnabled": true,
+            "routingPriority": 1,
+            "routingRule": "enrichmentData.sfd_dec_outcome_enrch!=10&&alertType==\"sfd_debitcard\"&&enrichmentData.sfd_cf_cardPresInd_enrch==\"1\"&&enrichmentData.sfd_cf_usdAmt_enrch >= 100.00",
+            "reactivationEnabled": false,
+            "stickyFlag": false,
+            "dispositions": [
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_RESCHEDULE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SAVE_PENDING_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SEND_OUTBOUND_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                }
+            ],
+            "optLockVersion": 8,
+            "localizedName": "Card Not Present",
+            "creationTimeStamp": "2025-02-05T19:46:58.52028Z",
+            "createdBy": "sas.rfcSolutionConfig",
+            "modifiedTimeStamp": "2025-05-05T12:48:15.040327Z",
+            "modifiedBy": "fraudsvc",
+            "links": [
+                {
+                    "method": "GET",
+                    "rel": "self",
+                    "href": "/alerts/queues/sfd_debit_card_not_present",
+                    "uri": "/alerts/queues/sfd_debit_card_not_present",
+                    "type": "application/vnd.sas.triage.queue"
+                }
+            ]
+        },
+        {
+            "version": 1,
+            "id": "sfd_payment_fraud",
+            "name": "Payment Fraud",
+            "domainID": "sfd_payment_fraud",
+            "triageTypeID": "sfd_payment_fraud",
+            "defaultFlag": true,
+            "groupID": "Fraud_Decisioning_Administrator",
+            "servicePriority": 32767,
+            "serviceSortFieldOrder": "creationTimeStamp:ascending",
+            "serviceEnabled": true,
+            "alertMaxDurationInQueue": 24,
+            "routingEnabled": true,
+            "routingPriority": 32767,
+            "reactivationEnabled": false,
+            "stickyFlag": false,
+            "dispositions": [
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                },
+                {
+                    "id": "SFD_RESCHEDULE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SAVE_PENDING_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SEND_OUTBOUND_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "AD_BUILT_IN_CLOSE"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                }
+            ],
+            "optLockVersion": 10,
+            "localizedName": "Payment Fraud",
+            "creationTimeStamp": "2025-02-05T19:46:57.469734Z",
+            "createdBy": "sas.rfcSolutionConfig",
+            "modifiedTimeStamp": "2025-05-05T12:48:14.61859Z",
+            "modifiedBy": "fraudsvc",
+            "links": [
+                {
+                    "method": "GET",
+                    "rel": "self",
+                    "href": "/alerts/queues/sfd_payment_fraud",
+                    "uri": "/alerts/queues/sfd_payment_fraud",
+                    "type": "application/vnd.sas.triage.queue"
+                }
+            ]
+        },
+        {
+            "version": 1,
+            "id": "sfd_vip_payment_fraud",
+            "name": "High Value",
+            "domainID": "sfd_payment_fraud",
+            "triageTypeID": "sfd_vip_payment_fraud",
+            "defaultFlag": false,
+            "servicePriority": 2,
+            "serviceSortFieldOrder": "creationTimeStamp:ascending",
+            "serviceEnabled": true,
+            "alertMaxDurationInQueue": 24,
+            "routingEnabled": true,
+            "routingPriority": 6,
+            "routingRule": "enrichmentData.sfd_dec_outcome_enrch!=10&&alertType==\"sfd_debitacc\"&&enrichmentData.sfd_cus_type_enrch==\"VIP\"&&enrichmentData.sfd_cf_usdAmt_enrch >= 100.00",
+            "reactivationEnabled": false,
+            "stickyFlag": false,
+            "dispositions": [
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_RESCHEDULE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SAVE_PENDING_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SEND_OUTBOUND_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                }
+            ],
+            "optLockVersion": 8,
+            "localizedName": "High Value",
+            "creationTimeStamp": "2025-02-05T19:49:53.774658Z",
+            "createdBy": "sas.rfcSolutionConfig",
+            "modifiedTimeStamp": "2025-05-05T12:48:14.689161Z",
+            "modifiedBy": "fraudsvc",
+            "links": [
+                {
+                    "method": "GET",
+                    "rel": "self",
+                    "href": "/alerts/queues/sfd_vip_payment_fraud",
+                    "uri": "/alerts/queues/sfd_vip_payment_fraud",
+                    "type": "application/vnd.sas.triage.queue"
+                }
+            ]
+        },
+        {
+            "version": 1,
+            "id": "sfd_high_payment_fraud",
+            "name": "High Value",
+            "domainID": "sfd_payment_fraud",
+            "triageTypeID": "sfd_payment_fraud",
+            "defaultFlag": false,
+            "servicePriority": 1,
+            "serviceSortFieldOrder": "creationTimeStamp:ascending",
+            "serviceEnabled": true,
+            "alertMaxDurationInQueue": 24,
+            "routingEnabled": true,
+            "routingPriority": 5,
+            "routingRule": "enrichmentData.sfd_dec_outcome_enrch!=10&&alertType==\"sfd_debitacc\"&&enrichmentData.sfd_cf_usdAmt_enrch >= 1000.00",
+            "reactivationEnabled": false,
+            "stickyFlag": false,
+            "dispositions": [
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_RESCHEDULE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SAVE_PENDING_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SEND_OUTBOUND_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                }
+            ],
+            "optLockVersion": 8,
+            "localizedName": "High Value",
+            "creationTimeStamp": "2025-02-05T19:46:58.012671Z",
+            "createdBy": "sas.rfcSolutionConfig",
+            "modifiedTimeStamp": "2025-05-05T12:48:14.759108Z",
+            "modifiedBy": "fraudsvc",
+            "links": [
+                {
+                    "method": "GET",
+                    "rel": "self",
+                    "href": "/alerts/queues/sfd_high_payment_fraud",
+                    "uri": "/alerts/queues/sfd_high_payment_fraud",
+                    "type": "application/vnd.sas.triage.queue"
+                }
+            ]
+        },
+        {
+            "version": 1,
+            "id": "queue_default",
+            "name": "Default Queue",
+            "domainID": "domain_default",
+            "triageTypeID": "triage_type_default",
+            "defaultFlag": true,
+            "groupID": "SASTriageUsers",
+            "servicePriority": 32767,
+            "serviceSortFieldOrder": "creationTimeStamp:ascending",
+            "serviceEnabled": true,
+            "alertMaxDurationInQueue": 24,
+            "routingEnabled": true,
+            "routingPriority": 32767,
+            "reactivationEnabled": false,
+            "stickyFlag": false,
+            "optLockVersion": 4,
+            "localizedName": "Default Queue",
+            "creationTimeStamp": "2025-02-05T19:36:58.77223Z",
+            "createdBy": "sas-alerts",
+            "modifiedTimeStamp": "2025-05-05T12:48:13.839642Z",
+            "modifiedBy": "fraudsvc",
+            "links": [
+                {
+                    "method": "GET",
+                    "rel": "self",
+                    "href": "/alerts/queues/queue_default",
+                    "uri": "/alerts/queues/queue_default",
+                    "type": "application/vnd.sas.triage.queue"
+                }
+            ]
+        },
+        {
+            "version": 1,
+            "id": "sfd_high_other_payment_fraud",
+            "name": "High Value - Others",
+            "domainID": "sfd_payment_fraud",
+            "triageTypeID": "sfd_payment_fraud",
+            "defaultFlag": false,
+            "groupID": "Fraud_Decisioning_Users_Triage_Payment_Fraud",
+            "servicePriority": 32766,
+            "serviceSortFieldOrder": "creationTimeStamp:ascending",
+            "serviceEnabled": true,
+            "alertMaxDurationInQueue": 24,
+            "routingEnabled": true,
+            "routingPriority": 32766,
+            "reactivationEnabled": false,
+            "stickyFlag": false,
+            "optLockVersion": 4,
+            "localizedName": "High Value - Others",
+            "creationTimeStamp": "2025-04-27T18:36:26.465253Z",
+            "createdBy": "sas.rfcSolutionConfig",
+            "modifiedTimeStamp": "2025-05-05T12:48:13.888545Z",
+            "modifiedBy": "fraudsvc",
+            "links": [
+                {
+                    "method": "GET",
+                    "rel": "self",
+                    "href": "/alerts/queues/sfd_high_other_payment_fraud",
+                    "uri": "/alerts/queues/sfd_high_other_payment_fraud",
+                    "type": "application/vnd.sas.triage.queue"
+                }
+            ]
+        },
+        {
+            "version": 1,
+            "id": "sfd_debit_card_present",
+            "name": "Card Present",
+            "domainID": "sfd_payment_fraud",
+            "triageTypeID": "sfd_debit_card_fraud",
+            "defaultFlag": false,
+            "servicePriority": 2,
+            "serviceSortFieldOrder": "creationTimeStamp:ascending",
+            "serviceEnabled": true,
+            "alertMaxDurationInQueue": 24,
+            "routingEnabled": true,
+            "routingPriority": 2,
+            "routingRule": "enrichmentData.sfd_dec_outcome_enrch!=10&&alertType==\"sfd_debitcard\"&&enrichmentData.sfd_cf_cardPresInd_enrch==\"0\"&&enrichmentData.sfd_cf_usdAmt_enrch >= 100.00",
+            "reactivationEnabled": false,
+            "stickyFlag": false,
+            "dispositions": [
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_RESCHEDULE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SAVE_PENDING_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SEND_OUTBOUND_DISPOSITION"
+                },
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                }
+            ],
+            "optLockVersion": 8,
+            "localizedName": "Card Present",
+            "creationTimeStamp": "2025-02-05T19:46:58.661861Z",
+            "createdBy": "sas.rfcSolutionConfig",
+            "modifiedTimeStamp": "2025-05-05T12:48:14.830915Z",
+            "modifiedBy": "fraudsvc",
+            "links": [
+                {
+                    "method": "GET",
+                    "rel": "self",
+                    "href": "/alerts/queues/sfd_debit_card_present",
+                    "uri": "/alerts/queues/sfd_debit_card_present",
+                    "type": "application/vnd.sas.triage.queue"
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "method": "POST",
+            "rel": "collection",
+            "href": "/alerts/queues",
+            "uri": "/alerts/queues",
+            "type": "application/vnd.sas.collection",
+            "itemType": "application/vnd.sas.triage.queue"
+        },
+        {
+            "method": "POST",
+            "rel": "self",
+            "href": "/alerts/queues?start=0&limit=10",
+            "uri": "/alerts/queues?start=0&limit=10",
+            "type": "application/vnd.sas.collection",
+            "itemType": "application/vnd.sas.triage.queue"
+        }
+    ]
+}

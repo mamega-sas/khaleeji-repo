@@ -1,0 +1,63 @@
+{
+    "post": "/alertsTransaction/transactionViewerConfig",
+    "contentType": "application/vnd.sas.triage.transaction.viewer.config+json",
+    "body": [
+        {
+            "alertFieldValuePath": "actionableEntityID",
+            "id": "sfd_txViewer_card_paymentFraud",
+            "indexableVariablePath": "message.customer.identifier",
+            "optLockVersion": -1,
+            "transactionGridDefinitionConfigs": [
+                {
+                    "id": "sfd_allTx_paymentfraud"
+                },
+                {
+                    "id": "sfd_events_paymentfraud"
+                },
+                {
+                    "id": "sfd_paymentTx_paymentfraud"
+                }
+            ],
+            "transactionMarkConfigs": [],
+            "version": 1
+        },
+        {
+            "alertFieldValuePath": "actionableEntityID",
+            "id": "sfd_txViewer_creditcard",
+            "indexableVariablePath": "message.creditcard.number",
+            "optLockVersion": -1,
+            "transactionGridDefinitionConfigs": [
+                {
+                    "id": "sfd_allTx_cardfraud"
+                },
+                {
+                    "id": "sfd_ccTx_cardfraud"
+                },
+                {
+                    "id": "sfd_events_cardfraud"
+                }
+            ],
+            "transactionMarkConfigs": [],
+            "version": 1
+        },
+        {
+            "alertFieldValuePath": "actionableEntityID",
+            "id": "sfd_txViewer_debitcard",
+            "indexableVariablePath": "message.debitcard.number",
+            "optLockVersion": -1,
+            "transactionGridDefinitionConfigs": [
+                {
+                    "id": "sfd_allTx_cardfraud"
+                },
+                {
+                    "id": "sfd_dcTx_cardfraud"
+                },
+                {
+                    "id": "sfd_events_cardfraud"
+                }
+            ],
+            "transactionMarkConfigs": [],
+            "version": 1
+        }
+    ]
+}

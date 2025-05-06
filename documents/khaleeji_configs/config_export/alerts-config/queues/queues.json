@@ -1,0 +1,46 @@
+{
+    "post": "/alerts/queues",
+    "contentType": "application/vnd.sas.collection.triage.queue+json",
+    "body": [
+        [
+            {
+                "alertMaxDurationInQueue": 24,
+                "defaultFlag": true,
+                "domainID": "domain_default",
+                "groupID": "SASTriageUsers",
+                "id": "queue_default",
+                "localizedName": "Default Queue",
+                "name": "Default Queue",
+                "optLockVersion": -1,
+                "reactivationEnabled": false,
+                "routingEnabled": true,
+                "routingPriority": 32767,
+                "serviceEnabled": true,
+                "servicePriority": 32767,
+                "serviceSortFieldOrder": "creationTimeStamp:ascending",
+                "stickyFlag": false,
+                "triageTypeID": "triage_type_default",
+                "version": 1
+            },
+            {
+                "alertMaxDurationInQueue": 24,
+                "defaultFlag": true,
+                "domainID": "sfd_payment_fraud",
+                "groupID": "Fraud_Decisioning_Administrator",
+                "id": "sfd_payment_fraud",
+                "localizedName": "Payment Fraud",
+                "name": "Payment Fraud",
+                "optLockVersion": -1,
+                "reactivationEnabled": false,
+                "routingEnabled": true,
+                "routingPriority": 32767,
+                "serviceEnabled": true,
+                "servicePriority": 32767,
+                "serviceSortFieldOrder": "creationTimeStamp:ascending",
+                "stickyFlag": false,
+                "triageTypeID": "sfd_payment_fraud",
+                "version": 1
+            }
+        ]
+    ]
+}
