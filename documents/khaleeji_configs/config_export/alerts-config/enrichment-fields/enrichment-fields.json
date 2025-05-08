@@ -115,17 +115,6 @@
             },
             {
                 "dataType": "string",
-                "displayOrder": 1,
-                "header": "Customer Type",
-                "id": "sfd_cst_type_enrch",
-                "localizedHeader": "Customer Type",
-                "localizedName": "Customer Type",
-                "name": "Customer Type",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "dataType": "string",
                 "displayOrder": 5,
                 "header": "Customer Type",
                 "id": "sfd_sol_customerType_enrch",
@@ -140,6 +129,17 @@
                 "displayOrder": 1,
                 "header": "Customer Type",
                 "id": "sfd_cus_type_enrch",
+                "localizedHeader": "Customer Type",
+                "localizedName": "Customer Type",
+                "name": "Customer Type",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "dataType": "string",
+                "displayOrder": 1,
+                "header": "Customer Type",
+                "id": "sfd_cst_type_enrch",
                 "localizedHeader": "Customer Type",
                 "localizedName": "Customer Type",
                 "name": "Customer Type",

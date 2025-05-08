@@ -4,8 +4,22 @@
     "body": [
         {
             "discriminatorVariablePath": "message.solution.activityType",
+            "id": "sfd_solution_activity_type_of",
+            "messageSchemaName": "online fraud",
+            "optLockVersion": -1,
+            "version": 1
+        },
+        {
+            "discriminatorVariablePath": "message.solution.activityType",
             "id": "sfd_solution_activity_type",
             "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "version": 1
+        },
+        {
+            "discriminatorVariablePath": "message.solution.originationType",
+            "id": "sfd_solution_origination_type_of",
+            "messageSchemaName": "online fraud",
             "optLockVersion": -1,
             "version": 1
         },
