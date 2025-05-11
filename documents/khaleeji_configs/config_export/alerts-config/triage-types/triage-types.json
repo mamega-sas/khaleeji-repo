@@ -4,6 +4,15 @@
     "body": [
         [
             {
+                "domainID": "online_fraud_domain",
+                "id": "corporate_triage_type",
+                "localizedName": "Corporate Triage Type",
+                "name": "Corporate Triage Type",
+                "optLockVersion": -1,
+                "servicePriority": 2,
+                "version": 1
+            },
+            {
                 "defaultFlag": true,
                 "domainID": "domain_default",
                 "id": "triage_type_default",
@@ -12,6 +21,25 @@
                 "optLockVersion": -1,
                 "servicePriority": 32767,
                 "triageMode": "MANUAL",
+                "version": 1
+            },
+            {
+                "domainID": "online_fraud_domain",
+                "id": "individual_triage_type",
+                "localizedName": "Individual Triage Type",
+                "name": "Individual Triage Type",
+                "optLockVersion": -1,
+                "servicePriority": 1,
+                "version": 1
+            },
+            {
+                "defaultFlag": true,
+                "domainID": "online_fraud_domain",
+                "id": "online_fraud_domain",
+                "localizedName": "Online Fraud Domain",
+                "name": "Online Fraud Domain",
+                "optLockVersion": -1,
+                "servicePriority": 32767,
                 "version": 1
             },
             {

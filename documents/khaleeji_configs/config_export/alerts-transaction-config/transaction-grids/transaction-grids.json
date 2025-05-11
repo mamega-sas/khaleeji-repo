@@ -810,10 +810,10 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CCNM"
+                    "id": "CSNM"
                 },
                 {
-                    "id": "DCNM"
+                    "id": "CKNM"
                 },
                 {
                     "id": "DCCP"
@@ -822,16 +822,16 @@
                     "id": "CCCP"
                 },
                 {
+                    "id": "DCCA"
+                },
+                {
                     "id": "CCCA"
                 },
                 {
-                    "id": "CSNM"
+                    "id": "CCNM"
                 },
                 {
-                    "id": "CKNM"
-                },
-                {
-                    "id": "DCCA"
+                    "id": "DCNM"
                 }
             ],
             "version": 1
@@ -2176,13 +2176,7 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CKFP"
-                },
-                {
                     "id": "CSDE"
-                },
-                {
-                    "id": "CCCP"
                 },
                 {
                     "id": "CSNM"
@@ -2191,7 +2185,10 @@
                     "id": "CKNM"
                 },
                 {
-                    "id": "CKBP"
+                    "id": "CCCP"
+                },
+                {
+                    "id": "CKFP"
                 },
                 {
                     "id": "CKPT"
@@ -2201,6 +2198,9 @@
                 },
                 {
                     "id": "CSDV"
+                },
+                {
+                    "id": "CKBP"
                 }
             ],
             "version": 1
@@ -2229,46 +2229,43 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CCDP"
-                },
-                {
-                    "id": "CCNM"
-                },
-                {
-                    "id": "DCCW"
-                },
-                {
-                    "id": "DCNM"
-                },
-                {
-                    "id": "DCCP"
-                },
-                {
-                    "id": "CCCP"
-                },
-                {
-                    "id": "CCCA"
-                },
-                {
-                    "id": "DCCV"
-                },
-                {
-                    "id": "CCAT"
-                },
-                {
                     "id": "CSNM"
                 },
                 {
                     "id": "CKNM"
                 },
                 {
-                    "id": "CCCT"
+                    "id": "DCCP"
+                },
+                {
+                    "id": "DCCV"
+                },
+                {
+                    "id": "CCCP"
                 },
                 {
                     "id": "DCCA"
                 },
                 {
-                    "id": "DCAT"
+                    "id": "CCCT"
+                },
+                {
+                    "id": "CCCA"
+                },
+                {
+                    "id": "CCNM"
+                },
+                {
+                    "id": "CCDP"
+                },
+                {
+                    "id": "DCCW"
+                },
+                {
+                    "id": "CCAT"
+                },
+                {
+                    "id": "DCNM"
                 },
                 {
                     "id": "DCDE"
@@ -2280,13 +2277,16 @@
                     "id": "CCCW"
                 },
                 {
-                    "id": "DCCT"
-                },
-                {
                     "id": "CCDE"
                 },
                 {
                     "id": "CCCV"
+                },
+                {
+                    "id": "DCAT"
+                },
+                {
+                    "id": "DCCT"
                 }
             ],
             "version": 1
@@ -3401,16 +3401,16 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CCNM"
-                },
-                {
-                    "id": "DCNM"
-                },
-                {
                     "id": "CSNM"
                 },
                 {
                     "id": "CKNM"
+                },
+                {
+                    "id": "CCNM"
+                },
+                {
+                    "id": "DCNM"
                 }
             ],
             "version": 1
@@ -4037,19 +4037,19 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CKFP"
-                },
-                {
                     "id": "CCCP"
                 },
                 {
-                    "id": "CKBP"
+                    "id": "CKFP"
                 },
                 {
                     "id": "CKPT"
                 },
                 {
                     "id": "CKET"
+                },
+                {
+                    "id": "CKBP"
                 }
             ],
             "version": 1
