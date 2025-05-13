@@ -9,13 +9,13 @@
             "optLockVersion": -1,
             "transactionGridDefinitionConfigs": [
                 {
-                    "id": "sfd_allTx_paymentfraud"
+                    "id": "sfd_allTx_onlinefraud"
                 },
                 {
-                    "id": "sfd_events_paymentfraud"
+                    "id": "sfd_events_onlinefraud"
                 },
                 {
-                    "id": "sfd_paymentTx_paymentfraud"
+                    "id": "sfd_paymentTx_onlinefraud"
                 }
             ],
             "transactionMarkConfigs": [],
@@ -54,6 +54,25 @@
                 },
                 {
                     "id": "sfd_events_cardfraud"
+                }
+            ],
+            "transactionMarkConfigs": [],
+            "version": 1
+        },
+        {
+            "alertFieldValuePath": "actionableEntityID",
+            "id": "sfd_txViewer_onlineFraud",
+            "indexableVariablePath": "message.customer.identifier",
+            "optLockVersion": -1,
+            "transactionGridDefinitionConfigs": [
+                {
+                    "id": "sfd_allTx_onlinefraud"
+                },
+                {
+                    "id": "sfd_events_onlinefraud"
+                },
+                {
+                    "id": "sfd_paymentTx_onlinefraud"
                 }
             ],
             "transactionMarkConfigs": [],

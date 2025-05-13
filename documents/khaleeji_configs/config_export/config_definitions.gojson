@@ -9,6 +9,7 @@
   {{template "AllJSONResources" "alerts-config/dispositions"}},
   {{template "AllJSONResources" "alerts-config/entity-types"}},
   {{template "AllJSONResources" "alerts-config/alert-types"}},
+  {{template "AllJSONResources" "alerts-config/page-definitions"}},
   {{template "AllJSONResources" "alerts-config/enrichment-fields"}},
   {{template "AllJSONResources" "alerts-config/enrichment-mappings"}},
   {{template "AllJSONResources" "alerts-config/reference-lists"}},
