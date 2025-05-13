@@ -1,0 +1,14 @@
+SELECT * FROM alerts.domain;
+
+UPDATE alerts.triage_type SET default_triage_type_flg = 'f' WHERE triage_type_id in ('sfd_payment_fraud', 'triage_type_default','online_fraud_domain');
+UPDATE alerts.triage_type SET default_queue_flg = 't' WHERE triage_type_id = 'individual_triage_type';
+
+
+UPDATE alerts.queue SET default_queue_flg = 'f' WHERE queue_id = 'low_corporate_queue';
+UPDATE alerts.queue SET default_queue_flg = 'f' WHERE queue_id = 'low_individual_queue';
+
+UPDATE alerts.queue SET queue_routing_priority_val = '101' WHERE queue_id = 'low_individual_queue';
+
+
+UPDATE alerts.domain SET default_domain_flg = 'f' WHERE domain_id in ('domain_default');
+UPDATE alerts.domain SET default_domain_flg = 't' WHERE domain_id in ('online_fraud_domain');
