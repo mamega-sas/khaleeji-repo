@@ -21,7 +21,7 @@ Accept: application/json
       "decision": "A"
     },
     "customer": {
-      "identifier": "r2_028"
+      "identifier": "r2_029"
     },
     "payment": {
       "amount": "2000"
