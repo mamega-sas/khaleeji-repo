@@ -424,28 +424,6 @@
             "defaultDisplayName": "Customer – Device",
             "discriminators": {
                 "message.solution.activityType": [
-                    "AT"
-                ],
-                "message.solution.originationType": [
-                    "DC"
-                ]
-            },
-            "displayName": "Customer – Device",
-            "displayNameLocalizationKey": "f485dd1cf42fd2ea",
-            "id": "DCAT",
-            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
-            "messageSchemaName": "Payment Fraud",
-            "optLockVersion": -1,
-            "retentionPeriod": 0,
-            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
-            "transactionIdPath": "message.sas.system.transactionIdentifier",
-            "transactionTypeTableName": "DCAT",
-            "version": 1
-        },
-        {
-            "defaultDisplayName": "Customer – Device",
-            "discriminators": {
-                "message.solution.activityType": [
                     "DV"
                 ],
                 "message.solution.originationType": [
@@ -462,6 +440,28 @@
             "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
             "transactionIdPath": "message.sas.system.transactionIdentifier",
             "transactionTypeTableName": "CSDV",
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "Customer – Device",
+            "discriminators": {
+                "message.solution.activityType": [
+                    "AT"
+                ],
+                "message.solution.originationType": [
+                    "DC"
+                ]
+            },
+            "displayName": "Customer – Device",
+            "displayNameLocalizationKey": "f485dd1cf42fd2ea",
+            "id": "DCAT",
+            "indexableVariablePaths": "[\"message.customer.identifier\", \"message.debitcard.number\"]",
+            "messageSchemaName": "Payment Fraud",
+            "optLockVersion": -1,
+            "retentionPeriod": 0,
+            "transactionDatetimePath": "message.sas.system.transactionDtTmUtc",
+            "transactionIdPath": "message.sas.system.transactionIdentifier",
+            "transactionTypeTableName": "DCAT",
             "version": 1
         },
         {

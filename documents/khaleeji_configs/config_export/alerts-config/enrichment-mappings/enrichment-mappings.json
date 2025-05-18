@@ -302,7 +302,7 @@
             {
                 "alertTypeID": "sfd_customer",
                 "enrichmentFieldID": "sfd_cus_type_enrch",
-                "enrichmentVariablePathName": "message.customer.type",
+                "enrichmentVariablePathName": "message.solution.customerType",
                 "id": "sfd_cus_type_1_em",
                 "optLockVersion": -1,
                 "version": 1
@@ -406,7 +406,7 @@
             {
                 "alertTypeID": "sfd_customer",
                 "enrichmentFieldID": "sfd_dec_outcome_desc_enrch",
-                "enrichmentVariablePathName": "message.sas.decision.outcomeDesc",
+                "enrichmentVariablePathName": "message.sas.decision.outcomeName",
                 "id": "sfd_dec_outcome_desc_1_em",
                 "optLockVersion": -1,
                 "version": 1

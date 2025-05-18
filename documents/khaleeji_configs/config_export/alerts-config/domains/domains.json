@@ -4,7 +4,7 @@
     "body": [
         [
             {
-                "defaultFlag": true,
+                "defaultFlag": false,
                 "id": "domain_default",
                 "localizedName": "Default Domain",
                 "name": "Default Domain",
@@ -12,7 +12,7 @@
                 "version": 1
             },
             {
-                "defaultFlag": false,
+                "defaultFlag": true,
                 "id": "online_fraud_domain",
                 "localizedName": "Online Fraud Domain",
                 "name": "Online Fraud Domain",

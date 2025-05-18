@@ -329,78 +329,81 @@
             },
             {
                 "definitionData": {
-                    "panes": [
+                    "childComponents": [
                         {
-                            "coordinates": [
-                                0,
-                                0
-                            ],
-                            "defaultSize": "25%",
-                            "links": [
+                            "childComponents": [
                                 {
-                                    "href": "/account/data/${contactEntityID}",
-                                    "itemType": "account",
-                                    "rel": "data"
-                                },
-                                {
-                                    "href": "/account/meta",
-                                    "itemType": "account",
-                                    "rel": "metadata"
+                                    "childComponents": [
+                                        {
+                                            "childComponents": [
+                                                {
+                                                    "configID": "sfd_contact_pane",
+                                                    "defaultSize": "33%"
+                                                },
+                                                {
+                                                    "configID": "sfd_customer_pane",
+                                                    "defaultSize": "33%"
+                                                },
+                                                {
+                                                    "configID": "sfd_account_pane",
+                                                    "defaultSize": "33%"
+                                                }
+                                            ],
+                                            "config": {
+                                                "border": false,
+                                                "flow": "horizontal",
+                                                "padding": true
+                                            },
+                                            "coordinates": [
+                                                0,
+                                                0
+                                            ],
+                                            "id": "alertdetails",
+                                            "type": "Pane"
+                                        },
+                                        {
+                                            "configID": "ui_customer_txs_with_select_pane",
+                                            "coordinates": [
+                                                1,
+                                                0
+                                            ]
+                                        }
+                                    ],
+                                    "config": {
+                                        "splitbarType": "horizontalCollapseUp"
+                                    },
+                                    "id": "top_of_tab_1",
+                                    "type": "Splitter"
                                 }
                             ],
-                            "title": "Account"
+                            "config": {
+                                "defaultLabel": "Alert Information",
+                                "showToolbar": false
+                            },
+                            "id": "cust_alert_data_tab",
+                            "type": "Tab"
                         },
                         {
-                            "coordinates": [
-                                0,
-                                1
-                            ],
-                            "defaultSize": "50%",
-                            "links": [
+                            "childComponents": [
                                 {
-                                    "href": "/contact/data/${contactEntityID}",
-                                    "itemType": "contact",
-                                    "rel": "data"
-                                },
-                                {
-                                    "href": "/contact/meta",
-                                    "itemType": "contact",
-                                    "rel": "metadata"
+                                    "configID": "alerts_default",
+                                    "type": "RelatedAlerts"
                                 }
                             ],
-                            "title": "Contact Information"
-                        },
-                        {
-                            "coordinates": [
-                                0,
-                                2
-                            ],
-                            "defaultSize": "25%",
-                            "links": [
-                                {
-                                    "href": "/customer/data/${contactEntityID}",
-                                    "itemType": "customer",
-                                    "rel": "data"
-                                },
-                                {
-                                    "href": "/customer/meta",
-                                    "itemType": "customer",
-                                    "rel": "metadata"
-                                }
-                            ],
-                            "title": "Customer"
-                        },
-                        {
-                            "contentConfigId": "sfd_txViewer_card_paymentFraud",
-                            "contentType": "table",
-                            "coordinates": [
-                                1,
-                                0
-                            ],
-                            "title": "Transactions"
+                            "config": {
+                                "defaultLabel": "Related Alert Information",
+                                "showToolbar": false
+                            },
+                            "id": "cust_rel_alert_data_tab",
+                            "type": "Tab"
                         }
                     ],
-                    "splitbarType": "horizontalCollapseUp"
+                    "config": {
+                        "showToolbar": true
+                    },
+                    "id": "tabPage",
+                    "type": "TabBar",
+                    "version": 2
                 },
                 "entityTypeID": "sfd_customer",
                 "id": "sfd_customer_x_online_fraud_ind",
@@ -485,87 +488,6 @@
                 },
                 "entityTypeID": "sfd_customer",
                 "id": "sfd_customer_x_payment_fraud",
-                "optLockVersion": -1,
-                "triageTypeID": "sfd_payment_fraud",
-                "version": 1
-            },
-            {
-                "definitionData": {
-                    "panes": [
-                        {
-                            "coordinates": [
-                                0,
-                                0
-                            ],
-                            "defaultSize": "25%",
-                            "links": [
-                                {
-                                    "href": "/account/data/${contactEntityID}",
-                                    "itemType": "account",
-                                    "rel": "data"
-                                },
-                                {
-                                    "href": "/account/meta",
-                                    "itemType": "account",
-                                    "rel": "metadata"
-                                }
-                            ],
-                            "title": "Account"
-                        },
-                        {
-                            "coordinates": [
-                                0,
-                                1
-                            ],
-                            "defaultSize": "50%",
-                            "links": [
-                                {
-                                    "href": "/contact/data/${contactEntityID}",
-                                    "itemType": "contact",
-                                    "rel": "data"
-                                },
-                                {
-                                    "href": "/contact/meta",
-                                    "itemType": "contact",
-                                    "rel": "metadata"
-                                }
-                            ],
-                            "title": "Contact Information"
-                        },
-                        {
-                            "coordinates": [
-                                0,
-                                2
-                            ],
-                            "defaultSize": "25%",
-                            "links": [
-                                {
-                                    "href": "/customer/data/${contactEntityID}",
-                                    "itemType": "customer",
-                                    "rel": "data"
-                                },
-                                {
-                                    "href": "/customer/meta",
-                                    "itemType": "customer",
-                                    "rel": "metadata"
-                                }
-                            ],
-                            "title": "Customer"
-                        },
-                        {
-                            "contentConfigId": "sfd_txViewer_card_paymentFraud",
-                            "contentType": "table",
-                            "coordinates": [
-                                1,
-                                0
-                            ],
-                            "title": "Transactions"
-                        }
-                    ],
-                    "splitbarType": "horizontalCollapseUp"
-                },
-                "entityTypeID": "sfd_debitacc",
-                "id": "sfd_debitacc_x_payment_fraud",
                 "optLockVersion": -1,
                 "triageTypeID": "sfd_payment_fraud",
                 "version": 1

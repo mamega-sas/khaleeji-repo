@@ -810,529 +810,28 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CCNM"
+                    "id": "CCCP"
                 },
                 {
-                    "id": "CSNM"
+                    "id": "CCNM"
                 },
                 {
                     "id": "DCNM"
                 },
                 {
-                    "id": "DCCP"
-                },
-                {
                     "id": "CKNM"
                 },
                 {
-                    "id": "CCCP"
+                    "id": "DCCP"
+                },
+                {
+                    "id": "CSNM"
                 },
                 {
                     "id": "CCCA"
                 },
                 {
                     "id": "DCCA"
-                }
-            ],
-            "version": 1
-        },
-        {
-            "defaultDisplayName": "All Payment Transactions",
-            "displayName": "All Payment Transactions",
-            "displayNameLocalizationKey": "sfd_allTx_onlinefraud_key",
-            "id": "sfd_allTx_onlinefraud",
-            "optLockVersion": -1,
-            "transactionFieldConfigs": [
-                {
-                    "dataType": "dateTime",
-                    "defaultDisplayName": "Transaction DateTime",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Transaction DateTime",
-                    "displayNameLocalizationKey": "TransactionDateTime_key",
-                    "displayOrderVal": 1,
-                    "displayWidthVal": 3,
-                    "id": "sfd_TX_DT_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.request.messageDtTm"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Customer Type",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Customer Type",
-                    "displayNameLocalizationKey": "CustomerType_key",
-                    "displayOrderVal": 2,
-                    "displayWidthVal": 3,
-                    "id": "sfd_cust_type_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.customer.type"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Transaction Name",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Transaction Name",
-                    "displayNameLocalizationKey": "TransactionName_key",
-                    "displayOrderVal": 3,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Tx_name_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.solution.sourceDesc"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Channel Type",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Channel Type",
-                    "displayNameLocalizationKey": "ChannelType_key",
-                    "displayOrderVal": 4,
-                    "displayWidthVal": 3,
-                    "id": "sfd_channelType_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.solution.channelType"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Customer Account Number",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Customer Account Number",
-                    "displayNameLocalizationKey": "CustomerAccountNumber_key",
-                    "displayOrderVal": 5,
-                    "displayWidthVal": 3,
-                    "id": "sfd_cust_account_num_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.debitaccount.number"
-                },
-                {
-                    "dataType": "number",
-                    "defaultDisplayName": "Transaction Amount",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Transaction Amount",
-                    "displayNameLocalizationKey": "TransactionAmount_key",
-                    "displayOrderVal": 6,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Tx_amount_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.payment.amount"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Beneficiary Account Number",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Beneficiary Account Number",
-                    "displayNameLocalizationKey": "BeneficiaryAccountNumber_key",
-                    "displayOrderVal": 7,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Ben_num_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.creditaccount.number"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Beneficiary IBAN",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Beneficiary IBAN",
-                    "displayNameLocalizationKey": "BeneficiaryIBAN_key",
-                    "displayOrderVal": 8,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Ben_iban_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.creditaccount.iban"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "CIF",
-                    "defaultSortDirection": "asc",
-                    "displayName": "CIF",
-                    "displayNameLocalizationKey": "CIF_key",
-                    "displayOrderVal": 9,
-                    "displayWidthVal": 3,
-                    "id": "sfd_CIF_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.customer.identifier"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Device ID",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Device ID",
-                    "displayNameLocalizationKey": "DeviceID_key",
-                    "displayOrderVal": 10,
-                    "displayWidthVal": 3,
-                    "id": "sfd_device_id_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.device.macAddress"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Status",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Status",
-                    "displayNameLocalizationKey": "Status_key",
-                    "displayOrderVal": 11,
-                    "displayWidthVal": 3,
-                    "id": "sfd_status_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.authentication.decision"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Transaction Type",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Transaction Type",
-                    "displayNameLocalizationKey": "TransactionType_key",
-                    "displayOrderVal": 12,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Tx_type_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.solution.originationType"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Ip Address",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Ip Address",
-                    "displayNameLocalizationKey": "IpAddress_key",
-                    "displayOrderVal": 13,
-                    "displayWidthVal": 3,
-                    "id": "sfd_ip_address_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.device.ipAddressV6"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Device operating system",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Device operating system",
-                    "displayNameLocalizationKey": "Device_OS_key",
-                    "displayOrderVal": 14,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Device_OS_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.device.operatingSystem"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Device browser operating system",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Device browser operating system",
-                    "displayNameLocalizationKey": "Device_browser_OS_key",
-                    "displayOrderVal": 15,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Device_browser_OS_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.device.BrowserOperatingSystem"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Customer Mobile Phone",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Customer Mobile Phone",
-                    "displayNameLocalizationKey": "cust_phone_key",
-                    "displayOrderVal": 16,
-                    "displayWidthVal": 3,
-                    "id": "sfd_cust_phone_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.customer.mobilePhone"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Beneficiary Mobile Phone",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Beneficiary Mobile Phone",
-                    "displayNameLocalizationKey": "ben_phone_key",
-                    "displayOrderVal": 17,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Ben_phone_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.creditaccount.mobilePhone"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Beneficiary Name",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Beneficiary Name",
-                    "displayNameLocalizationKey": "ben_name_key",
-                    "displayOrderVal": 18,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Ben_name_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.creditaccount.name"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Swift Code",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Swift Code",
-                    "displayNameLocalizationKey": "SwiftCode_key",
-                    "displayOrderVal": 20,
-                    "displayWidthVal": 3,
-                    "id": "sfd_swift_code_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.creditaccount.swiftCode"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Device Language",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Device Language",
-                    "displayNameLocalizationKey": "Device_Language_key",
-                    "displayOrderVal": 21,
-                    "displayWidthVal": 3,
-                    "id": "sfd_device_language_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.device.language"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Device Type",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Device Type",
-                    "displayNameLocalizationKey": "Device_Type_key",
-                    "displayOrderVal": 22,
-                    "displayWidthVal": 3,
-                    "id": "sfd_device_type_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.device.type"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Device internet protocol city",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Device internet protocol city",
-                    "displayNameLocalizationKey": "ipCityCode_key",
-                    "displayOrderVal": 23,
-                    "displayWidthVal": 3,
-                    "id": "sfd_ip_City_Code_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.device.ipCity"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Device internet protocol country code",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Device internet protocol country code",
-                    "displayNameLocalizationKey": "ipCountryCode_key",
-                    "displayOrderVal": 23,
-                    "displayWidthVal": 3,
-                    "id": "sfd_ip_Country_Code_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.device.ipCountryCode"
-                },
-                {
-                    "dataType": "dateTime",
-                    "defaultDisplayName": "Access Datetime",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Access Datetime",
-                    "displayNameLocalizationKey": "AccessDatetime_key",
-                    "displayOrderVal": 24,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Access_Datetime_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.digital.sessionStartDtTm"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Payment Direction",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Payment Direction",
-                    "displayNameLocalizationKey": "Payment_Direction_key",
-                    "displayOrderVal": 25,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Payment_Direction_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.payment.direction"
-                },
-                {
-                    "dataType": "boolean",
-                    "defaultDisplayName": "Beneficiary Type",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Beneficiary Type",
-                    "displayNameLocalizationKey": "BeneficiaryType_key",
-                    "displayOrderVal": 26,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Bene_Type_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.payment.trustedBeneficiaryFlg"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Authentication Method",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Authentication Method",
-                    "displayNameLocalizationKey": "auth_method_key",
-                    "displayOrderVal": 27,
-                    "displayWidthVal": 3,
-                    "id": "sfd_auth_method_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.solution.authenticationType"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Message Classification Name",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Message Classification Name",
-                    "displayNameLocalizationKey": "messageClassificationName_key",
-                    "displayOrderVal": 27,
-                    "displayWidthVal": 3,
-                    "id": "sfd_msg_classification_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.request.messageClassificationName"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Message Schema Name",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Message Schema Name",
-                    "displayNameLocalizationKey": "schemaName_key",
-                    "displayOrderVal": 27,
-                    "displayWidthVal": 3,
-                    "id": "sfd_msg_schema_name_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.request.schemaName"
-                },
-                {
-                    "dataType": "boolean",
-                    "defaultDisplayName": "Message Rest Response Flag",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Message Rest Response Flag",
-                    "displayNameLocalizationKey": "restResponseFlg_key",
-                    "displayOrderVal": 28,
-                    "displayWidthVal": 3,
-                    "id": "sfd_rest_Response_Flg_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.request.restResponseFlg"
-                },
-                {
-                    "dataType": "dateTime",
-                    "defaultDisplayName": "Customer DOB",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Customer DOB",
-                    "displayNameLocalizationKey": "customer_DOB_key",
-                    "displayOrderVal": 29,
-                    "displayWidthVal": 3,
-                    "id": "sfd_customer_dob_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.customer.birthDt"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "KYC Change Type",
-                    "defaultSortDirection": "asc",
-                    "displayName": "KYC Change Type",
-                    "displayNameLocalizationKey": "KYC_Change_Type_key",
-                    "displayOrderVal": 30,
-                    "displayWidthVal": 3,
-                    "id": "sfd_KYC_change_type_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.demographic.type"
-                },
-                {
-                    "dataType": "string",
-                    "defaultDisplayName": "Passport Number",
-                    "defaultSortDirection": "asc",
-                    "displayName": "Passport Number",
-                    "displayNameLocalizationKey": "Passport_Number_key",
-                    "displayOrderVal": 31,
-                    "displayWidthVal": 3,
-                    "id": "sfd_Passport_Number_allTx_oFraud",
-                    "isResizable": true,
-                    "isSortable": true,
-                    "textAlignment": "left",
-                    "variablePath": "message.customer.identification.number"
-                }
-            ],
-            "transactionTypeIds": [
-                {
-                    "id": "CKFP"
-                },
-                {
-                    "id": "CSNM"
-                },
-                {
-                    "id": "CSDE"
-                },
-                {
-                    "id": "CKNM"
-                },
-                {
-                    "id": "CCCP"
-                },
-                {
-                    "id": "CKBP"
-                },
-                {
-                    "id": "CKPT"
-                },
-                {
-                    "id": "CKET"
-                },
-                {
-                    "id": "CSDV"
                 }
             ],
             "version": 1
@@ -2677,19 +2176,22 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CKFP"
-                },
-                {
-                    "id": "CSNM"
+                    "id": "CCCP"
                 },
                 {
                     "id": "CSDE"
                 },
                 {
+                    "id": "CKFP"
+                },
+                {
                     "id": "CKNM"
                 },
                 {
-                    "id": "CCCP"
+                    "id": "CSNM"
+                },
+                {
+                    "id": "CSDV"
                 },
                 {
                     "id": "CKBP"
@@ -2699,9 +2201,521 @@
                 },
                 {
                     "id": "CKET"
+                }
+            ],
+            "version": 1
+        },
+        {
+            "defaultDisplayName": "All Transactions",
+            "displayName": "All Transactions",
+            "displayNameLocalizationKey": "sfd_allTx_onlinefraud_key",
+            "id": "sfd_allTx_onlinefraud",
+            "optLockVersion": -1,
+            "transactionFieldConfigs": [
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Decision",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Decision",
+                    "displayNameLocalizationKey": "Decision_key",
+                    "displayOrderVal": 0,
+                    "displayWidthVal": 3,
+                    "id": "sfd_TX_outcome_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.sas.decision.outcomeName"
+                },
+                {
+                    "dataType": "dateTime",
+                    "defaultDisplayName": "Transaction DateTime",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Transaction DateTime",
+                    "displayNameLocalizationKey": "TransactionDateTime_key",
+                    "displayOrderVal": 1,
+                    "displayWidthVal": 3,
+                    "id": "sfd_TX_DT_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.request.messageDtTm"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Customer Type",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Customer Type",
+                    "displayNameLocalizationKey": "CustomerType_key",
+                    "displayOrderVal": 2,
+                    "displayWidthVal": 3,
+                    "id": "sfd_cust_type_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.solution.customerType"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Transaction Name",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Transaction Name",
+                    "displayNameLocalizationKey": "TransactionName_key",
+                    "displayOrderVal": 3,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Tx_name_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.solution.source"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Channel Type",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Channel Type",
+                    "displayNameLocalizationKey": "ChannelType_key",
+                    "displayOrderVal": 4,
+                    "displayWidthVal": 3,
+                    "id": "sfd_channelType_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.solution.channelType"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Customer Account Number",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Customer Account Number",
+                    "displayNameLocalizationKey": "CustomerAccountNumber_key",
+                    "displayOrderVal": 5,
+                    "displayWidthVal": 3,
+                    "id": "sfd_cust_account_num_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.debitaccount.number"
+                },
+                {
+                    "dataType": "number",
+                    "defaultDisplayName": "Transaction Amount",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Transaction Amount",
+                    "displayNameLocalizationKey": "TransactionAmount_key",
+                    "displayOrderVal": 6,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Tx_amount_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.payment.amount"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Beneficiary Account Number",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Beneficiary Account Number",
+                    "displayNameLocalizationKey": "BeneficiaryAccountNumber_key",
+                    "displayOrderVal": 7,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Ben_num_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.creditaccount.number"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Beneficiary IBAN",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Beneficiary IBAN",
+                    "displayNameLocalizationKey": "BeneficiaryIBAN_key",
+                    "displayOrderVal": 8,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Ben_iban_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.creditaccount.iban"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "CIF",
+                    "defaultSortDirection": "asc",
+                    "displayName": "CIF",
+                    "displayNameLocalizationKey": "CIF_key",
+                    "displayOrderVal": 9,
+                    "displayWidthVal": 3,
+                    "id": "sfd_CIF_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.customer.identifier"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Device ID",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Device ID",
+                    "displayNameLocalizationKey": "DeviceID_key",
+                    "displayOrderVal": 10,
+                    "displayWidthVal": 3,
+                    "id": "sfd_device_id_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.device.macAddress"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Status",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Status",
+                    "displayNameLocalizationKey": "Status_key",
+                    "displayOrderVal": 11,
+                    "displayWidthVal": 3,
+                    "id": "sfd_status_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.authentication.decision"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Transaction Type",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Transaction Type",
+                    "displayNameLocalizationKey": "TransactionType_key",
+                    "displayOrderVal": 12,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Tx_type_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.solution.originationType"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Ip Address",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Ip Address",
+                    "displayNameLocalizationKey": "IpAddress_key",
+                    "displayOrderVal": 13,
+                    "displayWidthVal": 3,
+                    "id": "sfd_ip_address_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.device.ipAddressV6"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Device OS",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Device OS",
+                    "displayNameLocalizationKey": "Device_OS_key",
+                    "displayOrderVal": 14,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Device_OS_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.device.operatingSystem"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Device Browser OS",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Device Browser OS",
+                    "displayNameLocalizationKey": "Device_browser_OS_key",
+                    "displayOrderVal": 15,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Device_browser_OS_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.device.BrowserOperatingSystem"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Customer Mobile Phone",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Customer Mobile Phone",
+                    "displayNameLocalizationKey": "cust_phone_key",
+                    "displayOrderVal": 16,
+                    "displayWidthVal": 3,
+                    "id": "sfd_cust_phone_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.customer.mobilePhone"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Beneficiary Mobile Phone",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Beneficiary Mobile Phone",
+                    "displayNameLocalizationKey": "ben_phone_key",
+                    "displayOrderVal": 17,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Ben_phone_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.creditaccount.mobilePhone"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Beneficiary Name",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Beneficiary Name",
+                    "displayNameLocalizationKey": "ben_name_key",
+                    "displayOrderVal": 18,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Ben_name_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.creditaccount.name"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Swift Code",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Swift Code",
+                    "displayNameLocalizationKey": "SwiftCode_key",
+                    "displayOrderVal": 20,
+                    "displayWidthVal": 3,
+                    "id": "sfd_swift_code_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.creditaccount.swiftCode"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Device Language",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Device Language",
+                    "displayNameLocalizationKey": "Device_Language_key",
+                    "displayOrderVal": 21,
+                    "displayWidthVal": 3,
+                    "id": "sfd_device_language_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.device.language"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Device Type",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Device Type",
+                    "displayNameLocalizationKey": "Device_Type_key",
+                    "displayOrderVal": 22,
+                    "displayWidthVal": 3,
+                    "id": "sfd_device_type_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.device.type"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Device City IP",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Device City IP",
+                    "displayNameLocalizationKey": "ipCityCode_key",
+                    "displayOrderVal": 23,
+                    "displayWidthVal": 3,
+                    "id": "sfd_ip_City_Code_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.device.ipCity"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Device Country IP",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Device Country IP",
+                    "displayNameLocalizationKey": "ipCountryCode_key",
+                    "displayOrderVal": 23,
+                    "displayWidthVal": 3,
+                    "id": "sfd_ip_Country_Code_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.device.ipCountryCode"
+                },
+                {
+                    "dataType": "dateTime",
+                    "defaultDisplayName": "Access Datetime",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Access Datetime",
+                    "displayNameLocalizationKey": "AccessDatetime_key",
+                    "displayOrderVal": 24,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Access_Datetime_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.digital.sessionStartDtTm"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Payment Direction",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Payment Direction",
+                    "displayNameLocalizationKey": "Payment_Direction_key",
+                    "displayOrderVal": 25,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Payment_Direction_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.payment.direction"
+                },
+                {
+                    "dataType": "boolean",
+                    "defaultDisplayName": "Beneficiary Type",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Beneficiary Type",
+                    "displayNameLocalizationKey": "BeneficiaryType_key",
+                    "displayOrderVal": 26,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Bene_Type_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.payment.trustedBeneficiaryFlg"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Authentication Method",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Authentication Method",
+                    "displayNameLocalizationKey": "auth_method_key",
+                    "displayOrderVal": 27,
+                    "displayWidthVal": 3,
+                    "id": "sfd_auth_method_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.solution.authenticationType"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Message Classification Name",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Message Classification Name",
+                    "displayNameLocalizationKey": "messageClassificationName_key",
+                    "displayOrderVal": 27,
+                    "displayWidthVal": 3,
+                    "id": "sfd_msg_classification_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.request.messageClassificationName"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Message Schema Name",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Message Schema Name",
+                    "displayNameLocalizationKey": "schemaName_key",
+                    "displayOrderVal": 27,
+                    "displayWidthVal": 3,
+                    "id": "sfd_msg_schema_name_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.request.schemaName"
+                },
+                {
+                    "dataType": "boolean",
+                    "defaultDisplayName": "Message Rest Response Flag",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Message Rest Response Flag",
+                    "displayNameLocalizationKey": "restResponseFlg_key",
+                    "displayOrderVal": 28,
+                    "displayWidthVal": 3,
+                    "id": "sfd_rest_Response_Flg_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.request.restResponseFlg"
+                },
+                {
+                    "dataType": "dateTime",
+                    "defaultDisplayName": "Customer DOB",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Customer DOB",
+                    "displayNameLocalizationKey": "customer_DOB_key",
+                    "displayOrderVal": 29,
+                    "displayWidthVal": 3,
+                    "id": "sfd_customer_dob_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.customer.birthDt"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "KYC Change Type",
+                    "defaultSortDirection": "asc",
+                    "displayName": "KYC Change Type",
+                    "displayNameLocalizationKey": "KYC_Change_Type_key",
+                    "displayOrderVal": 30,
+                    "displayWidthVal": 3,
+                    "id": "sfd_KYC_change_type_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.demographic.type"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Passport Number",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Passport Number",
+                    "displayNameLocalizationKey": "Passport_Number_key",
+                    "displayOrderVal": 31,
+                    "displayWidthVal": 3,
+                    "id": "sfd_Passport_Number_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.customer.identification.number"
+                }
+            ],
+            "transactionTypeIds": [
+                {
+                    "id": "CCCP"
+                },
+                {
+                    "id": "CSDE"
+                },
+                {
+                    "id": "CKFP"
+                },
+                {
+                    "id": "CKNM"
+                },
+                {
+                    "id": "CSNM"
                 },
                 {
                     "id": "CSDV"
+                },
+                {
+                    "id": "CKBP"
+                },
+                {
+                    "id": "CKPT"
+                },
+                {
+                    "id": "CKET"
                 }
             ],
             "version": 1
@@ -2730,19 +2744,22 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CCNM"
+                    "id": "DCCW"
                 },
                 {
-                    "id": "CSNM"
-                },
-                {
-                    "id": "DCNM"
-                },
-                {
-                    "id": "DCCP"
+                    "id": "CCCP"
                 },
                 {
                     "id": "CCCT"
+                },
+                {
+                    "id": "CCDP"
+                },
+                {
+                    "id": "CCNM"
+                },
+                {
+                    "id": "DCNM"
                 },
                 {
                     "id": "DCCV"
@@ -2754,28 +2771,16 @@
                     "id": "CCAT"
                 },
                 {
-                    "id": "CCDP"
+                    "id": "DCCP"
                 },
                 {
-                    "id": "CCCP"
+                    "id": "CSNM"
                 },
                 {
                     "id": "CCCA"
                 },
                 {
                     "id": "DCCA"
-                },
-                {
-                    "id": "DCCW"
-                },
-                {
-                    "id": "DCDP"
-                },
-                {
-                    "id": "CCCW"
-                },
-                {
-                    "id": "CCDE"
                 },
                 {
                     "id": "CCCV"
@@ -2788,6 +2793,15 @@
                 },
                 {
                     "id": "DCDE"
+                },
+                {
+                    "id": "DCDP"
+                },
+                {
+                    "id": "CCCW"
+                },
+                {
+                    "id": "CCDE"
                 }
             ],
             "version": 1
@@ -3905,13 +3919,13 @@
                     "id": "CCNM"
                 },
                 {
-                    "id": "CSNM"
-                },
-                {
                     "id": "DCNM"
                 },
                 {
                     "id": "CKNM"
+                },
+                {
+                    "id": "CSNM"
                 }
             ],
             "version": 1
@@ -4094,13 +4108,13 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CSNM"
-                },
-                {
                     "id": "CSDE"
                 },
                 {
                     "id": "CKNM"
+                },
+                {
+                    "id": "CSNM"
                 },
                 {
                     "id": "CSDV"
@@ -4115,6 +4129,20 @@
             "id": "sfd_events_onlinefraud",
             "optLockVersion": -1,
             "transactionFieldConfigs": [
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Decision",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Decision",
+                    "displayNameLocalizationKey": "Decision_key",
+                    "displayOrderVal": 0,
+                    "displayWidthVal": 3,
+                    "id": "sfd_TX_outcome_events_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.sas.decision.outcomeName"
+                },
                 {
                     "dataType": "dateTime",
                     "defaultDisplayName": "Transaction DateTime",
@@ -4141,7 +4169,7 @@
                     "isResizable": true,
                     "isSortable": true,
                     "textAlignment": "left",
-                    "variablePath": "message.customer.type"
+                    "variablePath": "mmessage.solution.customerType"
                 },
                 {
                     "dataType": "string",
@@ -4155,7 +4183,7 @@
                     "isResizable": true,
                     "isSortable": true,
                     "textAlignment": "left",
-                    "variablePath": "message.solution.sourceDesc"
+                    "variablePath": "message.solution.source"
                 },
                 {
                     "dataType": "string",
@@ -4299,9 +4327,9 @@
                 },
                 {
                     "dataType": "string",
-                    "defaultDisplayName": "Device operating system",
+                    "defaultDisplayName": "Device OS",
                     "defaultSortDirection": "asc",
-                    "displayName": "Device operating system",
+                    "displayName": "Device OS",
                     "displayNameLocalizationKey": "Device_OS_key",
                     "displayOrderVal": 14,
                     "displayWidthVal": 3,
@@ -4313,9 +4341,9 @@
                 },
                 {
                     "dataType": "string",
-                    "defaultDisplayName": "Device browser operating system",
+                    "defaultDisplayName": "Device Browser OS",
                     "defaultSortDirection": "asc",
-                    "displayName": "Device browser operating system",
+                    "displayName": "Device Browser OS",
                     "displayNameLocalizationKey": "Device_browser_OS_key",
                     "displayOrderVal": 15,
                     "displayWidthVal": 3,
@@ -4411,9 +4439,9 @@
                 },
                 {
                     "dataType": "string",
-                    "defaultDisplayName": "Device internet protocol city",
+                    "defaultDisplayName": "Device City IP",
                     "defaultSortDirection": "asc",
-                    "displayName": "Device internet protocol city",
+                    "displayName": "Device City IP",
                     "displayNameLocalizationKey": "ipCityCode_key",
                     "displayOrderVal": 23,
                     "displayWidthVal": 3,
@@ -4425,9 +4453,9 @@
                 },
                 {
                     "dataType": "string",
-                    "defaultDisplayName": "Device internet protocol country code",
+                    "defaultDisplayName": "Device Country IP",
                     "defaultSortDirection": "asc",
-                    "displayName": "Device internet protocol country code",
+                    "displayName": "Device Country IP",
                     "displayNameLocalizationKey": "ipCountryCode_key",
                     "displayOrderVal": 23,
                     "displayWidthVal": 3,
@@ -4580,13 +4608,13 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CSNM"
-                },
-                {
                     "id": "CSDE"
                 },
                 {
                     "id": "CKNM"
+                },
+                {
+                    "id": "CSNM"
                 },
                 {
                     "id": "CSDV"
@@ -5024,10 +5052,10 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CKFP"
+                    "id": "CCCP"
                 },
                 {
-                    "id": "CCCP"
+                    "id": "CKFP"
                 },
                 {
                     "id": "CKBP"
@@ -5048,6 +5076,20 @@
             "id": "sfd_paymentTx_onlinefraud",
             "optLockVersion": -1,
             "transactionFieldConfigs": [
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Decision",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Decision",
+                    "displayNameLocalizationKey": "Decision_key",
+                    "displayOrderVal": 0,
+                    "displayWidthVal": 3,
+                    "id": "sfd_TX_outcome_paymentTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.sas.decision.outcomeName"
+                },
                 {
                     "dataType": "dateTime",
                     "defaultDisplayName": "Transaction DateTime",
@@ -5074,7 +5116,7 @@
                     "isResizable": true,
                     "isSortable": true,
                     "textAlignment": "left",
-                    "variablePath": "message.customer.type"
+                    "variablePath": "message.solution.customerType"
                 },
                 {
                     "dataType": "string",
@@ -5088,7 +5130,7 @@
                     "isResizable": true,
                     "isSortable": true,
                     "textAlignment": "left",
-                    "variablePath": "message.solution.sourceDesc"
+                    "variablePath": "message.solution.source"
                 },
                 {
                     "dataType": "string",
@@ -5218,9 +5260,9 @@
                 },
                 {
                     "dataType": "string",
-                    "defaultDisplayName": "Device operating system",
+                    "defaultDisplayName": "Device OS",
                     "defaultSortDirection": "asc",
-                    "displayName": "Device operating system",
+                    "displayName": "Device OS",
                     "displayNameLocalizationKey": "Device_OS_key",
                     "displayOrderVal": 14,
                     "displayWidthVal": 3,
@@ -5316,9 +5358,9 @@
                 },
                 {
                     "dataType": "string",
-                    "defaultDisplayName": "Device internet protocol city",
+                    "defaultDisplayName": "Device City IP",
                     "defaultSortDirection": "asc",
-                    "displayName": "Device internet protocol city",
+                    "displayName": "Device City IP",
                     "displayNameLocalizationKey": "ipCityCode_key",
                     "displayOrderVal": 23,
                     "displayWidthVal": 3,
@@ -5330,9 +5372,9 @@
                 },
                 {
                     "dataType": "string",
-                    "defaultDisplayName": "Device internet protocol country code",
+                    "defaultDisplayName": "Device Country IP",
                     "defaultSortDirection": "asc",
-                    "displayName": "Device internet protocol country code",
+                    "displayName": "Device Country IP",
                     "displayNameLocalizationKey": "ipCountryCode_key",
                     "displayOrderVal": 23,
                     "displayWidthVal": 3,
@@ -5429,10 +5471,10 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CKFP"
+                    "id": "CCCP"
                 },
                 {
-                    "id": "CCCP"
+                    "id": "CKFP"
                 },
                 {
                     "id": "CKBP"

@@ -13,7 +13,6 @@
                 "version": 1
             },
             {
-                "defaultFlag": true,
                 "domainID": "domain_default",
                 "id": "triage_type_default",
                 "localizedName": "Default Triage Type",
@@ -24,6 +23,7 @@
                 "version": 1
             },
             {
+                "defaultFlag": true,
                 "domainID": "online_fraud_domain",
                 "id": "individual_triage_type",
                 "localizedName": "Individual Triage Type",
@@ -33,7 +33,6 @@
                 "version": 1
             },
             {
-                "defaultFlag": true,
                 "domainID": "online_fraud_domain",
                 "id": "online_fraud_domain",
                 "localizedName": "Online Fraud Domain",
@@ -43,7 +42,6 @@
                 "version": 1
             },
             {
-                "defaultFlag": true,
                 "domainID": "sfd_payment_fraud",
                 "id": "sfd_payment_fraud",
                 "localizedName": "Payment Fraud",
