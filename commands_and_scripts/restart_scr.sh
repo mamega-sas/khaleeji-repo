@@ -17,5 +17,4 @@ if [ -n "$pod_names" ]; then
     echo "Deleting pods: $pod_names"
     kubectl delete pod $pod_names -n scr
 else
-    echo "No pods found in the namespace 'scr'."
-fi
+    echo "No pods found"
