@@ -57,4 +57,7 @@ curl -X POST 'http://10.243.10.205:32080/detection/decision/execute' -H "Content
 #Query to get Access Token
 ACCESS_TOKEN=`curl -skX POST "https://sfdnp.khaleeji.bank/SASLogon/oauth/token"  -H "Content-Type: application/x-www-form-urlencoded"  -d "grant_type=client_credentials" -u "client.cli:client.secret"| awk -F: '{print $2}'|awk -F\" '{print $2}'`; echo "The client access-token is: " ${ACCESS_TOKEN}; echo ${ACCESS_TOKEN} > ~/idtoken.txt
 
-
+#restart registry
+docker run -d --restart=always -p 5000:5000 --name registry registry:2  
+docker start registry
+docker ps -a
