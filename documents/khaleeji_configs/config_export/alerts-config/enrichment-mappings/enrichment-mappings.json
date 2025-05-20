@@ -4,22 +4,6 @@
     "body": [
         [
             {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "fired_flg_enrch",
-                "enrichmentVariablePathName": "message.sas.rulefired.firedFlg",
-                "id": "fired_flg_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "rule_ref_id_enrch",
-                "enrichmentVariablePathName": "message.sas.rulefired.rulefired",
-                "id": "rule_ref_id_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
                 "alertTypeID": "sfd_creditacc",
                 "enrichmentFieldID": "sfd_ca_number_enrch",
                 "enrichmentVariablePathName": "message.creditaccount.number",
@@ -318,7 +302,7 @@
             {
                 "alertTypeID": "sfd_customer",
                 "enrichmentFieldID": "sfd_cus_type_enrch",
-                "enrichmentVariablePathName": "message.solution.customerType",
+                "enrichmentVariablePathName": "message.customer.type",
                 "id": "sfd_cus_type_1_em",
                 "optLockVersion": -1,
                 "version": 1
@@ -422,7 +406,7 @@
             {
                 "alertTypeID": "sfd_customer",
                 "enrichmentFieldID": "sfd_dec_outcome_desc_enrch",
-                "enrichmentVariablePathName": "message.sas.decision.outcomeName",
+                "enrichmentVariablePathName": "message.sas.decision.outcomeDesc",
                 "id": "sfd_dec_outcome_desc_1_em",
                 "optLockVersion": -1,
                 "version": 1
