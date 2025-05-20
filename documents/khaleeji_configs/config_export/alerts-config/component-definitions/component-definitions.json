@@ -8,6 +8,186 @@
                     "childComponents": [
                         {
                             "config": {
+                                "defaultMsgSingleSelection": "Make a single selection from the table above.",
+                                "fields": [
+                                    {
+                                        "defaultLabel": "Rule Ref ID",
+                                        "field": "transaction_data.transactionMessage.message.sas.rulefired[0].referenceIdentifier",
+                                        "filter": true,
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.transactionMessage.message.sas.rulefired.ruleIdentifier",
+                                        "filter": true,
+                                        "headerName": "Rule ID",
+                                        "hide": true,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.alertFlg",
+                                        "filter": true,
+                                        "headerName": "Rule Alerted?",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.name",
+                                        "filter": true,
+                                        "headerName": "Rule Name",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.description",
+                                        "filter": true,
+                                        "headerName": "Rule Description",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.firedFlg",
+                                        "filter": true,
+                                        "headerName": "Rule Fired?",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.outcomeEntity",
+                                        "filter": true,
+                                        "headerName": "Outcome Entity",
+                                        "hide": true,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.outcomeEntityType",
+                                        "filter": true,
+                                        "headerName": "Outcome Entity Type",
+                                        "hide": true,
+                                        "sortable": true
+                                    }
+                                ],
+                                "numCols": 5,
+                                "useServerSideDatasource": false
+                            },
+                            "datasources": [
+                                {
+                                    "id": "transaction_data",
+                                    "request": {
+                                        "uri": "/alertsTransaction/transactions/${@component.sfd_txViewer_card_paymentFraud.singleSelection.transactionID}?transactionTypeID=${@component.sfd_txViewer_card_paymentFraud.singleSelection.transactionTypeID}",
+                                        "verb": "GET"
+                                    }
+                                }
+                            ],
+                            "id": "sfd_rulesFired_table",
+                            "type": "EqualColumns"
+                        }
+                    ],
+                    "config": {
+                        "border": false,
+                        "collapsible": false,
+                        "defaultLabel": "Decisioning Rules"
+                    },
+                    "type": "Pane"
+                },
+                "id": "cust_sfd_rulesFired_pane",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "definitionData": {
+                    "childComponents": [
+                        {
+                            "config": {
+                                "columns": [
+                                    {
+                                        "field": "transaction_data.firedFlg",
+                                        "filter": true,
+                                        "headerName": "Rule Fired?",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.alertFlg",
+                                        "filter": true,
+                                        "headerName": "Rule Alerted?",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.referenceIdentifier",
+                                        "filter": true,
+                                        "headerName": "Rule Ref ID",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.ruleIdentifier",
+                                        "filter": true,
+                                        "headerName": "Rule ID",
+                                        "hide": true,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.name",
+                                        "filter": true,
+                                        "headerName": "Rule Name",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.description",
+                                        "filter": true,
+                                        "headerName": "Rule Description",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.outcomeEntity",
+                                        "filter": true,
+                                        "headerName": "Outcome Entity",
+                                        "hide": true,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.outcomeEntityType",
+                                        "filter": true,
+                                        "headerName": "Outcome Entity Type",
+                                        "hide": true,
+                                        "sortable": true
+                                    }
+                                ],
+                                "defaultMsgSingleSelection": "Make a single selection from the table above.",
+                                "numCols": 5,
+                                "useServerSideDatasource": false
+                            },
+                            "datasources": [
+                                {
+                                    "externalUri": "/alert/rulesFired/${@component.sfd_txViewer_debitcard.singleSelection.transactionID}?transactionID=${@component.sfd_txViewer_debitcard.singleSelection.transactionID}",
+                                    "id": "transaction_data",
+                                    "path": "rulefired"
+                                }
+                            ],
+                            "id": "sfd_rulesFired_table",
+                            "type": "Table"
+                        }
+                    ],
+                    "config": {
+                        "border": false,
+                        "collapsible": false,
+                        "defaultLabel": "Decisioning Rules"
+                    },
+                    "type": "Pane"
+                },
+                "id": "dc_sfd_rulesFired_pane",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "definitionData": {
+                    "childComponents": [
+                        {
+                            "config": {
                                 "fields": [
                                     {
                                         "defaultLabel": "Account",
@@ -234,6 +414,35 @@
                     "type": "Pane"
                 },
                 "id": "sfd_txViewer_debitcard_pane",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "definitionData": {
+                    "childComponents": [
+                        {
+                            "configID": "sfd_txViewer_card_paymentFraud",
+                            "defaultSize": "60%",
+                            "type": "Transactions"
+                        },
+                        {
+                            "childComponents": [
+                                {
+                                    "configID": "cust_sfd_rulesFired_pane"
+                                }
+                            ],
+                            "defaultSize": "40%",
+                            "id": "selected_transaction_details_pane1",
+                            "type": "Pane"
+                        }
+                    ],
+                    "config": {
+                        "border": false,
+                        "collapsible": false
+                    },
+                    "type": "Pane"
+                },
+                "id": "ui_customer_txs_with_select_pane",
                 "optLockVersion": -1,
                 "version": 1
             }

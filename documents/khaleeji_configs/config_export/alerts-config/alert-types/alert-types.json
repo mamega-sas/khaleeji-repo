@@ -57,7 +57,7 @@
                 "contactEntityTypeID": "sfd_customer",
                 "contactEntityVariablePathName": "message.customer.identifier",
                 "description": "Customer",
-                "domainID": "sfd_payment_fraud",
+                "domainID": "online_fraud_domain",
                 "id": "sfd_customer",
                 "localizedDescription": "Customer",
                 "localizedName": "Customer",

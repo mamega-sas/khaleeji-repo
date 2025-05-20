@@ -65,6 +65,15 @@
             "state": "active",
             "type": "group",
             "version": 1
+        },
+        {
+            "description": "Group that has access to alerts in low individual queue",
+            "id": "low_individual_group",
+            "name": "Low Individual Group",
+            "providerId": "local",
+            "state": "active",
+            "type": "group",
+            "version": 1
         }
     ]
 }
