@@ -21,7 +21,7 @@ Accept: application/json
       "decision": "A"
     },
     "customer": {
-      "identifier": "test-utc"
+      "identifier": "ssss-utc"
     },
     "payment": {
       "amount": "2000"
