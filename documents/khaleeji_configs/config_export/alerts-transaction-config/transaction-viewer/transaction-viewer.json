@@ -9,13 +9,13 @@
             "optLockVersion": -1,
             "transactionGridDefinitionConfigs": [
                 {
-                    "id": "sfd_paymentTx_onlinefraud"
-                },
-                {
                     "id": "sfd_allTx_onlinefraud"
                 },
                 {
                     "id": "sfd_events_onlinefraud"
+                },
+                {
+                    "id": "sfd_paymentTx_onlinefraud"
                 }
             ],
             "transactionMarkConfigs": [],
@@ -66,13 +66,13 @@
             "optLockVersion": -1,
             "transactionGridDefinitionConfigs": [
                 {
-                    "id": "sfd_paymentTx_onlinefraud"
-                },
-                {
                     "id": "sfd_allTx_onlinefraud"
                 },
                 {
                     "id": "sfd_events_onlinefraud"
+                },
+                {
+                    "id": "sfd_paymentTx_onlinefraud"
                 }
             ],
             "transactionMarkConfigs": [],

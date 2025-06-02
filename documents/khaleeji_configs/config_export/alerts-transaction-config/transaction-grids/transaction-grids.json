@@ -810,19 +810,7 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CCCP"
-                },
-                {
-                    "id": "CCNM"
-                },
-                {
-                    "id": "DCNM"
-                },
-                {
                     "id": "CKNM"
-                },
-                {
-                    "id": "DCCP"
                 },
                 {
                     "id": "CSNM"
@@ -831,7 +819,19 @@
                     "id": "CCCA"
                 },
                 {
+                    "id": "DCCP"
+                },
+                {
                     "id": "DCCA"
+                },
+                {
+                    "id": "DCNM"
+                },
+                {
+                    "id": "CCNM"
+                },
+                {
+                    "id": "CCCP"
                 }
             ],
             "version": 1
@@ -2176,19 +2176,22 @@
             ],
             "transactionTypeIds": [
                 {
+                    "id": "CKNM"
+                },
+                {
+                    "id": "CSNM"
+                },
+                {
+                    "id": "CKFP"
+                },
+                {
                     "id": "CCCP"
                 },
                 {
                     "id": "CSDE"
                 },
                 {
-                    "id": "CKFP"
-                },
-                {
-                    "id": "CKNM"
-                },
-                {
-                    "id": "CSNM"
+                    "id": "CKET"
                 },
                 {
                     "id": "CSDV"
@@ -2198,9 +2201,6 @@
                 },
                 {
                     "id": "CKPT"
-                },
-                {
-                    "id": "CKET"
                 }
             ],
             "version": 1
@@ -2225,6 +2225,48 @@
                     "isSortable": true,
                     "textAlignment": "left",
                     "variablePath": "message.sas.decision.outcomeName"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Phone",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Phone",
+                    "displayNameLocalizationKey": "Phone_key",
+                    "displayOrderVal": 0,
+                    "displayWidthVal": 3,
+                    "id": "sfd_TX_phone_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.customer.phone.0.full"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Phone Number",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Phone Number",
+                    "displayNameLocalizationKey": "PhoneNumber_key",
+                    "displayOrderVal": 1,
+                    "displayWidthVal": 3,
+                    "id": "sfd_TX_phone_num_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.customer.phone.1.full"
+                },
+                {
+                    "dataType": "string",
+                    "defaultDisplayName": "Phone Number2",
+                    "defaultSortDirection": "asc",
+                    "displayName": "Phone Number2",
+                    "displayNameLocalizationKey": "PhoneNum_key",
+                    "displayOrderVal": 1,
+                    "displayWidthVal": 3,
+                    "id": "sfd_TX_phone_num2_allTx_oFraud",
+                    "isResizable": true,
+                    "isSortable": true,
+                    "textAlignment": "left",
+                    "variablePath": "message.customer.phone.2.full"
                 },
                 {
                     "dataType": "dateTime",
@@ -2691,19 +2733,22 @@
             ],
             "transactionTypeIds": [
                 {
+                    "id": "CKNM"
+                },
+                {
+                    "id": "CSNM"
+                },
+                {
+                    "id": "CKFP"
+                },
+                {
                     "id": "CCCP"
                 },
                 {
                     "id": "CSDE"
                 },
                 {
-                    "id": "CKFP"
-                },
-                {
-                    "id": "CKNM"
-                },
-                {
-                    "id": "CSNM"
+                    "id": "CKET"
                 },
                 {
                     "id": "CSDV"
@@ -2713,9 +2758,6 @@
                 },
                 {
                     "id": "CKPT"
-                },
-                {
-                    "id": "CKET"
                 }
             ],
             "version": 1
@@ -2744,19 +2786,25 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "DCCW"
+                    "id": "CKNM"
                 },
                 {
-                    "id": "CCCP"
+                    "id": "CSNM"
                 },
                 {
-                    "id": "CCCT"
+                    "id": "CCAT"
+                },
+                {
+                    "id": "CCCA"
+                },
+                {
+                    "id": "DCCP"
                 },
                 {
                     "id": "CCDP"
                 },
                 {
-                    "id": "CCNM"
+                    "id": "DCCA"
                 },
                 {
                     "id": "DCNM"
@@ -2765,22 +2813,25 @@
                     "id": "DCCV"
                 },
                 {
-                    "id": "CKNM"
+                    "id": "CCCT"
                 },
                 {
-                    "id": "CCAT"
+                    "id": "DCCW"
                 },
                 {
-                    "id": "DCCP"
+                    "id": "CCNM"
                 },
                 {
-                    "id": "CSNM"
+                    "id": "CCCP"
                 },
                 {
-                    "id": "CCCA"
+                    "id": "DCDP"
                 },
                 {
-                    "id": "DCCA"
+                    "id": "CCCW"
+                },
+                {
+                    "id": "CCDE"
                 },
                 {
                     "id": "CCCV"
@@ -2793,15 +2844,6 @@
                 },
                 {
                     "id": "DCDE"
-                },
-                {
-                    "id": "DCDP"
-                },
-                {
-                    "id": "CCCW"
-                },
-                {
-                    "id": "CCDE"
                 }
             ],
             "version": 1
@@ -3278,10 +3320,10 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CCCP"
+                    "id": "CCCA"
                 },
                 {
-                    "id": "CCCA"
+                    "id": "CCCP"
                 }
             ],
             "version": 1
@@ -3916,16 +3958,16 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CCNM"
+                    "id": "CKNM"
+                },
+                {
+                    "id": "CSNM"
                 },
                 {
                     "id": "DCNM"
                 },
                 {
-                    "id": "CKNM"
-                },
-                {
-                    "id": "CSNM"
+                    "id": "CCNM"
                 }
             ],
             "version": 1
@@ -4108,13 +4150,13 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CSDE"
-                },
-                {
                     "id": "CKNM"
                 },
                 {
                     "id": "CSNM"
+                },
+                {
+                    "id": "CSDE"
                 },
                 {
                     "id": "CSDV"
@@ -4608,13 +4650,13 @@
             ],
             "transactionTypeIds": [
                 {
-                    "id": "CSDE"
-                },
-                {
                     "id": "CKNM"
                 },
                 {
                     "id": "CSNM"
+                },
+                {
+                    "id": "CSDE"
                 },
                 {
                     "id": "CSDV"
@@ -5052,19 +5094,19 @@
             ],
             "transactionTypeIds": [
                 {
+                    "id": "CKFP"
+                },
+                {
                     "id": "CCCP"
                 },
                 {
-                    "id": "CKFP"
+                    "id": "CKET"
                 },
                 {
                     "id": "CKBP"
                 },
                 {
                     "id": "CKPT"
-                },
-                {
-                    "id": "CKET"
                 }
             ],
             "version": 1
@@ -5471,19 +5513,19 @@
             ],
             "transactionTypeIds": [
                 {
+                    "id": "CKFP"
+                },
+                {
                     "id": "CCCP"
                 },
                 {
-                    "id": "CKFP"
+                    "id": "CKET"
                 },
                 {
                     "id": "CKBP"
                 },
                 {
                     "id": "CKPT"
-                },
-                {
-                    "id": "CKET"
                 }
             ],
             "version": 1

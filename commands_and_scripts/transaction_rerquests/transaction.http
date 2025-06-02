@@ -21,14 +21,13 @@ Accept: application/json
       "decision": "A"
     },
     "customer": {
-      "identifier": "ssss-utc"
+      "identifier": "mazen_t8"
     },
     "payment": {
-      "amount": "2000"
+      "amount": "400000"
     },
     "device": {
       "macAddress": "ABC1000"
     }
   }
 }
-

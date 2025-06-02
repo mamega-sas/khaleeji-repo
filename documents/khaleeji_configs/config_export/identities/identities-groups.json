@@ -65,6 +65,60 @@
             "state": "active",
             "type": "group",
             "version": 1
+        },
+        {
+            "description": "Group that has access to alerts in low individual queue",
+            "id": "low_individual_group",
+            "name": "Low Individual Group",
+            "providerId": "local",
+            "state": "active",
+            "type": "group",
+            "version": 1
+        },
+        {
+            "description": "group that has access to the high individual queue",
+            "id": "high_individual_group",
+            "name": "High Individual Group",
+            "providerId": "local",
+            "state": "active",
+            "type": "group",
+            "version": 1
+        },
+        {
+            "description": "group that has access to manager individual queue",
+            "id": "manager_individual_group",
+            "name": "Manager Individual Group",
+            "providerId": "local",
+            "state": "active",
+            "type": "group",
+            "version": 1
+        },
+        {
+            "description": "group that has access to low corporate queue",
+            "id": "low_corporate_group",
+            "name": "Low Corporate Group",
+            "providerId": "local",
+            "state": "active",
+            "type": "group",
+            "version": 1
+        },
+        {
+            "description": "group that has access to high corporate queue",
+            "id": "high_corporate_group",
+            "name": "High Corporate Group",
+            "providerId": "local",
+            "state": "active",
+            "type": "group",
+            "version": 1
+        },
+        {
+            "description": "group that has access to manager corporate queue",
+            "id": "manager_corporate_group",
+            "name": "Manager Corporate Group",
+            "providerId": "local",
+            "state": "active",
+            "type": "group",
+            "version": 1
         }
     ]
 }

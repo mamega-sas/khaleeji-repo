@@ -66,15 +66,6 @@
                         "name": "Set Productivity",
                         "order": 1,
                         "validationJSON": ""
-                    },
-                    {
-                        "argumentsJSON": "",
-                        "id": "interactive-suspend-alert",
-                        "localizationKey": "",
-                        "localizedName": "Interactive Suspend",
-                        "name": "Interactive Suspend",
-                        "order": 2,
-                        "validationJSON": ""
                     }
                 ],
                 "name": "Closed Indeterminate",
@@ -96,11 +87,10 @@
                         "validationJSON": ""
                     },
                     {
-                        "argumentsJSON": "",
-                        "id": "interactive-suspend-alert",
+                        "argumentsJSON": "[{\"name\": \"suspendDuration\", \"value\": 1}]",
+                        "id": "suspend-alert",
                         "localizationKey": "",
-                        "localizedName": "Interactive Suspend",
-                        "name": "Interactive Suspend",
+                        "name": "",
                         "order": 2,
                         "validationJSON": ""
                     }
@@ -123,8 +113,8 @@
                         "validationJSON": ""
                     },
                     {
-                        "argumentsJSON": "",
-                        "id": "interactive-suspend-alert",
+                        "argumentsJSON": "[{\"name\": \"suspendDuration\", \"value\": 1}]",
+                        "id": "suspend-alert",
                         "localizationKey": "",
                         "name": "",
                         "order": 2,
@@ -132,32 +122,6 @@
                     }
                 ],
                 "name": "Closed Unproductive",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "builtInFlag": false,
-                "id": "MOVE_TO_MANAGER_CORPORATE_AG",
-                "localizedName": "Move to Queue - Magaer Corporate",
-                "members": [
-                    {
-                        "argumentsJSON": "",
-                        "id": "interactive-move-to-queue",
-                        "localizationKey": "",
-                        "name": "",
-                        "order": 1,
-                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"manager_corporate_queue\"}]"
-                    },
-                    {
-                        "argumentsJSON": "",
-                        "id": "interactive-set-reason-code",
-                        "localizationKey": "",
-                        "name": "",
-                        "order": 2,
-                        "validationJSON": ""
-                    }
-                ],
-                "name": "Move to Queue - Magaer Corporate",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -184,6 +148,24 @@
                     }
                 ],
                 "name": "Move to Queue - Magaer Individual",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "MOVE_TO_MANAGER_CORPORATE_AG",
+                "localizedName": "Move to Queue - Manager Corporate",
+                "members": [
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-move-to-queue",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"manager_corporate_queue\"}]"
+                    }
+                ],
+                "name": "Move to Queue - Manager Corporate",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -225,6 +207,24 @@
             },
             {
                 "builtInFlag": false,
+                "id": "AUTO_CLOSE_ALERT",
+                "localizedName": "Skip",
+                "members": [
+                    {
+                        "argumentsJSON": "[{\"name\": \"suspendDuration\", \"value\": 1}]",
+                        "id": "suspend-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Skip",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
                 "id": "SFD_SKIP_ALERT",
                 "localizedName": "Skip",
                 "members": [
@@ -238,6 +238,32 @@
                     }
                 ],
                 "name": "Skip",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_SUSPEND_ALERT_1_HOUR",
+                "localizedName": "suspend alert for 1 hour",
+                "members": [
+                    {
+                        "argumentsJSON": "[{ \"name\": \"suspendDuration\", \"value\": 1 }]",
+                        "id": "suspend-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    },
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-set-reason-code",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "suspend alert for 1 hour",
                 "optLockVersion": -1,
                 "version": 1
             }

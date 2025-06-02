@@ -1,14 +1,20 @@
 {
-    "post": "/alerts/queues/sfd_payment_fraud/dispositions",
+    "post": "/alerts/queues/manager_individual_queue/dispositions",
     "contentType": "application/json",
     "body": [
         {
             "dispositions": [
                 {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
                     "id": "AD_BUILT_IN_CLOSE"
                 },
                 {
-                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                    "id": "SFD_CLOSE_ALERT_AT_DT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
                 },
                 {
                     "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
@@ -17,19 +23,187 @@
                     "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
                 },
                 {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
                     "id": "AD_BUILT_IN_REACTIVATE"
-                },
-                {
-                    "id": "SFD_RESCHEDULE_DISPOSITION"
-                },
-                {
-                    "id": "SFD_SAVE_PENDING_DISPOSITION"
-                },
-                {
-                    "id": "SFD_SEND_OUTBOUND_DISPOSITION"
-                },
+                }
+            ]
+        }
+    ]
+},{
+    "post": "/alerts/queues/manager_corporate_queue/dispositions",
+    "contentType": "application/json",
+    "body": [
+        {
+            "dispositions": [
                 {
                     "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "AD_BUILT_IN_CLOSE"
+                },
+                {
+                    "id": "SFD_CLOSE_ALERT_AT_DT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                }
+            ]
+        }
+    ]
+},{
+    "post": "/alerts/queues/low_individual_queue/dispositions",
+    "contentType": "application/json",
+    "body": [
+        {
+            "dispositions": [
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "AD_BUILT_IN_CLOSE"
+                },
+                {
+                    "id": "SFD_CLOSE_ALERT_AT_DT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
+                    "id": "MOVE_TO_MANGER_INDIVIDUAL_Q"
+                },
+                {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                }
+            ]
+        }
+    ]
+},{
+    "post": "/alerts/queues/low_corporate_queue/dispositions",
+    "contentType": "application/json",
+    "body": [
+        {
+            "dispositions": [
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "AD_BUILT_IN_CLOSE"
+                },
+                {
+                    "id": "SFD_CLOSE_ALERT_AT_DT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
+                    "id": "MOVE_TO_MANGER_CORPORATE_Q"
+                },
+                {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                }
+            ]
+        }
+    ]
+},{
+    "post": "/alerts/queues/high_individual_queue/dispositions",
+    "contentType": "application/json",
+    "body": [
+        {
+            "dispositions": [
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "AD_BUILT_IN_CLOSE"
+                },
+                {
+                    "id": "SFD_CLOSE_ALERT_AT_DT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
+                    "id": "MOVE_TO_MANGER_INDIVIDUAL_Q"
+                },
+                {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                }
+            ]
+        }
+    ]
+},{
+    "post": "/alerts/queues/high_corporate_queue/dispositions",
+    "contentType": "application/json",
+    "body": [
+        {
+            "dispositions": [
+                {
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "AD_BUILT_IN_CLOSE"
+                },
+                {
+                    "id": "SFD_CLOSE_ALERT_AT_DT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
+                    "id": "MOVE_TO_MANGER_CORPORATE_Q"
+                },
+                {
+                    "id": "AD_BUILT_IN_REACTIVATE"
                 }
             ]
         }

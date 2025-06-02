@@ -4,6 +4,38 @@
     "body": [
         [
             {
+                "alertTypeID": "sfd_customer",
+                "enrichmentFieldID": "sfd_account_number_enrch",
+                "enrichmentVariablePathName": "message.debitaccount.number",
+                "id": "account_number_em",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "alertTypeID": "sfd_customer",
+                "enrichmentFieldID": "sfd_customer_identifier_enrch",
+                "enrichmentVariablePathName": "message.customer.identifier",
+                "id": "customer_identifier_em",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "alertTypeID": "sfd_customer",
+                "enrichmentFieldID": "fired_flg_enrch",
+                "enrichmentVariablePathName": "message.sas.rulefired.firedFlg",
+                "id": "fired_flg_em",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "alertTypeID": "sfd_customer",
+                "enrichmentFieldID": "rule_ref_id_enrch",
+                "enrichmentVariablePathName": "message.sas.rulefired.rulefired",
+                "id": "rule_ref_id_em",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
                 "alertTypeID": "sfd_creditacc",
                 "enrichmentFieldID": "sfd_ca_number_enrch",
                 "enrichmentVariablePathName": "message.creditaccount.number",
