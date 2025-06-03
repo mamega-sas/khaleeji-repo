@@ -4,6 +4,24 @@
     "body": [
         [
             {
+                "builtInFlag": false,
+                "id": "SFD_AUTO_CLOSE_ALERT_1_HOUR",
+                "localizedName": "Auto close alert after 1 hour",
+                "members": [
+                    {
+                        "argumentsJSON": "[{\"name\": \"autoCloseDuration\", \"value\": 1}]",
+                        "id": "auto-close-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Auto close alert after 1 hour",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
                 "builtInFlag": true,
                 "description": "Built-in close",
                 "id": "AD_BUILT_IN_CLOSE",
@@ -56,7 +74,7 @@
             {
                 "builtInFlag": false,
                 "id": "SFD_CLOSED_INDETERMINATE",
-                "localizedName": "Closed Indeterminate",
+                "localizedName": "Close Indeterminate",
                 "members": [
                     {
                         "argumentsJSON": "[{\"name\": \"productivityRating\", \"value\": \"INDETERMINATE\"}]",
@@ -66,16 +84,24 @@
                         "name": "Set Productivity",
                         "order": 1,
                         "validationJSON": ""
+                    },
+                    {
+                        "argumentsJSON": "[{\"name\": \"autoCloseDuration\", \"value\": 720}]",
+                        "id": "auto-close-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
                     }
                 ],
-                "name": "Closed Indeterminate",
+                "name": "Close Indeterminate",
                 "optLockVersion": -1,
                 "version": 1
             },
             {
                 "builtInFlag": false,
                 "id": "SFD_CLOSED_PRODUCTIVE",
-                "localizedName": "Closed Productive",
+                "localizedName": "Close Productive",
                 "members": [
                     {
                         "argumentsJSON": "[{\"name\": \"productivityRating\", \"value\": \"PRODUCTIVE\"}]",
@@ -87,22 +113,22 @@
                         "validationJSON": ""
                     },
                     {
-                        "argumentsJSON": "[{\"name\": \"suspendDuration\", \"value\": 1}]",
-                        "id": "suspend-alert",
+                        "argumentsJSON": "[{\"name\": \"autoCloseDuration\", \"value\": 720}]",
+                        "id": "auto-close-alert",
                         "localizationKey": "",
                         "name": "",
                         "order": 2,
                         "validationJSON": ""
                     }
                 ],
-                "name": "Closed Productive",
+                "name": "Close Productive",
                 "optLockVersion": -1,
                 "version": 1
             },
             {
                 "builtInFlag": false,
                 "id": "SFD_CLOSED_UNPRODUCTIVE",
-                "localizedName": "Closed Unproductive",
+                "localizedName": "Close Unproductive",
                 "members": [
                     {
                         "argumentsJSON": "[{\"name\": \"productivityRating\", \"value\": \"UNPRODUCTIVE\"}]",
@@ -113,15 +139,33 @@
                         "validationJSON": ""
                     },
                     {
-                        "argumentsJSON": "[{\"name\": \"suspendDuration\", \"value\": 1}]",
-                        "id": "suspend-alert",
+                        "argumentsJSON": "[{\"name\": \"autoCloseDuration\", \"value\": 720}]",
+                        "id": "auto-close-alert",
                         "localizationKey": "",
                         "name": "",
                         "order": 2,
                         "validationJSON": ""
                     }
                 ],
-                "name": "Closed Unproductive",
+                "name": "Close Unproductive",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_INTERACTIVE_CLOSE",
+                "localizedName": "Close alert at specified date and time",
+                "members": [
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-auto-close-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Close alert at specified date and time",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -202,24 +246,6 @@
                     }
                 ],
                 "name": "Send outbound contact",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "builtInFlag": false,
-                "id": "AUTO_CLOSE_ALERT",
-                "localizedName": "Skip",
-                "members": [
-                    {
-                        "argumentsJSON": "[{\"name\": \"suspendDuration\", \"value\": 1}]",
-                        "id": "suspend-alert",
-                        "localizationKey": "",
-                        "name": "",
-                        "order": 1,
-                        "validationJSON": ""
-                    }
-                ],
-                "name": "Skip",
                 "optLockVersion": -1,
                 "version": 1
             },

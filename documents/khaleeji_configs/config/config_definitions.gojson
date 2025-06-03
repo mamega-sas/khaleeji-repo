@@ -1,0 +1,3 @@
+[
+{{template "AllJSONResources" "alerts-config/enrichment-mappings"}}
+]

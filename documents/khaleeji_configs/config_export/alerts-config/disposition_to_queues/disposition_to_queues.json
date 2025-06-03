@@ -5,9 +5,6 @@
         {
             "dispositions": [
                 {
-                    "id": "SFD_SKIP_ALERT_DISPOSITION"
-                },
-                {
                     "id": "AD_BUILT_IN_CLOSE"
                 },
                 {
@@ -17,16 +14,22 @@
                     "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
                 },
                 {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
                     "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
                 },
                 {
                     "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
                 },
                 {
-                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                    "id": "SFD_INTERACTIVE_SUSPEND_DISPOSITION"
                 },
                 {
-                    "id": "AD_BUILT_IN_REACTIVATE"
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
                 }
             ]
         }
@@ -38,9 +41,6 @@
         {
             "dispositions": [
                 {
-                    "id": "SFD_SKIP_ALERT_DISPOSITION"
-                },
-                {
                     "id": "AD_BUILT_IN_CLOSE"
                 },
                 {
@@ -50,16 +50,22 @@
                     "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
                 },
                 {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
                     "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
                 },
                 {
                     "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
                 },
                 {
-                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                    "id": "SFD_INTERACTIVE_SUSPEND_DISPOSITION"
                 },
                 {
-                    "id": "AD_BUILT_IN_REACTIVATE"
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
                 }
             ]
         }
@@ -71,9 +77,6 @@
         {
             "dispositions": [
                 {
-                    "id": "SFD_SKIP_ALERT_DISPOSITION"
-                },
-                {
                     "id": "AD_BUILT_IN_CLOSE"
                 },
                 {
@@ -83,19 +86,25 @@
                     "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
                 },
                 {
+                    "id": "MOVE_TO_MANGER_INDIVIDUAL_Q"
+                },
+                {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
                     "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
                 },
                 {
                     "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
                 },
                 {
-                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                    "id": "SFD_INTERACTIVE_SUSPEND_DISPOSITION"
                 },
                 {
-                    "id": "MOVE_TO_MANGER_INDIVIDUAL_Q"
-                },
-                {
-                    "id": "AD_BUILT_IN_REACTIVATE"
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
                 }
             ]
         }
@@ -107,9 +116,6 @@
         {
             "dispositions": [
                 {
-                    "id": "SFD_SKIP_ALERT_DISPOSITION"
-                },
-                {
                     "id": "AD_BUILT_IN_CLOSE"
                 },
                 {
@@ -119,19 +125,25 @@
                     "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
                 },
                 {
+                    "id": "MOVE_TO_MANGER_CORPORATE_Q"
+                },
+                {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
                     "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
                 },
                 {
                     "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
                 },
                 {
-                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                    "id": "SFD_INTERACTIVE_SUSPEND_DISPOSITION"
                 },
                 {
-                    "id": "MOVE_TO_MANGER_CORPORATE_Q"
-                },
-                {
-                    "id": "AD_BUILT_IN_REACTIVATE"
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
                 }
             ]
         }
@@ -143,9 +155,6 @@
         {
             "dispositions": [
                 {
-                    "id": "SFD_SKIP_ALERT_DISPOSITION"
-                },
-                {
                     "id": "AD_BUILT_IN_CLOSE"
                 },
                 {
@@ -155,19 +164,25 @@
                     "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
                 },
                 {
+                    "id": "MOVE_TO_MANGER_INDIVIDUAL_Q"
+                },
+                {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
                     "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
                 },
                 {
                     "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
                 },
                 {
-                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                    "id": "SFD_INTERACTIVE_SUSPEND_DISPOSITION"
                 },
                 {
-                    "id": "MOVE_TO_MANGER_INDIVIDUAL_Q"
-                },
-                {
-                    "id": "AD_BUILT_IN_REACTIVATE"
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
                 }
             ]
         }
@@ -179,9 +194,6 @@
         {
             "dispositions": [
                 {
-                    "id": "SFD_SKIP_ALERT_DISPOSITION"
-                },
-                {
                     "id": "AD_BUILT_IN_CLOSE"
                 },
                 {
@@ -191,19 +203,25 @@
                     "id": "SFD_AUTO_CLOSE_ALERT_DISPOSITION"
                 },
                 {
+                    "id": "MOVE_TO_MANGER_CORPORATE_Q"
+                },
+                {
+                    "id": "AD_BUILT_IN_REACTIVATE"
+                },
+                {
+                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                },
+                {
                     "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION"
                 },
                 {
                     "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION"
                 },
                 {
-                    "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION"
+                    "id": "SFD_INTERACTIVE_SUSPEND_DISPOSITION"
                 },
                 {
-                    "id": "MOVE_TO_MANGER_CORPORATE_Q"
-                },
-                {
-                    "id": "AD_BUILT_IN_REACTIVATE"
+                    "id": "SFD_SKIP_ALERT_DISPOSITION"
                 }
             ]
         }

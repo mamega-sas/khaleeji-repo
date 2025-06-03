@@ -17,7 +17,7 @@
                 "version": 1
             },
             {
-                "actionGroupID": "SFD_INTERACTIVE_SUSPEND",
+                "actionGroupID": "SFD_INTERACTIVE_CLOSE",
                 "builtInFlag": false,
                 "bulkApplyFlag": false,
                 "description": "Close alert at specified date and time",
@@ -30,7 +30,7 @@
                 "version": 1
             },
             {
-                "actionGroupID": "AUTO_CLOSE_ALERT",
+                "actionGroupID": "SFD_AUTO_CLOSE_ALERT_1_HOUR",
                 "builtInFlag": false,
                 "bulkApplyFlag": false,
                 "description": "Close an alert after 1 hour",
@@ -43,15 +43,28 @@
                 "version": 1
             },
             {
+                "actionGroupID": "SFD_CLOSED_INDETERMINATE",
+                "builtInFlag": false,
+                "bulkApplyFlag": false,
+                "description": "sets the productivity rating as Indeterminate and alert status as AUTO-CLOSE for 30 days",
+                "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION",
+                "includeTxMarkingsFlag": false,
+                "localizedDescription": "sets the productivity rating as Indeterminate and alert status as AUTO-CLOSE for 30 days",
+                "localizedName": "Close as indeterminate",
+                "name": "Close as indeterminate",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
                 "actionGroupID": "SFD_CLOSED_PRODUCTIVE",
                 "builtInFlag": false,
                 "bulkApplyFlag": false,
-                "description": "Closed as productive",
+                "description": "sets the productivity rating as productive and the alert status as AUTO-CLOSE for 30 days",
                 "id": "SFD_CLOSED_PRODUCTIVE_DISPOSITION",
                 "includeTxMarkingsFlag": false,
-                "localizedDescription": "Closed as productive",
-                "localizedName": "Closed as productive",
-                "name": "Closed as productive",
+                "localizedDescription": "sets the productivity rating as productive and the alert status as AUTO-CLOSE for 30 days",
+                "localizedName": "Close as productive",
+                "name": "Close as productive",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -59,25 +72,12 @@
                 "actionGroupID": "SFD_CLOSED_UNPRODUCTIVE",
                 "builtInFlag": false,
                 "bulkApplyFlag": false,
-                "description": "Closed as unproductive",
+                "description": "sets the productivity rating as unproductive and alert status as AUTO-CLOSE for 30 days",
                 "id": "SFD_CLOSED_UNPRODUCTIVE_DISPOSITION",
                 "includeTxMarkingsFlag": false,
-                "localizedDescription": "Closed as unproductive",
-                "localizedName": "Closed as unproductive",
-                "name": "Closed as unproductive",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "actionGroupID": "SFD_CLOSED_INDETERMINATE",
-                "builtInFlag": false,
-                "bulkApplyFlag": false,
-                "description": "Close as Indeterminate",
-                "id": "SFD_CLOSED_INDETERMINATE_DISPOSITION",
-                "includeTxMarkingsFlag": false,
-                "localizedDescription": "Close as Indeterminate",
-                "localizedName": "Closed indeterminate",
-                "name": "Closed indeterminate",
+                "localizedDescription": "sets the productivity rating as unproductive and alert status as AUTO-CLOSE for 30 days",
+                "localizedName": "Close as unproductive",
+                "name": "Close as unproductive",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -119,45 +119,6 @@
                 "version": 1
             },
             {
-                "actionGroupID": "SFD_INTERACTIVE_SUSPEND",
-                "builtInFlag": false,
-                "bulkApplyFlag": false,
-                "description": "Set a date and time in a certain queue to resurface the alert.",
-                "id": "SFD_RESCHEDULE_DISPOSITION",
-                "includeTxMarkingsFlag": false,
-                "localizedDescription": "Set a date and time in a certain queue to resurface the alert.",
-                "localizedName": "Reschedule",
-                "name": "Reschedule",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "actionGroupID": "SFD_INTERACTIVE_SUSPEND",
-                "builtInFlag": false,
-                "bulkApplyFlag": false,
-                "description": "Close alert at specified date and time.",
-                "id": "SFD_SAVE_PENDING_DISPOSITION",
-                "includeTxMarkingsFlag": false,
-                "localizedDescription": "Close alert at specified date and time.",
-                "localizedName": "Save pending",
-                "name": "Save pending",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "actionGroupID": "SFD_INTERACTIVE_SUSPEND",
-                "builtInFlag": false,
-                "bulkApplyFlag": false,
-                "description": "interactive suspend and multi-kafka actions.",
-                "id": "SFD_SEND_OUTBOUND_DISPOSITION",
-                "includeTxMarkingsFlag": false,
-                "localizedDescription": "interactive suspend and multi-kafka actions.",
-                "localizedName": "Send outbound contact",
-                "name": "Send outbound contact",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
                 "actionGroupID": "SFD_SKIP_ALERT",
                 "builtInFlag": false,
                 "bulkApplyFlag": false,
@@ -167,6 +128,19 @@
                 "localizedDescription": "skip to the next alert. the original alert stays in the queue and its status becomes Suspended for one hour.",
                 "localizedName": "Skip",
                 "name": "Skip",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "actionGroupID": "SFD_INTERACTIVE_SUSPEND",
+                "builtInFlag": false,
+                "bulkApplyFlag": false,
+                "description": "Sets status as SUSPEND until a specified date and time",
+                "id": "SFD_INTERACTIVE_SUSPEND_DISPOSITION",
+                "includeTxMarkingsFlag": false,
+                "localizedDescription": "Sets status as SUSPEND until a specified date and time",
+                "localizedName": "Suspend until specified date and time",
+                "name": "Suspend until specified date and time",
                 "optLockVersion": -1,
                 "version": 1
             }
