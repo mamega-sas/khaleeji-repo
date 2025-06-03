@@ -18,14 +18,6 @@
                 "name": "Online Fraud Domain",
                 "optLockVersion": -1,
                 "version": 1
-            },
-            {
-                "defaultFlag": false,
-                "id": "sfd_payment_fraud",
-                "localizedName": "Payment Fraud",
-                "name": "Payment Fraud",
-                "optLockVersion": -1,
-                "version": 1
             }
         ]
     ]
