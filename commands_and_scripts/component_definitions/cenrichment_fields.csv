@@ -1,0 +1,22 @@
+ID,Name
+sfd_cst_addrCntryCode_enrch,Address Country Code
+sfd_sol_authType_enrch,Authentication Type
+sfd_cf_cardPresInd_enrch,Card was Present Information
+sfd_sol_chnType_enrch,Channel Type
+sfd_cst_surname_enrch,Customer
+sfd_cus_type_enrch,Customer Type
+sfd_cst_type_enrch,Customer Type
+sfd_sol_customerType_enrch,Customer Type
+sfd_dec_outcome_enrch,Decision Outcome
+sfd_dec_outcome_desc_enrch,Decision Outcome Description
+sfd_customer_identifier_enrch,Customer Identifier
+fired_flg_enrch,Rule Fired
+rule_ref_id_enrch,Rule Ref ID
+sfd_account_number_enrch,Account Number
+sfd_sol_activityType_enrch,Activity Type
+sfd_sol_origType_enrch,Origination Type
+sfd_py_creditCurrCode_enrch,Payment Credit Currency
+sfd_py_debitCurrCode_enrch,Payment Debit Currency Code
+sfd_py_usdAmt_enrch,Payment USD amount
+sfd_cf_usdAmt_enrch,Transaction Amount
+sfd_cf_currCode_enrch,Transaction Currency Code

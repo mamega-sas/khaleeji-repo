@@ -1,0 +1,12 @@
+ID,Name
+sfd_contact_pane,N/A
+sfd_txViewer_card_paymentFraud_pane,N/A
+sfd_customer_pane,N/A
+sfd_txViewer_creditcard_pane,N/A
+sfd_txViewer_debitcard_pane,N/A
+ui_customer_txs_with_select_pane,N/A
+transaction_rules_fired,N/A
+dc_sfd_rulesFired_pane,N/A
+sfd_customer_x_online_fraud_ind,N/A
+sfd_account_pane,N/A
+cust_sfd_rulesFired_pane,N/A
