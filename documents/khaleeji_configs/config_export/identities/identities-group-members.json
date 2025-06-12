@@ -25,6 +25,24 @@
         },
         {
             "id": "Fraud_Decisioning_Users_Triage_Payment_Fraud"
+        },
+        {
+            "id": "high_corporate_group"
+        },
+        {
+            "id": "high_individual_group"
+        },
+        {
+            "id": "low_corporate_group"
+        },
+        {
+            "id": "low_individual_group"
+        },
+        {
+            "id": "manager_corporate_group"
+        },
+        {
+            "id": "manager_individual_group"
         }
     ]
 }

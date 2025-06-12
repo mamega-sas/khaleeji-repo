@@ -8,58 +8,250 @@
                     "childComponents": [
                         {
                             "config": {
-                                "fields": [
+                                "columns": [
                                     {
-                                        "defaultLabel": "Account",
-                                        "field": "sfd_account_data.account_type",
-                                        "type": "string"
+                                        "field": "transaction_data.referenceIdentifier",
+                                        "filter": true,
+                                        "headerName": "Rule Ref ID",
+                                        "hide": false,
+                                        "sortable": true
                                     },
                                     {
-                                        "defaultLabel": "Number",
+                                        "field": "transaction_data.ruleIdentifier",
+                                        "filter": true,
+                                        "headerName": "Rule ID",
+                                        "hide": true,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.name",
+                                        "filter": true,
+                                        "headerName": "Rule Name",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.description",
+                                        "filter": true,
+                                        "headerName": "Rule Description",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.alertFlg",
+                                        "filter": true,
+                                        "headerName": "Rule Alerted?",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.firedFlg",
+                                        "filter": true,
+                                        "headerName": "Rule Fired?",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.outcomeEntity",
+                                        "filter": true,
+                                        "headerName": "Outcome Entity",
+                                        "hide": true,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.outcomeEntityType",
+                                        "filter": true,
+                                        "headerName": "Outcome Entity Type",
+                                        "hide": true,
+                                        "sortable": true
+                                    }
+                                ],
+                                "numCols": 5,
+                                "useServerSideDatasource": false
+                            },
+                            "datasources": [
+                                {
+                                    "externalUri": "/alert/rulesFired/${@component.sfd_txViewer_card_paymentFraud.singleSelection.transactionID}?transactionTypeID=${@component.sfd_txViewer_card_paymentFraud.singleSelection.transactionTypeID}",
+                                    "id": "transaction_data",
+                                    "path": "rulefired"
+                                }
+                            ],
+                            "id": "sfd_rulesFired_table",
+                            "type": "Table"
+                        }
+                    ],
+                    "config": {
+                        "border": false,
+                        "collapsible": false,
+                        "defaultLabel": "Decisioning Rules"
+                    },
+                    "type": "Pane"
+                },
+                "id": "cust_sfd_rulesFired_pane",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "definitionData": {
+                    "childComponents": [
+                        {
+                            "config": {
+                                "columns": [
+                                    {
+                                        "field": "transaction_data.firedFlg",
+                                        "filter": true,
+                                        "headerName": "Rule Fired?",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.alertFlg",
+                                        "filter": true,
+                                        "headerName": "Rule Alerted?",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.referenceIdentifier",
+                                        "filter": true,
+                                        "headerName": "Rule Ref ID",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.ruleIdentifier",
+                                        "filter": true,
+                                        "headerName": "Rule ID",
+                                        "hide": true,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.name",
+                                        "filter": true,
+                                        "headerName": "Rule Name",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.description",
+                                        "filter": true,
+                                        "headerName": "Rule Description",
+                                        "hide": false,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.outcomeEntity",
+                                        "filter": true,
+                                        "headerName": "Outcome Entity",
+                                        "hide": true,
+                                        "sortable": true
+                                    },
+                                    {
+                                        "field": "transaction_data.outcomeEntityType",
+                                        "filter": true,
+                                        "headerName": "Outcome Entity Type",
+                                        "hide": true,
+                                        "sortable": true
+                                    }
+                                ],
+                                "defaultMsgSingleSelection": "Make a single selection from the table above.",
+                                "numCols": 5,
+                                "useServerSideDatasource": false
+                            },
+                            "datasources": [
+                                {
+                                    "externalUri": "/alert/rulesFired/${@component.sfd_txViewer_debitcard.singleSelection.transactionID}?transactionID=${@component.sfd_txViewer_debitcard.singleSelection.transactionID}",
+                                    "id": "transaction_data",
+                                    "path": "rulefired"
+                                }
+                            ],
+                            "id": "sfd_rulesFired_table",
+                            "type": "Table"
+                        }
+                    ],
+                    "config": {
+                        "border": false,
+                        "collapsible": false,
+                        "defaultLabel": "Decisioning Rules"
+                    },
+                    "type": "Pane"
+                },
+                "id": "dc_sfd_rulesFired_pane",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "definitionData": {
+                    "childComponents": [
+                        {
+                            "config": {
+                                "fields": [
+                                    {
+                                        "defaultLabel": "Account Number",
                                         "field": "sfd_account_data.account_number",
                                         "type": "string"
                                     },
                                     {
-                                        "defaultLabel": "Activated",
-                                        "field": "sfd_account_data.activated_date",
+                                        "defaultLabel": "Account Name",
+                                        "field": "sfd_account_data.account_name",
                                         "type": "string"
                                     },
                                     {
-                                        "defaultLabel": "Opened",
-                                        "field": "sfd_account_data.opened_date",
+                                        "defaultLabel": "Account Type",
+                                        "field": "sfd_account_data.account_type_desc",
                                         "type": "string"
                                     },
                                     {
-                                        "defaultLabel": "Joint Accounts",
-                                        "field": "sfd_account_data.joint_acct_num",
+                                        "defaultLabel": "Registration Type",
+                                        "field": "sfd_account_data.account_registration_type_desc",
                                         "type": "string"
                                     },
                                     {
-                                        "defaultLabel": "Merchant Name",
-                                        "field": "sfd_account_data.merchant_name",
+                                        "defaultLabel": "Status",
+                                        "field": "sfd_account_data.account_status_desc",
                                         "type": "string"
                                     },
                                     {
-                                        "defaultLabel": "Unique Identifier",
-                                        "field": "sfd_account_data.unique_identifier",
+                                        "defaultLabel": "Currency Code",
+                                        "field": "sfd_account_data.account_currency_code",
                                         "type": "string"
                                     },
                                     {
-                                        "defaultLabel": "Payment Channel",
-                                        "field": "sfd_account_data.payment_channel",
+                                        "defaultLabel": "Open Date",
+                                        "field": "sfd_account_data.account_open_date",
                                         "type": "string"
                                     },
                                     {
-                                        "defaultLabel": "Tap Card or Inserted SIM",
-                                        "field": "sfd_account_data.tap_or_inserted_sim",
+                                        "defaultLabel": "Line of Business",
+                                        "field": "sfd_account_data.line_of_business_name",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Product Line Name",
+                                        "field": "sfd_account_data.product_line_name",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Tax ID Type",
+                                        "field": "sfd_account_data.account_tax_id_type_code",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Tax State Code",
+                                        "field": "sfd_account_data.account_tax_state_code",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Tax ID",
+                                        "field": "sfd_account_data.account_tax_id",
                                         "type": "string"
                                     }
                                 ],
-                                "numCols": 2
+                                "numCols": 3
                             },
                             "datasources": [
                                 {
-                                    "externalUri": "/account/data/${contactEntityID}",
+                                    "externalUri": "/account/data/${@component.sfd_txViewer_card_paymentFraud.singleSelection.transactionID}",
                                     "id": "sfd_account_data"
                                 }
                             ],
@@ -163,17 +355,107 @@
                             "config": {
                                 "fields": [
                                     {
-                                        "defaultLabel": "Joint Account Holder Names",
-                                        "field": "sfd_customer_data.joint_holder_names",
+                                        "defaultLabel": "Customer Number",
+                                        "field": "sfd_customer_data.party_number",
                                         "type": "string"
                                     },
                                     {
-                                        "defaultLabel": "Primary Account Holder Bank Name",
-                                        "field": "sfd_customer_data.primary_holder_bank_name",
+                                        "defaultLabel": "Customer Type",
+                                        "field": "sfd_customer_data.party_type_desc",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "First Name",
+                                        "field": "sfd_customer_data.party_first_name",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Last Name",
+                                        "field": "sfd_customer_data.party_last_name",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Full Name",
+                                        "field": "sfd_customer_data.party_name",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Email Address",
+                                        "field": "sfd_customer_data.email_address",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Citizenship",
+                                        "field": "sfd_customer_data.citizenship_country_name",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Residence",
+                                        "field": "sfd_customer_data.residence_country_name",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Status",
+                                        "field": "sfd_customer_data.party_status_desc",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Identification Type",
+                                        "field": "sfd_customer_data.party_identification_type_desc",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Birthdate",
+                                        "field": "sfd_customer_data.party_date_of_birth",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Occupation",
+                                        "field": "sfd_customer_data.occupation_desc",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Industry",
+                                        "field": "sfd_customer_data.industry_desc",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Marital Status",
+                                        "field": "sfd_customer_data.marital_status_desc",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Identification Number",
+                                        "field": "sfd_customer_data.party_identification_id",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Gender",
+                                        "field": "sfd_customer_data.party_gender",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Customer Since",
+                                        "field": "sfd_customer_data.customer_since_date",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Khaleeji Employee",
+                                        "field": "sfd_customer_data.employee_number",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Employer Name",
+                                        "field": "sfd_customer_data.employer_name",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "defaultLabel": "Employer Phone",
+                                        "field": "sfd_customer_data.employer_phone_number",
                                         "type": "string"
                                     }
                                 ],
-                                "numCols": 2
+                                "numCols": 5
                             },
                             "datasources": [
                                 {
@@ -192,6 +474,70 @@
                     "type": "Pane"
                 },
                 "id": "sfd_customer_pane",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "definitionData": {
+                    "childComponents": [
+                        {
+                            "childComponents": [
+                                {
+                                    "childComponents": [
+                                        {
+                                            "childComponents": [
+                                                {
+                                                    "configID": "sfd_customer_pane",
+                                                    "defaultSize": "33%"
+                                                },
+                                                {
+                                                    "configID": "sfd_account_pane",
+                                                    "defaultSize": "33%"
+                                                }
+                                            ],
+                                            "config": {
+                                                "border": false,
+                                                "flow": "horizontal",
+                                                "padding": true
+                                            },
+                                            "coordinates": [
+                                                0,
+                                                0
+                                            ],
+                                            "id": "alertdetails",
+                                            "type": "Pane"
+                                        },
+                                        {
+                                            "configID": "ui_customer_txs_with_select_pane",
+                                            "coordinates": [
+                                                1,
+                                                0
+                                            ]
+                                        }
+                                    ],
+                                    "config": {
+                                        "splitbarType": "horizontalCollapseUp"
+                                    },
+                                    "id": "top_of_tab_1",
+                                    "type": "Splitter"
+                                }
+                            ],
+                            "config": {
+                                "defaultLabel": "Alert Information",
+                                "showToolbar": false
+                            },
+                            "id": "cust_alert_data_tab",
+                            "type": "Tab"
+                        }
+                    ],
+                    "config": {
+                        "showToolbar": true
+                    },
+                    "id": "tabPage",
+                    "type": "TabBar",
+                    "version": 2
+                },
+                "id": "sfd_customer_x_online_fraud_ind",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -234,6 +580,74 @@
                     "type": "Pane"
                 },
                 "id": "sfd_txViewer_debitcard_pane",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "definitionData": {
+                    "config": {
+                        "columns": [
+                            {
+                                "field": "transaction_data.referenceIdentifier",
+                                "headerName": "Rule Fired"
+                            },
+                            {
+                                "field": "transaction_data.outcome",
+                                "headerName": "Outcome"
+                            },
+                            {
+                                "field": "transaction_data.alertFlg",
+                                "headerName": "Alert Flag"
+                            }
+                        ],
+                        "defaultMsgSingleSelection": "Select a transaction to see the rules fired."
+                    },
+                    "datasources": [
+                        {
+                            "id": "transaction_data",
+                            "path": "transactionMessage.message.sas.rulefired",
+                            "request": {
+                                "headers": {
+                                    "Accept": "application/vnd.sas.triage.transaction+json",
+                                    "Content-Type": "application/vnd.sas.triage.transaction.details.query+json"
+                                },
+                                "uri": "/alertsTransaction/transactions/${@component.transaction_viewer.singleSelection.transactionID}?transactionTypeID=${@component.transaction_viewer.singleSelection.transactionTypeID"
+                            },
+                            "verb": "GET"
+                        }
+                    ],
+                    "type": "Table"
+                },
+                "id": "transaction_rules_fired",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "definitionData": {
+                    "childComponents": [
+                        {
+                            "configID": "sfd_txViewer_card_paymentFraud",
+                            "defaultSize": "60%",
+                            "type": "Transactions"
+                        },
+                        {
+                            "childComponents": [
+                                {
+                                    "configID": "cust_sfd_rulesFired_pane"
+                                }
+                            ],
+                            "defaultSize": "40%",
+                            "id": "selected_transaction_details_pane1",
+                            "type": "Pane"
+                        }
+                    ],
+                    "config": {
+                        "border": false,
+                        "collapsible": false
+                    },
+                    "type": "Pane"
+                },
+                "id": "ui_customer_txs_with_select_pane",
                 "optLockVersion": -1,
                 "version": 1
             }

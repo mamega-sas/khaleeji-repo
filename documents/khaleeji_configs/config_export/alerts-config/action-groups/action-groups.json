@@ -4,6 +4,24 @@
     "body": [
         [
             {
+                "builtInFlag": false,
+                "id": "SFD_AUTO_CLOSE_ALERT_1_HOUR",
+                "localizedName": "Auto close alert after 1 hour",
+                "members": [
+                    {
+                        "argumentsJSON": "[{\"name\": \"autoCloseDuration\", \"value\": 1}]",
+                        "id": "auto-close-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Auto close alert after 1 hour",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
                 "builtInFlag": true,
                 "description": "Built-in close",
                 "id": "AD_BUILT_IN_CLOSE",
@@ -14,7 +32,8 @@
                         "argumentsJSON": "",
                         "id": "close-alert",
                         "localizationKey": "",
-                        "name": "",
+                        "localizedName": "Close Alert",
+                        "name": "Close Alert",
                         "order": 1,
                         "validationJSON": ""
                     },
@@ -42,7 +61,8 @@
                         "argumentsJSON": "",
                         "id": "reactivate-alert",
                         "localizationKey": "",
-                        "name": "",
+                        "localizedName": "Reactivate Alert",
+                        "name": "Reactivate Alert",
                         "order": 1,
                         "validationJSON": ""
                     }
@@ -54,59 +74,61 @@
             {
                 "builtInFlag": false,
                 "id": "SFD_CLOSED_INDETERMINATE",
-                "localizedName": "Closed Indeterminate",
+                "localizedName": "Close Indeterminate",
                 "members": [
                     {
                         "argumentsJSON": "[{\"name\": \"productivityRating\", \"value\": \"INDETERMINATE\"}]",
                         "id": "set-productivity-rating",
                         "localizationKey": "",
-                        "name": "",
+                        "localizedName": "Set Productivity",
+                        "name": "Set Productivity",
                         "order": 1,
                         "validationJSON": ""
                     },
                     {
-                        "argumentsJSON": "",
-                        "id": "interactive-suspend-alert",
+                        "argumentsJSON": "[{\"name\": \"autoCloseDuration\", \"value\": 720}]",
+                        "id": "auto-close-alert",
                         "localizationKey": "",
                         "name": "",
                         "order": 2,
                         "validationJSON": ""
                     }
                 ],
-                "name": "Closed Indeterminate",
+                "name": "Close Indeterminate",
                 "optLockVersion": -1,
                 "version": 1
             },
             {
                 "builtInFlag": false,
                 "id": "SFD_CLOSED_PRODUCTIVE",
-                "localizedName": "Closed Productive",
+                "localizedName": "Close Productive",
                 "members": [
                     {
                         "argumentsJSON": "[{\"name\": \"productivityRating\", \"value\": \"PRODUCTIVE\"}]",
                         "id": "set-productivity-rating",
                         "localizationKey": "",
-                        "name": "",
+                        "localizedName": "Set Productivity",
+                        "name": "Set Productivity",
                         "order": 1,
                         "validationJSON": ""
                     },
                     {
-                        "argumentsJSON": "",
-                        "id": "interactive-suspend-alert",
+                        "argumentsJSON": "[{\"name\": \"autoCloseDuration\", \"value\": 720}]",
+                        "id": "auto-close-alert",
                         "localizationKey": "",
                         "name": "",
                         "order": 2,
                         "validationJSON": ""
                     }
                 ],
-                "name": "Closed Productive",
+                "name": "Close Productive",
                 "optLockVersion": -1,
                 "version": 1
             },
             {
                 "builtInFlag": false,
                 "id": "SFD_CLOSED_UNPRODUCTIVE",
-                "localizedName": "Closed Unproductive",
+                "localizedName": "Close Unproductive",
                 "members": [
                     {
                         "argumentsJSON": "[{\"name\": \"productivityRating\", \"value\": \"UNPRODUCTIVE\"}]",
@@ -117,22 +139,40 @@
                         "validationJSON": ""
                     },
                     {
-                        "argumentsJSON": "",
-                        "id": "interactive-suspend-alert",
+                        "argumentsJSON": "[{\"name\": \"autoCloseDuration\", \"value\": 720}]",
+                        "id": "auto-close-alert",
                         "localizationKey": "",
                         "name": "",
                         "order": 2,
                         "validationJSON": ""
                     }
                 ],
-                "name": "Closed Unproductive",
+                "name": "Close Unproductive",
                 "optLockVersion": -1,
                 "version": 1
             },
             {
                 "builtInFlag": false,
-                "id": "SFD_INTERACTIVE_MOVE_TO_Q_CREDIT_CNP",
-                "localizedName": "Move to Queue - CNP",
+                "id": "SFD_INTERACTIVE_CLOSE",
+                "localizedName": "Close alert at specified date and time",
+                "members": [
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-auto-close-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "Close alert at specified date and time",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "MOVE_TO_MANAGER_INIVIDUAL_AG",
+                "localizedName": "Move to Queue - Magaer Individual",
                 "members": [
                     {
                         "argumentsJSON": "",
@@ -140,7 +180,7 @@
                         "localizationKey": "",
                         "name": "",
                         "order": 1,
-                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"sfd_credit_card_not_present\"}]"
+                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"manager_individual_queue\"}]"
                     },
                     {
                         "argumentsJSON": "",
@@ -151,14 +191,14 @@
                         "validationJSON": ""
                     }
                 ],
-                "name": "Move to Queue - CNP",
+                "name": "Move to Queue - Magaer Individual",
                 "optLockVersion": -1,
                 "version": 1
             },
             {
                 "builtInFlag": false,
-                "id": "SFD_INTERACTIVE_MOVE_TO_Q_CREDIT_CP",
-                "localizedName": "Move to Queue - CP",
+                "id": "MOVE_TO_MANAGER_CORPORATE_AG",
+                "localizedName": "Move to Queue - Manager Corporate",
                 "members": [
                     {
                         "argumentsJSON": "",
@@ -166,70 +206,10 @@
                         "localizationKey": "",
                         "name": "",
                         "order": 1,
-                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"sfd_credit_card_present\"}]"
-                    },
-                    {
-                        "argumentsJSON": "",
-                        "id": "interactive-set-reason-code",
-                        "localizationKey": "",
-                        "name": "",
-                        "order": 2,
-                        "validationJSON": ""
+                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"manager_corporate_queue\"}]"
                     }
                 ],
-                "name": "Move to Queue - CP",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "builtInFlag": false,
-                "id": "SFD_INTERACTIVE_MOVE_TO_Q_DEBIT_CNP",
-                "localizedName": "Move to Queue - Debit Card",
-                "members": [
-                    {
-                        "argumentsJSON": "",
-                        "id": "interactive-move-to-queue",
-                        "localizationKey": "",
-                        "name": "",
-                        "order": 1,
-                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"sfd_debit_card_not_present\"}]"
-                    },
-                    {
-                        "argumentsJSON": "",
-                        "id": "interactive-set-reason-code",
-                        "localizationKey": "",
-                        "name": "",
-                        "order": 2,
-                        "validationJSON": ""
-                    }
-                ],
-                "name": "Move to Queue - Debit Card",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "builtInFlag": false,
-                "id": "SFD_INTERACTIVE_MOVE_TO_Q_DEBIT_CP",
-                "localizedName": "Move to Queue - Debit Card",
-                "members": [
-                    {
-                        "argumentsJSON": "",
-                        "id": "interactive-move-to-queue",
-                        "localizationKey": "",
-                        "name": "",
-                        "order": 1,
-                        "validationJSON": "[{\"name\": \"validQueueIDs\", \"value\": \"sfd_debit_card_present\"}]"
-                    },
-                    {
-                        "argumentsJSON": "",
-                        "id": "interactive-set-reason-code",
-                        "localizationKey": "",
-                        "name": "",
-                        "order": 2,
-                        "validationJSON": ""
-                    }
-                ],
-                "name": "Move to Queue - Debit Card",
+                "name": "Move to Queue - Manager Corporate",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -275,7 +255,7 @@
                 "localizedName": "Skip",
                 "members": [
                     {
-                        "argumentsJSON": "[{\"name\": \"suspendDuration\", \"value\": 120}]",
+                        "argumentsJSON": "[{\"name\": \"suspendDuration\", \"value\": 1}]",
                         "id": "suspend-alert",
                         "localizationKey": "",
                         "name": "",
@@ -284,6 +264,32 @@
                     }
                 ],
                 "name": "Skip",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "builtInFlag": false,
+                "id": "SFD_SUSPEND_ALERT_1_HOUR",
+                "localizedName": "suspend alert for 1 hour",
+                "members": [
+                    {
+                        "argumentsJSON": "[{ \"name\": \"suspendDuration\", \"value\": 1 }]",
+                        "id": "suspend-alert",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 1,
+                        "validationJSON": ""
+                    },
+                    {
+                        "argumentsJSON": "",
+                        "id": "interactive-set-reason-code",
+                        "localizationKey": "",
+                        "name": "",
+                        "order": 2,
+                        "validationJSON": ""
+                    }
+                ],
+                "name": "suspend alert for 1 hour",
                 "optLockVersion": -1,
                 "version": 1
             }

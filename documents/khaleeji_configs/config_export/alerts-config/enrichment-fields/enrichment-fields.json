@@ -5,6 +5,17 @@
         [
             {
                 "dataType": "string",
+                "displayOrder": 9,
+                "header": "Account Number",
+                "id": "sfd_account_number_enrch",
+                "localizedHeader": "Account Number",
+                "localizedName": "Account Number",
+                "name": "Account Number",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "dataType": "string",
                 "displayOrder": 2,
                 "header": "Activity Type",
                 "id": "sfd_sol_activityType_enrch",
@@ -115,12 +126,12 @@
             },
             {
                 "dataType": "string",
-                "displayOrder": 1,
-                "header": "Customer Type",
-                "id": "sfd_cst_type_enrch",
-                "localizedHeader": "Customer Type",
-                "localizedName": "Customer Type",
-                "name": "Customer Type",
+                "displayOrder": 9,
+                "header": "Customer Identifier",
+                "id": "sfd_customer_identifier_enrch",
+                "localizedHeader": "Customer Identifier",
+                "localizedName": "Customer Identifier",
+                "name": "Customer Identifier",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -129,6 +140,17 @@
                 "displayOrder": 5,
                 "header": "Customer Type",
                 "id": "sfd_sol_customerType_enrch",
+                "localizedHeader": "Customer Type",
+                "localizedName": "Customer Type",
+                "name": "Customer Type",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "dataType": "string",
+                "displayOrder": 1,
+                "header": "Customer Type",
+                "id": "sfd_cst_type_enrch",
                 "localizedHeader": "Customer Type",
                 "localizedName": "Customer Type",
                 "name": "Customer Type",
@@ -275,6 +297,28 @@
                 "localizedHeader": "Payment USD amount",
                 "localizedName": "Payment USD amount",
                 "name": "Payment USD amount",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "dataType": "boolean",
+                "displayOrder": 2,
+                "header": "Rule Fired?",
+                "id": "fired_flg_enrch",
+                "localizedHeader": "Rule Fired?",
+                "localizedName": "Rule Fired",
+                "name": "Rule Fired",
+                "optLockVersion": -1,
+                "version": 1
+            },
+            {
+                "dataType": "string",
+                "displayOrder": 2,
+                "header": "Rule Ref ID",
+                "id": "rule_ref_id_enrch",
+                "localizedHeader": "Rule Ref ID",
+                "localizedName": "Rule Ref ID",
+                "name": "Rule Ref ID",
                 "optLockVersion": -1,
                 "version": 1
             },

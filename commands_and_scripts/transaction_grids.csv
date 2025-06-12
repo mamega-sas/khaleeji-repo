@@ -1,0 +1,393 @@
+ID,Name
+sfd_allTx_cardfraud,All
+displayName
+Transaction Type
+Transaction Type Description
+Transaction Amount in the Transaction Currency
+Transaction Currency Code
+Transaction Amount in USD
+Card was Present Information
+Customer was Present Information
+Authentication Terminal PAN Entry Capability
+Authentication Terminal PIN Entry Capability
+POS Entry Mode
+Merchant Identifier
+Merchant Name
+Merchant City
+Merchant State
+Merchant Country Code
+DC Number
+DC BIN
+DC Type
+DC Expiration Date
+DC Previous Expiration Date
+DC PIN Last Sent
+DC Invalid PIN Tries
+DC Last Invalid PIN Try
+DC BIN Category
+DC Issuing Bank
+DC Issuing Bank Country Code
+DC Status Indicator
+DC Issue Date
+DA Number
+DA Open Date
+DA Account Type
+DA Base Country Code
+DA Delinquency Status
+DA Spend Limit
+CC Number
+CC BIN
+CC Type
+CC Account Open Date
+CC PIN Last Sent
+CC Invalid PIN Tries
+CC Last Invalid PIN Try
+CC BIN Category
+CC Issuing Bank
+CC Issuing Bank Country
+CC Holder Name
+CC Limit Amount
+CC Last Card Limit Change
+CC Previous Card Limit
+CC Spend Limit
+CC Status Indicator
+CC Number of Cards
+CC Current Balance
+CC Issue Date
+Category
+Change Type
+Change SubType
+Change Description
+sfd_allTx_paymentfraud,All Payment Transactions
+displayName
+Authentication Type
+Authentication Sub Type
+Authentication Event
+Authentication Method
+Authentication Result
+Authentication Decision
+Authentication Decision Score
+Authentication Decision Details
+Authentication Attempt Number
+Authentication Level
+DA Number
+DA Open Date
+DA Account Type
+DA Base Country Code
+DA Delinquency Status
+DA Spend Limit
+Unique Payment Identifier
+Payment Status
+Payment Direction
+Payment Full Description
+Payment Debit Reference Identifier
+Payment Amount
+Payment USD Amount
+Payment Debit Currency
+Payment Debit Currency Code
+Payment Created Date
+Payment Debiting Date
+Payment is Scheduled
+Payment Schedule Indicator
+Payment is Direct Debit
+DC Holder Embossed Name
+CC Holder Embossed Name
+Transaction Type
+Transaction Type Description
+Transaction Amount in the Transaction Currency
+Transaction Currency Code
+Transaction Amount in USD
+Card was Present Information
+Customer was Present Information
+Authentication Terminal PAN Entry Capability
+Authentication Terminal PIN Entry Capability
+POS Entry Mode
+CC Number
+CC BIN
+CC Type
+CC Account Open Date
+CC Issue Date
+CC Activation Date
+CC Activation Channel
+CC Expiration Date
+CC Previous Expiration Date
+CC PIN Last Sent
+CC Invalid PIN Tries
+CC Last Invalid PIN Try
+CC BIN Category
+CC Issuing Bank
+CC Issuing Bank Country
+CC Holder Name
+CC Limit Amount
+CC Last Limit Change
+CC Previous Card Limit
+CC Spend Limit
+CC Status Indicator
+CC Number of Cards
+CC Current Balance
+Merchant Identifier
+Merchant Name
+Merchant City
+Merchant State
+Merchant Country Code
+DC Number
+DC BIN
+DC Type
+DC Issue Date
+DC Issue Type
+DC Activation Date
+DC Activation Channel
+DC Expiration Date
+DC Previous Expiration Date
+DC Pin Last Sent
+DC Invalid PIN Tries
+DC Last Invalid PIN Try
+DC BIN Category
+DC Issuing Bank
+DC Issuing Bank Country Code
+DC Holder Name
+DC Limit Amount
+DC Last Limit Change
+DC Previous Card Limit
+DC Spend Limit
+DC Status Indicator
+Category
+Change Type
+Change SubType
+Change Description
+sfd_allTx_onlinefraud,All Transactions
+displayName
+Decision
+Phone
+Phone Number
+Phone Number2
+Transaction DateTime
+Customer Type
+Transaction Name
+Channel Type
+Customer Account Number
+Transaction Amount
+Beneficiary Account Number
+Beneficiary IBAN
+CIF
+Device ID
+Status
+Transaction Type
+Ip Address
+Device OS
+Device Browser OS
+Customer Mobile Phone
+Beneficiary Mobile Phone
+Beneficiary Name
+Swift Code
+Device Language
+Device Type
+Device City IP
+Device Country IP
+Access Datetime
+Payment Direction
+Beneficiary Type
+Authentication Method
+Message Classification Name
+Message Schema Name
+Message Rest Response Flag
+Customer DOB
+KYC Change Type
+Passport Number
+sfd_allDefaultTx_cardfraud,All Transactions for All Alert Types
+displayName
+Customer Type
+sfd_ccTx_cardfraud,Credit Card Transactions
+displayName
+Transaction Type
+Transaction Type Description
+Transaction Amount in the Transaction Currency
+Transaction Currency Code
+Transaction Amount in USD
+Card was Present Information
+Customer was Present Information
+Authentication Terminal PAN Entry Capability
+Authentication Terminal PIN Entry Capability
+POS Entry Mode
+CC Number
+CC BIN
+CC Type
+CC Account Open Date
+CC PIN Last Sent
+CC Invalid PIN Tries
+CC Last Invalid PIN Try
+CC BIN Category
+CC Issuing Bank
+CC Issuing Bank Country
+CC Holder Name
+CC Limit Amount
+CC Last Card Limit Change
+CC Previous Card Limit
+CC Spend Limit
+CC Status
+CC Number of Cards
+CC Current Balance
+Merchant Identifier
+Merchant Name
+Merchant City
+Merchant State
+Merchant Country Code
+sfd_dcTx_cardfraud,Debit Card Transactions
+displayName
+DC Number
+DC BIN
+DC Type
+DC Expiration Date
+DC Previous Expiration Date
+DC PIN Last Sent
+DC Invalid PIN Tries
+DC Last Invalid PIN Try
+DC BIN Category
+DC Issuing Bank
+Issuing Bank Country Code
+DC Status Indicator
+Card Transaction Type
+Transaction Type Description
+Transaction Amount in the Transaction Currency
+Transaction Currency Code
+Transaction Amount in USD
+Card was Present Information
+Customer was Present Information
+Authentication Terminal PAN Entry Capability
+Authentication Terminal PIN Entry Capability
+POS Entry Mode
+Merchant Identifier
+Merchant Name
+Merchant City
+Merchant State
+Merchant Country Code
+DA Number
+DA Open Date
+DA Type
+DA Base Country Code
+DA Delinquency Status
+DA Spend Limit
+sfd_events_cardfraud,Events
+displayName
+CC Issue Date
+CC PIN Last Sent
+CC Last Invalid PIN Try
+DC Issue Date
+DC PIN Last Sent
+DC Last Invalid PIN Try
+Category
+Change Type
+Change SubType
+Change Description
+sfd_events_paymentfraud,Events (Non Monetary)
+displayName
+Category
+Change Type
+Change SubType
+Change Description
+Date of Birth
+DA Account Type
+Alternate Address Last Changed Date
+Identity
+Identity Type
+Monthly Regular Outgoings
+DA Delinquency Days
+DA Delinquency Status
+sfd_events_onlinefraud,Events (Non Monetary)
+displayName
+Decision
+Transaction DateTime
+Customer Type
+Transaction Name
+Channel Type
+Customer Account Number
+Transaction Amount
+Beneficiary Account Number
+Beneficiary IBAN
+CIF
+Device ID
+Status
+Transaction Type
+Ip Address
+Device OS
+Device Browser OS
+Customer Mobile Phone
+Beneficiary Mobile Phone
+Beneficiary Name
+Swift Code
+Device Language
+Device Type
+Device City IP
+Device Country IP
+Access Datetime
+Payment Direction
+Beneficiary Type
+Authentication Method
+Message Classification Name
+Message Schema Name
+Message Rest Response Flag
+Customer DOB
+KYC Change Type
+Passport Number
+sfd_paymentTx_paymentfraud,Payment Transactions
+displayName
+Authentication Type
+Authentication Sub Type
+Authentication Event
+Authentication Method
+Authentication Result
+Authentication Decision
+Authentication Decision Score
+Authentication Decision Details
+Authentication Attempt Number
+Authentication Level
+DA Account Number
+DA Open Date
+DA Account Type
+DA Base Country Code
+DA Delinquency Status
+DA Spend Limit
+Unique Payment Identifier
+Payment Status
+Payment Direction
+Payment Full Description
+Payment Debit Reference Identifier
+Payment Amount
+Payment USD Amount
+Payment Debit Currency
+Payment Debit Currency Code
+Payment Created Date
+Payment Debiting Date
+Payment is Scheduled
+Payment Schedule Indicator
+Payment is Direct Debit
+sfd_paymentTx_onlinefraud,Payment Transactions
+displayName
+Decision
+Transaction DateTime
+Customer Type
+Transaction Name
+Channel Type
+Transaction Amount
+Beneficiary Account Number
+Beneficiary IBAN
+CIF
+Device ID
+Status
+Transaction Type
+Ip Address
+Device OS
+Customer Mobile Phone
+Beneficiary Mobile Phone
+Beneficiary Name
+Swift Code
+Device Language
+Device Type
+Device City IP
+Device Country IP
+Access Datetime
+Beneficiary Type
+Authentication Method
+Customer DOB
+KYC Change Type
+Passport Number

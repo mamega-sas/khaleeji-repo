@@ -1,24 +1,8 @@
 {
-    "post": "/alerts/enrichmentMappings",
+    "delete": "/alerts/enrichmentMappings",
     "contentType": "application/vnd.sas.collection.triage.enrichment.mapping+json",
     "body": [
         [
-            {
-                "alertTypeID": "sfd_creditacc",
-                "enrichmentFieldID": "sfd_ca_number_enrch",
-                "enrichmentVariablePathName": "message.creditaccount.number",
-                "id": "sfd_ca_number_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_cf_cardPresInd_enrch",
-                "enrichmentVariablePathName": "message.cardfinancial.cardPresentInd",
-                "id": "sfd_cf_cardPresInd_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
             {
                 "alertTypeID": "sfd_debitcard",
                 "enrichmentFieldID": "sfd_cf_cardPresInd_enrch",
@@ -52,14 +36,6 @@
                 "version": 1
             },
             {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_cf_currCode_enrch",
-                "enrichmentVariablePathName": "message.cardfinancial.currencyCode",
-                "id": "sfd_cf_currCode_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
                 "alertTypeID": "sfd_debitcard",
                 "enrichmentFieldID": "sfd_cf_currCode_enrch",
                 "enrichmentVariablePathName": "message.cardfinancial.currencyCode",
@@ -88,14 +64,6 @@
                 "enrichmentFieldID": "sfd_cf_currCode_enrch",
                 "enrichmentVariablePathName": "message.cardfinancial.currencyCode",
                 "id": "sfd_cf_currCode_5_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_cf_usdAmt_enrch",
-                "enrichmentVariablePathName": "message.cardfinancial.usdAmount",
-                "id": "sfd_cf_usdAmt_1_em",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -164,14 +132,6 @@
                 "version": 1
             },
             {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_cst_addrCntryCode_enrch",
-                "enrichmentVariablePathName": "message.customer.addressCountryCode",
-                "id": "sfd_cst_addrCntryCode_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
                 "alertTypeID": "sfd_debitcard",
                 "enrichmentFieldID": "sfd_cst_addrCntryCode_enrch",
                 "enrichmentVariablePathName": "message.customer.addressCountryCode",
@@ -204,14 +164,6 @@
                 "version": 1
             },
             {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_cst_surname_enrch",
-                "enrichmentVariablePathName": "message.customer.surname",
-                "id": "sfd_cst_surname_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
                 "alertTypeID": "sfd_debitcard",
                 "enrichmentFieldID": "sfd_cst_surname_enrch",
                 "enrichmentVariablePathName": "message.customer.surname",
@@ -240,14 +192,6 @@
                 "enrichmentFieldID": "sfd_cst_surname_enrch",
                 "enrichmentVariablePathName": "message.customer.surname",
                 "id": "sfd_cst_surname_5_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_cst_type_enrch",
-                "enrichmentVariablePathName": "message.customer.type",
-                "id": "sfd_cst_type_1_em",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -300,14 +244,6 @@
                 "version": 1
             },
             {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_cus_type_enrch",
-                "enrichmentVariablePathName": "message.customer.type",
-                "id": "sfd_cus_type_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
                 "alertTypeID": "sfd_merchant",
                 "enrichmentFieldID": "sfd_cus_type_enrch",
                 "enrichmentVariablePathName": "message.customer.type",
@@ -344,14 +280,6 @@
                 "enrichmentFieldID": "sfd_da_number_enrch",
                 "enrichmentVariablePathName": "message.debitaccount.number",
                 "id": "sfd_da_number_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_dec_outcome_enrch",
-                "enrichmentVariablePathName": "message.sas.decision.outcome",
-                "id": "sfd_dec_outcome_1_em",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -400,14 +328,6 @@
                 "enrichmentFieldID": "sfd_dec_outcome_enrch",
                 "enrichmentVariablePathName": "message.sas.decision.outcome",
                 "id": "sfd_dec_outcome_7_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_dec_outcome_desc_enrch",
-                "enrichmentVariablePathName": "message.sas.decision.outcomeDesc",
-                "id": "sfd_dec_outcome_desc_1_em",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -500,14 +420,6 @@
                 "version": 1
             },
             {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_py_creditCurrCode_enrch",
-                "enrichmentVariablePathName": "message.payment.creditCurrencyCode",
-                "id": "sfd_py_creditCurrCode_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
                 "alertTypeID": "sfd_debitcard",
                 "enrichmentFieldID": "sfd_py_creditCurrCode_enrch",
                 "enrichmentVariablePathName": "message.payment.creditCurrencyCode",
@@ -544,14 +456,6 @@
                 "enrichmentFieldID": "sfd_py_creditCurrCode_enrch",
                 "enrichmentVariablePathName": "message.payment.creditCurrencyCode",
                 "id": "sfd_py_creditCurrCode_6_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_py_debitCurrCode_enrch",
-                "enrichmentVariablePathName": "message.payment.debitCurrencyCode",
-                "id": "sfd_py_debitCurrCode_1_em",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -596,14 +500,6 @@
                 "version": 1
             },
             {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_py_usdAmt_enrch",
-                "enrichmentVariablePathName": "message.payment.usdAmount",
-                "id": "sfd_py_usdAmt_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
                 "alertTypeID": "sfd_debitcard",
                 "enrichmentFieldID": "sfd_py_usdAmt_enrch",
                 "enrichmentVariablePathName": "message.payment.usdAmount",
@@ -640,14 +536,6 @@
                 "enrichmentFieldID": "sfd_py_usdAmt_enrch",
                 "enrichmentVariablePathName": "message.payment.usdAmount",
                 "id": "sfd_py_usdAmt_6_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_sol_activityType_enrch",
-                "enrichmentVariablePathName": "message.solution.activityType",
-                "id": "sfd_sol_activityType_1_em",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -700,14 +588,6 @@
                 "version": 1
             },
             {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_sol_authType_enrch",
-                "enrichmentVariablePathName": "message.solution.authenticationType",
-                "id": "sfd_sol_authType_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
                 "alertTypeID": "sfd_debitcard",
                 "enrichmentFieldID": "sfd_sol_authType_enrch",
                 "enrichmentVariablePathName": "message.solution.authenticationType",
@@ -752,14 +632,6 @@
                 "enrichmentFieldID": "sfd_sol_authType_enrch",
                 "enrichmentVariablePathName": "message.solution.authenticationType",
                 "id": "sfd_sol_authType_7_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_sol_chnType_enrch",
-                "enrichmentVariablePathName": "message.solution.channelType",
-                "id": "sfd_sol_chnType_1_em",
                 "optLockVersion": -1,
                 "version": 1
             },
@@ -812,14 +684,6 @@
                 "version": 1
             },
             {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_sol_customerType_enrch",
-                "enrichmentVariablePathName": "message.solution.customerType",
-                "id": "sfd_sol_customerType_1_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
                 "alertTypeID": "sfd_debitcard",
                 "enrichmentFieldID": "sfd_sol_customerType_enrch",
                 "enrichmentVariablePathName": "message.solution.customerType",
@@ -864,14 +728,6 @@
                 "enrichmentFieldID": "sfd_sol_customerType_enrch",
                 "enrichmentVariablePathName": "message.solution.customerType",
                 "id": "sfd_sol_customerType_7_em",
-                "optLockVersion": -1,
-                "version": 1
-            },
-            {
-                "alertTypeID": "sfd_customer",
-                "enrichmentFieldID": "sfd_sol_origType_enrch",
-                "enrichmentVariablePathName": "message.solution.originationType",
-                "id": "sfd_sol_origType_1_em",
                 "optLockVersion": -1,
                 "version": 1
             },

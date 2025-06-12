@@ -1,0 +1,51 @@
+component_id,defaultLabel,field,type
+sfd_contact_pane,Provider,sfd_contact_data.provider,string
+sfd_contact_pane,Name,sfd_contact_data.contact_full_name,string
+sfd_contact_pane,Date of Birth,sfd_contact_data.dob,string
+sfd_contact_pane,Social Security Number,sfd_contact_data.ssn,string
+sfd_contact_pane,Credit Score,sfd_contact_data.credit_score,string
+sfd_contact_pane,City,sfd_contact_data.city,string
+sfd_contact_pane,State/Province,sfd_contact_data.state,string
+sfd_contact_pane,Street Address,sfd_contact_data.street_address,string
+sfd_contact_pane,Email Address,sfd_contact_data.email,string
+sfd_contact_pane,Phone,sfd_contact_data.phone,string
+sfd_txViewer_card_paymentFraud_pane,,,
+sfd_customer_pane,Customer Number,sfd_customer_data.party_number,string
+sfd_customer_pane,Customer Type,sfd_customer_data.party_type_desc,string
+sfd_customer_pane,First Name,sfd_customer_data.party_first_name,string
+sfd_customer_pane,Last Name,sfd_customer_data.party_last_name,string
+sfd_customer_pane,Full Name,sfd_customer_data.party_name,string
+sfd_customer_pane,Email Address,sfd_customer_data.email_address,string
+sfd_customer_pane,Citizenship,sfd_customer_data.citizenship_country_name,string
+sfd_customer_pane,Residence,sfd_customer_data.residence_country_name,string
+sfd_customer_pane,Status,sfd_customer_data.party_status_desc,string
+sfd_customer_pane,Identification Type,sfd_customer_data.party_identification_type_desc,string
+sfd_customer_pane,Birthdate,sfd_customer_data.party_date_of_birth,string
+sfd_customer_pane,Occupation,sfd_customer_data.occupation_desc,string
+sfd_customer_pane,Industry,sfd_customer_data.industry_desc,string
+sfd_customer_pane,Marital Status,sfd_customer_data.marital_status_desc,string
+sfd_customer_pane,Identification Number,sfd_customer_data.party_identification_id,string
+sfd_customer_pane,Gender,sfd_customer_data.party_gender,string
+sfd_customer_pane,Customer Since,sfd_customer_data.customer_since_date,string
+sfd_customer_pane,Khaleeji Employee,sfd_customer_data.employee_number,string
+sfd_customer_pane,Employer Name,sfd_customer_data.employer_name,string
+sfd_customer_pane,Employer Phone,sfd_customer_data.employer_phone_number,string
+sfd_txViewer_creditcard_pane,,,
+sfd_txViewer_debitcard_pane,,,
+ui_customer_txs_with_select_pane,,,
+transaction_rules_fired,,,
+dc_sfd_rulesFired_pane,,,
+sfd_customer_x_online_fraud_ind,,,
+sfd_account_pane,Account Number,sfd_account_data.account_number,string
+sfd_account_pane,Account Name,sfd_account_data.account_name,string
+sfd_account_pane,Account Type,sfd_account_data.account_type_desc,string
+sfd_account_pane,Registration Type,sfd_account_data.account_registration_type_desc,string
+sfd_account_pane,Status,sfd_account_data.account_status_desc,string
+sfd_account_pane,Currency Code,sfd_account_data.account_currency_code,string
+sfd_account_pane,Open Date,sfd_account_data.account_open_date,string
+sfd_account_pane,Line of Business,sfd_account_data.line_of_business_name,string
+sfd_account_pane,Product Line Name,sfd_account_data.product_line_name,string
+sfd_account_pane,Tax ID Type,sfd_account_data.account_tax_id_type_code,string
+sfd_account_pane,Tax State Code,sfd_account_data.account_tax_state_code,string
+sfd_account_pane,Tax ID,sfd_account_data.account_tax_id,string
+cust_sfd_rulesFired_pane,,,

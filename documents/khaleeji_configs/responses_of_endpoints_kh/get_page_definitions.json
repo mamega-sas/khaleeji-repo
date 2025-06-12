@@ -1,0 +1,1329 @@
+{
+    "version": 2,
+    "count": 14,
+    "start": 0,
+    "limit": 1000,
+    "name": "page.definitions",
+    "items": [
+      {
+        "version": 1,
+        "id": "sfd_company_x_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_company_x_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_company_x_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_payment_fraud",
+        "entityTypeID": "sfd_company",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:54.141605Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_company_x_vip_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_company_x_vip_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_company_x_vip_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_vip_payment_fraud",
+        "entityTypeID": "sfd_company",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:53.958237Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_creditacc_x_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_creditacc_x_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_creditacc_x_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_payment_fraud",
+        "entityTypeID": "sfd_creditacc",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:54.049578Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_creditacc_x_vip_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_creditacc_x_vip_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_creditacc_x_vip_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_vip_payment_fraud",
+        "entityTypeID": "sfd_creditacc",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:53.988251Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_creditcard_x_credit_card_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_creditcard_x_credit_card_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_creditcard_x_credit_card_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_creditcard",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_credit_card_fraud",
+        "entityTypeID": "sfd_creditcard",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:52.383884Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_creditcard_x_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_creditcard_x_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_creditcard_x_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_payment_fraud",
+        "entityTypeID": "sfd_creditcard",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:54.169724Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_customer_x_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_customer_x_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_customer_x_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_payment_fraud",
+        "entityTypeID": "sfd_customer",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:54.109216Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_customer_x_vip_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_customer_x_vip_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_customer_x_vip_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_vip_payment_fraud",
+        "entityTypeID": "sfd_customer",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:53.901897Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_debitacc_x_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_debitacc_x_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_debitacc_x_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_payment_fraud",
+        "entityTypeID": "sfd_debitacc",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:53.675731Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_debitacc_x_vip_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_debitacc_x_vip_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_debitacc_x_vip_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_vip_payment_fraud",
+        "entityTypeID": "sfd_debitacc",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:54.017978Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_debitcard_x_debit_card_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_debitcard_x_debit_card_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_debitcard_x_debit_card_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_debitcard",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_debit_card_fraud",
+        "entityTypeID": "sfd_debitcard",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:51.392653Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_debitcard_x_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_debitcard_x_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_debitcard_x_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_payment_fraud",
+        "entityTypeID": "sfd_debitcard",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:54.076983Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_merchant_x_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_merchant_x_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_merchant_x_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_payment_fraud",
+        "entityTypeID": "sfd_merchant",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:53.645806Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      },
+      {
+        "version": 1,
+        "id": "sfd_merchant_x_vip_payment_fraud",
+        "links": [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/alerts/pageDefinitions/sfd_merchant_x_vip_payment_fraud",
+            "uri": "/alerts/pageDefinitions/sfd_merchant_x_vip_payment_fraud",
+            "type": "application/vnd.sas.triage.page.definition"
+          }
+        ],
+        "definitionData": {
+          "panes": [
+            {
+              "coordinates": [
+                0,
+                0
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/account/data/${contactEntityID}",
+                  "itemType": "account",
+                  "rel": "data"
+                },
+                {
+                  "href": "/account/meta",
+                  "itemType": "account",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Account"
+            },
+            {
+              "coordinates": [
+                0,
+                1
+              ],
+              "defaultSize": "50%",
+              "links": [
+                {
+                  "href": "/contact/data/${contactEntityID}",
+                  "itemType": "contact",
+                  "rel": "data"
+                },
+                {
+                  "href": "/contact/meta",
+                  "itemType": "contact",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Contact Information"
+            },
+            {
+              "coordinates": [
+                0,
+                2
+              ],
+              "defaultSize": "25%",
+              "links": [
+                {
+                  "href": "/customer/data/${contactEntityID}",
+                  "itemType": "customer",
+                  "rel": "data"
+                },
+                {
+                  "href": "/customer/meta",
+                  "itemType": "customer",
+                  "rel": "metadata"
+                }
+              ],
+              "title": "Customer"
+            },
+            {
+              "contentConfigId": "sfd_txViewer_card_paymentFraud",
+              "contentType": "table",
+              "coordinates": [
+                1,
+                0
+              ],
+              "title": "Transactions"
+            }
+          ],
+          "splitbarType": "horizontalCollapseUp"
+        },
+        "triageTypeID": "sfd_vip_payment_fraud",
+        "entityTypeID": "sfd_merchant",
+        "optLockVersion": 5,
+        "creationTimeStamp": "2025-02-05T19:49:53.929896Z",
+        "createdBy": "sas.rfcSolutionConfig",
+        "modifiedTimeStamp": "0001-01-01T00:00:00Z"
+      }
+    ],
+    "links": [
+      {
+        "method": "POST",
+        "rel": "collection",
+        "href": "/alerts/pageDefinitions",
+        "uri": "/alerts/pageDefinitions",
+        "type": "application/vnd.sas.collection",
+        "itemType": "application/vnd.sas.triage.page.definition"
+      },
+      {
+        "method": "POST",
+        "rel": "self",
+        "href": "/alerts/pageDefinitions?start=0&limit=1000",
+        "uri": "/alerts/pageDefinitions?start=0&limit=1000",
+        "type": "application/vnd.sas.collection",
+        "itemType": "application/vnd.sas.triage.page.definition"
+      }
+    ]
+  }

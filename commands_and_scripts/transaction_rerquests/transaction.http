@@ -1,0 +1,33 @@
+POST http://10.243.10.205:32080/detection/decision/execute
+Accept: application/json
+
+{
+  "message": {
+    "request": {
+      "messageClassificationName": "SAMPLEmcns",
+      "restResponseFlg": 0,
+      "schemaName": "online fraud",
+      "messageDtTm": "2025-08-02T10:15:10.702+02:00"
+    },
+    "solution": {
+      "activityType": "NM",
+      "authenticationType": "NA",
+      "channelType": "DM",
+      "customerType": "BU",
+      "originationType": "CS",
+      "source": "ONEPAY",
+    },
+    "authentication": {
+      "decision": "A"
+    },
+    "customer": {
+      "identifier": "mazen_t8"
+    },
+    "payment": {
+      "amount": "400000"
+    },
+    "device": {
+      "macAddress": "ABC1000"
+    }
+  }
+}
